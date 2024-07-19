@@ -14,6 +14,6 @@ public class AnimalData : ScriptableObject
     [SerializeField] private float damage;
     public float Damage { get { return damage; } }
 
-    [SerializeField] private GameObject rewardItem;
-    public GameObject RewardItem { get { return rewardItem; } }
+    [SerializeField] private GameObject[] rewardItem;
+    public GameObject[] RewardItem { get { return rewardItem; } }
 }
