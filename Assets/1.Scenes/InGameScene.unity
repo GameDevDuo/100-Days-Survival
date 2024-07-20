@@ -170,9 +170,11 @@ MonoBehaviour:
   treePrefab:
   - {fileID: 134804, guid: bec5527a8490b524696a6ab7a2993759, type: 3}
   - {fileID: 134804, guid: bec5527a8490b524696a6ab7a2993759, type: 3}
+  - {fileID: 122562, guid: 13f6097cdfae79d44acca4175298212a, type: 3}
+  - {fileID: 106554, guid: 1e96e737ba439e54a858591faf6298c2, type: 3}
   terrain: {fileID: 606024921}
-  treeCount: b80b0000b80b0000
-  texture: 0000000001000000
+  treeCount: b80b0000b80b00001027000010270000
+  texture: 00000000010000000300000003000000
   seaHeight: 10
 --- !u!1 &19989163
 GameObject:
