@@ -172,9 +172,11 @@ MonoBehaviour:
   - {fileID: 134804, guid: bec5527a8490b524696a6ab7a2993759, type: 3}
   - {fileID: 122562, guid: 13f6097cdfae79d44acca4175298212a, type: 3}
   - {fileID: 106554, guid: 1e96e737ba439e54a858591faf6298c2, type: 3}
+  - {fileID: 789338026105114097, guid: 4f11beb56a9b44455b1f058c903214a0, type: 3}
+  - {fileID: 2878546424940347127, guid: e3a2e1d725fe64fe4bebc9b233cb45f8, type: 3}
   terrain: {fileID: 606024921}
-  treeCount: b80b0000b80b00001027000010270000
-  texture: 00000000010000000300000003000000
+  treeCount: b80b0000b80b000010270000102700003075000030750000
+  texture: 000000000100000003000000030000000000000000000000
   seaHeight: 10
 --- !u!1 &19989163
 GameObject:
@@ -534,7 +536,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.25
+  m_Radius: 0.2
   m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 0.9, z: 0}
@@ -547,7 +549,7 @@ Transform:
   m_GameObject: {fileID: 112678249}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -200, y: 15.61, z: 1320.899}
+  m_LocalPosition: {x: 147.8, y: 15.61, z: 1320.899}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3565,7 +3567,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 15, y: 15}
+  m_SizeDelta: {x: 6, y: 6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1634753855
 MonoBehaviour:
