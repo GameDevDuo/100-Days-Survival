@@ -1,22 +1,50 @@
 ﻿<Properties StartupConfiguration="{1F604ABA-97D5-7786-F80E-1F5D5FA51AF3}|">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/5.Assets/VegetationSpawner/Editor/VegetationUtilitiesWindow.cs">
+    <Files>
+      <File FileName="Assets/3.Scripts/Player/PlayerController.cs" Line="30" Column="62" />
+      <File FileName="Assets/3.Scripts/Camera/FirstPersonCamera.cs" Line="11" Column="31" />
+      <File FileName="Assets/3.Scripts/Camera/ItemRaycaster.cs" Line="32" Column="32" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/Animal.cs" Line="30" Column="28" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalBase.cs" Line="5" Column="33" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalData.cs" Line="17" Column="2" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Item/ItemData.cs" Line="7" Column="56" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Item/Item.cs" Line="7" Column="48" />
+      <File FileName="Assets/5.Assets/VegetationSpawner/Editor/VegetationUtilitiesWindow.cs" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="100-Days-Survival" selected="True">
+          <Node name="100-Days-Survival" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="5.Assets" expanded="True" />
+              <Node name="3.Scripts" expanded="True">
+                <Node name="Camera" expanded="True" />
+                <Node name="Player" expanded="True" />
+                <Node name="ScriptableObject" expanded="True">
+                  <Node name="Animal" expanded="True">
+                    <Node name="Data" expanded="True" />
+                    <Node name="Scripts" expanded="True" />
+                  </Node>
+                  <Node name="Item" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="5.Assets" expanded="True">
+                <Node name="VegetationSpawner" expanded="True">
+                  <Node name="Editor" expanded="True">
+                    <Node name="VegetationUtilitiesWindow.cs" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3e96d78b-c352-448e-a676-b56ab78d105f" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="06d03928-ec45-43b5-8ebb-c9b106f13b2e" />
   <MultiItemStartupConfigurations />
 </Properties>

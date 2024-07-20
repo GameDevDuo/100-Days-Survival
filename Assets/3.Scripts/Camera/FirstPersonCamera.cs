@@ -32,7 +32,7 @@ public class FirstPersonCamera : MonoBehaviour
         float inputY = lookInput.y * mouseSensitivity;
 
         cameraVerticalRotation -= inputY;
-        cameraVerticalRotation = Mathf.Clamp(cameraVerticalRotation, -90f, 90f);
+        cameraVerticalRotation = Mathf.Clamp(cameraVerticalRotation, -80f, 70f);
         transform.localRotation = Quaternion.Euler(cameraVerticalRotation, 0f, 0f);
 
         player.Rotate(Vector3.up * inputX);
