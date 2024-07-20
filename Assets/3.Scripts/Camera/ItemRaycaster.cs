@@ -29,7 +29,6 @@ public class ItemRaycaster : MonoBehaviour
             Item item = hit.collider.GetComponent<Item>();
             if (item != null)
             {
-                Debug.Log("2");
                 string itemDataName = item.ItemData.ItemName;
                 Debug.Log(itemDataName);
             }
