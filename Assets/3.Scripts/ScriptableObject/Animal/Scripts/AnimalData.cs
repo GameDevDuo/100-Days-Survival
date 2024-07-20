@@ -1,6 +1,4 @@
-using Unity.VisualScripting;
 using UnityEngine;
-
 
 [CreateAssetMenu(fileName = "AnimalData", menuName = "ScriptbleObject/AnimalData", order = int.MaxValue)]
 public class AnimalData : ScriptableObject
