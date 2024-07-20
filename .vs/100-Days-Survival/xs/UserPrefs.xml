@@ -1,31 +1,36 @@
 ﻿<Properties StartupConfiguration="{1F604ABA-97D5-7786-F80E-1F5D5FA51AF3}|">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/3.Scripts/Utils/TreeSpawner.cs">
     <Files>
-      <File FileName="Assets/3.Scripts/Player/PlayerController.cs" Line="10" Column="31" />
-      <File FileName="Assets/3.Scripts/Camera/FirstPersonCamera.cs" Line="11" Column="31" />
-      <File FileName="Assets/3.Scripts/Camera/ItemRaycaster.cs" Line="33" Column="41" />
-      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/Animal.cs" Line="30" Column="28" />
-      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalBase.cs" Line="5" Column="33" />
-      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalData.cs" Line="17" Column="2" />
-      <File FileName="Assets/3.Scripts/ScriptableObject/Item/ItemData.cs" Line="7" Column="56" />
-      <File FileName="Assets/3.Scripts/ScriptableObject/Item/Item.cs" Line="7" Column="48" />
-      <File FileName="Assets/3.Scripts/Utils/TreeSpawner.cs" Line="15" Column="52" />
+      <File FileName="Assets/3.Scripts/Player/PlayerController.cs" />
+      <File FileName="Assets/3.Scripts/Camera/FirstPersonCamera.cs" />
+      <File FileName="Assets/3.Scripts/Camera/ItemRaycaster.cs" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/Animal.cs" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalBase.cs" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalData.cs" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Item/ItemData.cs" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Item/Item.cs" />
+      <File FileName="Assets/3.Scripts/Utils/TreeSpawner.cs" Line="32" Column="24" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="100-Days-Survival" selected="True">
-            <Node name="Assets" expanded="True" />
+          <Node name="100-Days-Survival">
+            <Node name="Assets" expanded="True">
+              <Node name="3.Scripts" expanded="True">
+                <Node name="Player" expanded="True" />
+                <Node name="Utils" expanded="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="06d03928-ec45-43b5-8ebb-c9b106f13b2e" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2f481166-03bc-465b-af2a-a27d53a7a931" />
   <MultiItemStartupConfigurations />
 </Properties>

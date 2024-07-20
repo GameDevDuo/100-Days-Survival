@@ -19,17 +19,12 @@ public class TreeSpawner : MonoBehaviour
                 float x = Random.Range(0, terrain.terrainData.size.x);
                 float z = Random.Range(0, terrain.terrainData.size.z);
                 float y = terrain.SampleHeight(new Vector3(x, 0, z));
-                Vector3 position = new Vector3(x, y - 0.25f, z);
+                Vector3 position = new Vector3(x, y, z);
 
                 if (OnGroundTexture(position, i) && SeaHeight(y))
                 {
                     GameObject tree = Instantiate(treePrefab[i], position, Quaternion.identity);
                     tree.transform.parent = transform;
-
-                    if (tree.TryGetComponent<MeshCollider>(out MeshCollider collider))
-                    {
-                        collider.enabled = false;
-                    }
                 }
             }
         }

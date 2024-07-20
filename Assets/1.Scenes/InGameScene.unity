@@ -8,8 +8,8 @@ OcclusionCullingSettings:
     smallestOccluder: 5
     smallestHole: 0.25
     backfaceThreshold: 100
-  m_SceneGUID: 00000000000000000000000000000000
-  m_OcclusionCullingData: {fileID: 0}
+  m_SceneGUID: 9fc0d4010bbf28b4594072e72b8655ab
+  m_OcclusionCullingData: {fileID: 36300000, guid: 94f5e3984fb2a7048b2d4287283e4e58, type: 2}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -168,8 +168,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   treePrefab:
-  - {fileID: 134804, guid: bec5527a8490b524696a6ab7a2993759, type: 3}
-  - {fileID: 134804, guid: bec5527a8490b524696a6ab7a2993759, type: 3}
+  - {fileID: 7707811046713200146, guid: c22f7c648023f495a868604699588ba0, type: 3}
+  - {fileID: 7707811046713200146, guid: c22f7c648023f495a868604699588ba0, type: 3}
   - {fileID: 122562, guid: 13f6097cdfae79d44acca4175298212a, type: 3}
   - {fileID: 106554, guid: 1e96e737ba439e54a858591faf6298c2, type: 3}
   - {fileID: 789338026105114097, guid: 4f11beb56a9b44455b1f058c903214a0, type: 3}
