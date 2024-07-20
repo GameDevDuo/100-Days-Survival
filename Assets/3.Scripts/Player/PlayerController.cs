@@ -7,11 +7,13 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed;
     private Rigidbody rb;
+    private Animator animator;
     private Vector3 moveInput;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
