@@ -1,17 +1,17 @@
 ﻿<Properties StartupConfiguration="{1F604ABA-97D5-7786-F80E-1F5D5FA51AF3}|">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/3.Scripts/Utils/TreeSpawner.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/3.Scripts/Camera/FirstPersonCamera.cs">
     <Files>
-      <File FileName="Assets/3.Scripts/Player/PlayerController.cs" />
-      <File FileName="Assets/3.Scripts/Camera/FirstPersonCamera.cs" />
-      <File FileName="Assets/3.Scripts/Camera/ItemRaycaster.cs" />
+      <File FileName="Assets/3.Scripts/Player/PlayerController.cs" Line="18" Column="1" />
+      <File FileName="Assets/3.Scripts/Camera/FirstPersonCamera.cs" Line="16" Column="50" />
       <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/Animal.cs" />
       <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalBase.cs" />
       <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalData.cs" />
       <File FileName="Assets/3.Scripts/ScriptableObject/Item/ItemData.cs" />
-      <File FileName="Assets/3.Scripts/ScriptableObject/Item/Item.cs" />
-      <File FileName="Assets/3.Scripts/Utils/TreeSpawner.cs" Line="32" Column="24" />
+      <File FileName="Assets/3.Scripts/Utils/TreeSpawner.cs" />
+      <File FileName="Assets/3.Scripts/Managers/UIManager.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,8 +19,24 @@
           <Node name="100-Days-Survival">
             <Node name="Assets" expanded="True">
               <Node name="3.Scripts" expanded="True">
+                <Node name="Camera" expanded="True">
+                  <Node name="FirstPersonCamera.cs" selected="True" />
+                </Node>
+                <Node name="Managers" expanded="True" />
                 <Node name="Player" expanded="True" />
+                <Node name="ScriptableObject" expanded="True">
+                  <Node name="Animal" expanded="True">
+                    <Node name="Scripts" expanded="True" />
+                  </Node>
+                  <Node name="Item" expanded="True" />
+                </Node>
                 <Node name="Utils" expanded="True" />
+              </Node>
+              <Node name="5.Assets" expanded="True">
+                <Node name="AQUAS-Lite" expanded="True">
+                  <Node name="Scripts" expanded="True" />
+                </Node>
+                <Node name="Foliage Free" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -28,9 +44,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2f481166-03bc-465b-af2a-a27d53a7a931" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="511838fa-3f4a-4371-aab6-157505a015e8" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>
