@@ -15,15 +15,12 @@ public class Animal : AnimalBase
     [SerializeField]
     private Transform centerPoint;
     
-
     private Vector3 targetPosition;
 
     private float moveSpeed = 3f;
 
     private float rangeRadius = 10f;
 
-    private float moveTime = 5f;
-    private float waitTime = 2f;
     private float currentTime;
 
     private bool isAction;
@@ -31,41 +28,9 @@ public class Animal : AnimalBase
 
     private void Start() => Init();
 
-    private void Update() => Move();
-
-    public override void Move()
+    protected override void Update()
     {
-        if (isWalking)
-        {
-            Vector3 direction = (targetPosition - transform.position).normalized;
-            rb.MovePosition(transform.position + direction * moveSpeed * Time.deltaTime);
-
-            currentTime -= Time.deltaTime;
-            if (currentTime <= 0)
-            {
-                isWalking = false;
-                currentTime = waitTime;
-            }
-        }
-        else
-        {
-            currentTime -= Time.deltaTime;
-            if (currentTime <= 0)
-            {
-                targetPosition = GetRandomPointInRange();
-                isWalking = true;
-                currentTime = moveTime;
-            }
-        }
-    }
-
-    private void Init()
-    {
-        rb = GetComponent<Rigidbody>();
-        animalCollider = GetComponent<Collider>();
-
-        currentTime = waitTime;
-        isAction = true;
+        base.Update();
     }
 
     private Vector3 GetRandomPointInRange()
@@ -89,5 +54,44 @@ public class Animal : AnimalBase
         }
 
         return randomPoint;
+    }
+
+    private void Init()
+    {
+        rb = GetComponent<Rigidbody>();
+        animalCollider = GetComponent<Collider>();
+
+        isAction = true;
+    }
+
+    public override void Idle()
+    {
+        currentTime -= Time.deltaTime;
+        if (currentTime <= 0)
+        {
+            targetPosition = GetRandomPointInRange();
+        }
+    }
+
+    public override void Move()
+    {
+        Vector3 direction = (targetPosition - transform.position).normalized;
+        rb.MovePosition(transform.position + direction * moveSpeed * Time.deltaTime);
+
+        currentTime -= Time.deltaTime;
+        if (currentTime <= 0)
+        {
+            
+        }
+    }
+
+    public override void Attak()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public override void Dead()
+    {
+        throw new System.NotImplementedException();
     }
 }
