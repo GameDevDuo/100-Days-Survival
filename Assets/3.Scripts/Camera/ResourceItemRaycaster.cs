@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemRaycaster : MonoBehaviour
+public class ResourceItemRaycaster : MonoBehaviour
 {
     [SerializeField] private float distance = 5f;
     [SerializeField] private LayerMask layerMask;
@@ -16,17 +16,17 @@ public class ItemRaycaster : MonoBehaviour
 
     void Update()
     {
-        RaycastForItem();
+        RaycastResourceItem();
     }
 
-    void RaycastForItem()
+    void RaycastResourceItem()
     {
         Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit, distance, layerMask))
         {
-            Item item = hit.collider.GetComponent<Item>();
+            ResourceItem item = hit.collider.GetComponent<ResourceItem>();
             if (item != null)
             {
                 string itemDataName = item.ItemData.ItemName;

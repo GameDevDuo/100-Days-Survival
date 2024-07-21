@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2367662}
   - component: {fileID: 13651722}
   - component: {fileID: 19340024}
+  - component: {fileID: -1061001726908473477}
   m_Layer: 6
   m_Name: Coconut_Palm_Tree_1
   m_TagString: Untagged
@@ -118,3 +119,16 @@ Tree:
   m_GameObject: {fileID: 122562}
   m_SpeedTreeWindAsset: {fileID: 0}
   m_TreeData: {fileID: 11499698, guid: 37247c6b4a4e32e4fb89832ff221ad0b, type: 2}
+--- !u!114 &-1061001726908473477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3cdcced73fa4858812737acceb101f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemData: {fileID: 11400000, guid: b7dae3c6038434a1fac009fc2ca45764, type: 2}
