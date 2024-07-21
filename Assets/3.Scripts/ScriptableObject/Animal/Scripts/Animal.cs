@@ -21,11 +21,6 @@ public class Animal : AnimalBase
 
     private float rangeRadius = 10f;
 
-    private float currentTime;
-
-    private bool isAction;
-    private bool isWalking;
-
     private void Start() => Init();
 
     protected override void Update()
@@ -61,7 +56,7 @@ public class Animal : AnimalBase
         rb = GetComponent<Rigidbody>();
         animalCollider = GetComponent<Collider>();
 
-        isAction = true;
+        ChangeState(State.Idle);
     }
 
     public override void Idle()
@@ -70,6 +65,7 @@ public class Animal : AnimalBase
         if (currentTime <= 0)
         {
             targetPosition = GetRandomPointInRange();
+            ChangeState(State.Move);
         }
     }
 
@@ -81,7 +77,7 @@ public class Animal : AnimalBase
         currentTime -= Time.deltaTime;
         if (currentTime <= 0)
         {
-            
+            ChangeState(State.Idle);
         }
     }
 
