@@ -20,11 +20,9 @@ public abstract class AnimalBase : MonoBehaviour, IMove
         switch (currentState) 
         { 
             case State.Idle:
-                RandomTime(2.5f);
                 Idle();
                 break;
             case State.Move:
-                RandomTime(5f);
                 Move();
                 break;
             case State.Attak:
@@ -41,13 +39,13 @@ public abstract class AnimalBase : MonoBehaviour, IMove
     public abstract void Attak();
     public abstract void Dead();
 
-    public void ChangeState(State newState)
+    public void ChangeState(State newState, float time)
     {
         currentState = newState;
     }
 
-    public void RandomTime(float maxTime)
+    public float RandomTime(float maxTime)
     {
-        currentTime = Random.Range(minTime, maxTime);
+        return currentTime = Random.Range(minTime, maxTime);
     }
 }
