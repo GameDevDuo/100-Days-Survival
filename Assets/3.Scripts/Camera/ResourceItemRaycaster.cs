@@ -6,11 +6,10 @@ public class ResourceItemRaycaster : MonoBehaviour
 {
     [SerializeField] private float distance = 5f;
     [SerializeField] private LayerMask layerMask;
-    private Camera playerCamera;  
+    private Camera playerCamera;
 
     void Start()
     {
-        playerCamera = GetComponent<Camera>();
         playerCamera = Camera.main;
     }
 

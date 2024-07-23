@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{1F604ABA-97D5-7786-F80E-1F5D5FA51AF3}|">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/3.Scripts/Camera/FirstPersonCamera.cs">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="aef7d73b-a2f2-4080-ad82-1709730fc91d" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/3.Scripts/Camera/ResourceItemRaycaster.cs">
     <Files>
-      <File FileName="Assets/3.Scripts/Player/PlayerController.cs" Line="18" Column="1" />
-      <File FileName="Assets/3.Scripts/Camera/FirstPersonCamera.cs" Line="16" Column="50" />
+      <File FileName="Assets/3.Scripts/Player/PlayerController.cs" Line="15" Column="40" />
+      <File FileName="Assets/3.Scripts/Camera/FirstPersonCamera.cs" Line="10" Column="47" />
+      <File FileName="Assets/3.Scripts/Camera/ResourceItemRaycaster.cs" Line="27" Column="44" />
       <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/Animal.cs" />
       <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalBase.cs" />
       <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalData.cs" />
@@ -20,7 +21,7 @@
             <Node name="Assets" expanded="True">
               <Node name="3.Scripts" expanded="True">
                 <Node name="Camera" expanded="True">
-                  <Node name="FirstPersonCamera.cs" selected="True" />
+                  <Node name="ResourceItemRaycaster.cs" selected="True" />
                 </Node>
                 <Node name="Managers" expanded="True" />
                 <Node name="Player" expanded="True" />
@@ -44,8 +45,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="511838fa-3f4a-4371-aab6-157505a015e8" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
