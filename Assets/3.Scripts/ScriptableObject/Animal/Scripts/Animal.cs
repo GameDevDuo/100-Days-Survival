@@ -1,13 +1,12 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Animal : AnimalBase
 {
     [SerializeField]
     private AnimalData animalData;
 
-    [SerializeField]
-    private Rigidbody rb;
-    [SerializeField]
+    private NavMeshAgent agent;
     private Collider animalCollider;
 
     [SerializeField]
@@ -16,8 +15,6 @@ public class Animal : AnimalBase
     private Transform centerPoint;
     
     private Vector3 targetPosition;
-
-    private float moveSpeed = 3f;
 
     private float rangeRadius = 10f;
 
@@ -53,10 +50,10 @@ public class Animal : AnimalBase
 
     private void Init()
     {
-        rb = GetComponent<Rigidbody>();
+        agent = GetComponent<NavMeshAgent>();
         animalCollider = GetComponent<Collider>();
 
-        ChangeState(State.Idle);
+        ChangeState(State.Idle, RandomTime(2.5f));
     }
 
     public override void Idle()
@@ -65,19 +62,18 @@ public class Animal : AnimalBase
         if (currentTime <= 0)
         {
             targetPosition = GetRandomPointInRange();
-            ChangeState(State.Move);
+            ChangeState(State.Move, RandomTime(5f));
         }
     }
 
     public override void Move()
     {
-        Vector3 direction = (targetPosition - transform.position).normalized;
-        rb.MovePosition(transform.position + direction * moveSpeed * Time.deltaTime);
+        agent.SetDestination(targetPosition);
 
         currentTime -= Time.deltaTime;
         if (currentTime <= 0)
         {
-            ChangeState(State.Idle);
+            ChangeState(State.Idle, RandomTime(2.5f));
         }
     }
 
