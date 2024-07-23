@@ -7,18 +7,14 @@ public class Animal : AnimalBase
     private const float IdleStateDuration = 2.5f;
     private const float MoveStateDuration = 5f;
 
-    [SerializeField]
-    private AnimalData animalData;
+    [SerializeField] private AnimalData animalData;
+    [SerializeField] private Terrain terrain;
+    [SerializeField] private Transform centerPoint;
 
     private NavMeshAgent agent;
     private Collider animalCollider;
     private Collider terrainCollider;
 
-    [SerializeField]
-    private Terrain terrain;
-    [SerializeField]
-    private Transform centerPoint;
-    
     private Vector3 targetPosition;
 
     private void Start() => Init();
@@ -48,7 +44,7 @@ public class Animal : AnimalBase
 
     private bool IsPointOnTerrain(Vector3 point)
     {
-        return terrain.GetComponent<Collider>().bounds.Contains(point);
+        return terrainCollider.bounds.Contains(point);
     }
 
 
@@ -84,11 +80,13 @@ public class Animal : AnimalBase
 
     public override void Attak()
     {
-        throw new System.NotImplementedException();
+        // TODO: Implement attack behavior
+        Debug.Log("Attak");
     }
 
     public override void Dead()
     {
-        throw new System.NotImplementedException();
+        // TODO: Implement dead behavior
+        Debug.Log("Dead");
     }
 }
