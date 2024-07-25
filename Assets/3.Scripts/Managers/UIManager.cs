@@ -9,6 +9,9 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private Image circularGauge;
 
+    public Text timeText;
+    public Text dateText;
+
     private void Awake()
     {
         if (Instance == null)
