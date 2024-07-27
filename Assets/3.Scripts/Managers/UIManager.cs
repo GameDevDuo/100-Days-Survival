@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,6 +14,7 @@ public class UIManager : MonoBehaviour, ITime, IDay
     public Text dateText;
 
     private int totalSecond;
+    public int day;
 
     private float gameTime;
 
@@ -46,18 +48,18 @@ public class UIManager : MonoBehaviour, ITime, IDay
 
     public void AddTime()
     {
-        gameTime += Time.deltaTime * 30f;
+        gameTime += Time.deltaTime * 60f;
 
         totalSecond = Mathf.FloorToInt(gameTime);
-        int hours = (totalSecond % 86400) / 3600;
-        int minutes = (totalSecond % 86400) / 60;
+        int hours = (totalSecond % 43200) / 3600;
+        int minutes = (totalSecond % 43200) / 60;
 
         timeText.text = string.Format("{0:D2}시 : {1:D2}분", hours, minutes);
     }
 
     public void AddDate()
     {
-        int day = totalSecond / 86400;
+        day = totalSecond / 43200;
 
         dateText.text = day + "일차";
     }
