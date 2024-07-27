@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,8 +12,10 @@ public class UIManager : MonoBehaviour, ITime, IDay
     public Text timeText;
     public Text dateText;
 
-    private int totalSecond;
+    private int second;
     public int day;
+    private int hours;
+    private int minutes;
 
     private float gameTime;
 
@@ -48,20 +49,23 @@ public class UIManager : MonoBehaviour, ITime, IDay
 
     public void AddTime()
     {
-        gameTime += Time.deltaTime * 30f;
+        gameTime += Time.deltaTime * 600f;
 
-        totalSecond = Mathf.FloorToInt(gameTime);
-        int hours = (totalSecond % 86400) / 3600;
-        int minutes = (totalSecond % 86400) / 60;
+        second = Mathf.FloorToInt(gameTime);
+        hours = (second / 3600) % 24; 
+        minutes = (second / 60) % 60;
 
-        timeText.text = string.Format("{0:D2}:{1:D2} AM", hours, minutes);
+        string time = hours >= 12 ? "PM" : "AM";
+        int total = hours % 12;
+        total = total == 0 ? 12 : total;
+
+        timeText.text = string.Format("{0:D2}:{1:D2} {2}", total, minutes, time);
     }
 
     public void AddDate()
     {
-        int day = totalSecond / 86400;
+        day = second / 86400;
 
         dateText.text = string.Format("Day {0}", day + 1);
     }
-
 }
