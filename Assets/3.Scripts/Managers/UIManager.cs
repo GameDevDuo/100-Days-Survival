@@ -46,26 +46,6 @@ public class UIManager : MonoBehaviour, ITime, IDay
         circularGauge.fillAmount = progress;
     }
 
-<<<<<<< Updated upstream
-    public void AddTime()
-    {
-        gameTime += Time.deltaTime * 60f;
-
-        totalSecond = Mathf.FloorToInt(gameTime);
-        int hours = (totalSecond % 43200) / 3600;
-        int minutes = (totalSecond % 43200) / 60;
-
-        timeText.text = string.Format("{0:D2}시 : {1:D2}분", hours, minutes);
-    }
-
-    public void AddDate()
-    {
-        day = totalSecond / 43200;
-
-        dateText.text = day + "일차";
-    }
-}
-=======
     public void AddTime()
     {
         gameTime += Time.deltaTime * 30f;
@@ -85,4 +65,3 @@ public class UIManager : MonoBehaviour, ITime, IDay
     }
 
 }
->>>>>>> Stashed changes
