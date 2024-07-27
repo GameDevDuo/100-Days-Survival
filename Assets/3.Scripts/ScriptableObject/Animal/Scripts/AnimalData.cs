@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "AnimalData", menuName = "ScriptbleObject/AnimalData", order = int.MaxValue)]
+[CreateAssetMenu(fileName = "AnimalData", menuName = "ScriptableObject/AnimalData", order = int.MaxValue)]
 public class AnimalData : ScriptableObject
 {
     [SerializeField] private string animalName;

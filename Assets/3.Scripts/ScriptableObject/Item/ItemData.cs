@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "ItemData", menuName = "ScriptbleObject/ItemData", order = int.MaxValue)]
+[CreateAssetMenu(fileName = "ItemData", menuName = "ScriptableObject/ItemData", order = int.MaxValue)]
 public class ItemData : ScriptableObject
 {
     [SerializeField] private string itemName;
