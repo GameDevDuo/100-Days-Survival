@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ResourceItemRaycaster : MonoBehaviour
 {
     [SerializeField] private float distance = 5f;
     [SerializeField] private LayerMask layerMask;
     private Camera playerCamera;
+    private ResourceItem currentItem;
 
     void Start()
     {
@@ -16,6 +18,22 @@ public class ResourceItemRaycaster : MonoBehaviour
     void Update()
     {
         RaycastResourceItem();
+
+        if (Mouse.current.leftButton.isPressed)
+        {
+            if (currentItem != null)
+            {
+                currentItem.StartCollection();
+            }
+        }
+        else
+        {
+            if (currentItem != null)
+            {
+                currentItem.StopCollection();
+                currentItem = null;
+            }
+        }
     }
 
     void RaycastResourceItem()
@@ -28,8 +46,30 @@ public class ResourceItemRaycaster : MonoBehaviour
             ResourceItem item = hit.collider.GetComponent<ResourceItem>();
             if (item != null)
             {
-                string itemDataName = item.ItemData.ItemName;
-                Debug.Log(itemDataName);
+                if (currentItem != item)
+                {
+                    if (currentItem != null)
+                    {
+                        currentItem.StopCollection();
+                    }
+                    currentItem = item;
+                }
+            }
+            else
+            {
+                if (currentItem != null)
+                {
+                    currentItem.StopCollection();
+                    currentItem = null;
+                }
+            }
+        }
+        else
+        {
+            if (currentItem != null)
+            {
+                currentItem.StopCollection();
+                currentItem = null;
             }
         }
     }
