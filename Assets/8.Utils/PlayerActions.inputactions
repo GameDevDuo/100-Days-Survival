@@ -24,9 +24,9 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Collect",
+                    "name": "Jump",
                     "type": "Button",
-                    "id": "3ab00aee-0718-4061-9330-5a5bfad1c481",
+                    "id": "32f7a1a8-8fc0-4e4e-9068-9d6a0c1fcae0",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -179,12 +179,12 @@
                 },
                 {
                     "name": "",
-                    "id": "2763c69d-4d2f-4477-bcc3-3a45134fdee0",
-                    "path": "<Mouse>/leftButton",
+                    "id": "191eeae5-eee0-4640-b069-3d6aea584860",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Collect",
+                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

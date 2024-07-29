@@ -4,9 +4,9 @@ using UnityEngine;
 public class ResourceItem : MonoBehaviour
 {
     public ItemData itemData;
+    private Rigidbody rb;
     private float currentCollectTime = 0.0f;
     private bool isBeingCollected = false;
-    private Rigidbody rb;
 
     public void StartCollection()
     {
