@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class ResourceItem : MonoBehaviour
@@ -5,6 +6,7 @@ public class ResourceItem : MonoBehaviour
     public ItemData itemData;
     private float currentCollectTime = 0.0f;
     private bool isBeingCollected = false;
+    private Rigidbody rb;
 
     public void StartCollection()
     {
@@ -49,10 +51,23 @@ public class ResourceItem : MonoBehaviour
         currentCollectTime = 0.0f;
         UIManager.Instance.ShowGauge(false);
         UIManager.Instance.UpdateGauge(0);
+
+        if (CompareTag("Tree"))
+        {
+            FallDown();
+        }
     }
 
     public float GetCurrentProgress()
     {
         return currentCollectTime / itemData.CollectionTime;
+    }
+
+    private void FallDown()
+    {
+        rb = gameObject.AddComponent<Rigidbody>();
+
+        Vector3 fallDirection = Camera.main.transform.forward;
+        rb.AddForce(fallDirection * 1.25f, ForceMode.Impulse);
     }
 }
