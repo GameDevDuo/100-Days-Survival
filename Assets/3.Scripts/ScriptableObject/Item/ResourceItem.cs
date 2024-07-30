@@ -7,10 +7,11 @@ public class ResourceItem : MonoBehaviour
     private Rigidbody rb;
     private float currentCollectTime = 0.0f;
     private bool isBeingCollected = false;
+    private bool isCollectible = false;
 
     public void StartCollection()
     {
-        if (!isBeingCollected)
+        if (!isBeingCollected && !isCollectible)
         {
             isBeingCollected = true;
             currentCollectTime = 0.0f;
@@ -20,7 +21,7 @@ public class ResourceItem : MonoBehaviour
 
     public void StopCollection()
     {
-        if (isBeingCollected)
+        if (isBeingCollected && !isCollectible)
         {
             isBeingCollected = false;
             currentCollectTime = 0.0f;
@@ -31,7 +32,7 @@ public class ResourceItem : MonoBehaviour
 
     void Update()
     {
-        if (isBeingCollected)
+        if (isBeingCollected && !isCollectible)
         {
             currentCollectTime += Time.deltaTime;
             float progress = currentCollectTime / itemData.CollectionTime;
@@ -48,6 +49,7 @@ public class ResourceItem : MonoBehaviour
     void FinishCollection()
     {
         isBeingCollected = false;
+        isCollectible = true;
         currentCollectTime = 0.0f;
         UIManager.Instance.ShowGauge(false);
         UIManager.Instance.UpdateGauge(0);
