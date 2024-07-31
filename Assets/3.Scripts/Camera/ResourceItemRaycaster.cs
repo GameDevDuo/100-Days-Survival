@@ -28,6 +28,15 @@ public class ResourceItemRaycaster : MonoBehaviour
             else if (currentItem != null)
             {
                 Inventory.Instance.AddResourceItem(currentItem);
+                Rigidbody itemRigidbody = currentItem.GetComponent<Rigidbody>();
+                if (itemRigidbody != null)
+                {
+                    itemRigidbody.isKinematic = false;
+                    itemRigidbody.mass = 100f;
+                    itemRigidbody.drag = 6f;
+                    itemRigidbody.angularDrag = 2f;
+                }
+                currentItem.gameObject.layer = 0;
             }
         }
         else

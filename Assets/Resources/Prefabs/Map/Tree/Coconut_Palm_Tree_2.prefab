@@ -107,9 +107,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.85
-  m_Height: 8
+  m_Height: 16
   m_Direction: 1
-  m_Center: {x: 0, y: 3, z: 0}
+  m_Center: {x: 0, y: 7.5, z: 0}
 --- !u!193 &19334346
 Tree:
   m_ObjectHideFlags: 0
@@ -132,3 +132,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: b7dae3c6038434a1fac009fc2ca45764, type: 2}
+  isCollectible: 0

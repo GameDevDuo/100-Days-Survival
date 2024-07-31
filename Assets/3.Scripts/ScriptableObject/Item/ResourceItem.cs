@@ -68,8 +68,19 @@ public class ResourceItem : MonoBehaviour
     private void FallDown()
     {
         rb = gameObject.AddComponent<Rigidbody>();
-
+          
         Vector3 fallDirection = Camera.main.transform.forward;
         rb.AddForce(fallDirection * 1.25f, ForceMode.Impulse);
+        StartCoroutine(IncreaseGravity());
+    }
+
+    private IEnumerator IncreaseGravity()
+    {
+        Vector3 originalGravity = Physics.gravity;
+        Physics.gravity = new Vector3(originalGravity.x, originalGravity.y * 5, originalGravity.z);
+
+        yield return new WaitForSeconds(8);
+
+        Physics.gravity = originalGravity;
     }
 }
