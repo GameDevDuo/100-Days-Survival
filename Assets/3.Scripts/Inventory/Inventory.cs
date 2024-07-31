@@ -7,6 +7,7 @@ public class Inventory : MonoBehaviour
 {
     public static Inventory Instance;
     [SerializeField] private Slot[] slots;
+    [SerializeField] private GameObject inventoryUI;
 
     private void Awake()
     {
@@ -20,6 +21,11 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    public void ToggleInventory()
+    {
+        inventoryUI.SetActive(!inventoryUI.activeSelf);
+    }
+
     public void AddResourceItem(ResourceItem item)
     {
         string itemName = item.itemData.ItemName;
@@ -27,7 +33,7 @@ public class Inventory : MonoBehaviour
 
         for (int i = 0; i < slots.Length; i++)
         {
-            if (slots[i].itemName == itemName)
+            if (slots[i].itemName == itemName && slots[i].count < 64)
             {
                 slots[i].InsertItem();
                 return;

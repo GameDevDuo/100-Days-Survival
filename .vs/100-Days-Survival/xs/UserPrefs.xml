@@ -1,29 +1,28 @@
 ﻿<Properties StartupConfiguration="{1F604ABA-97D5-7786-F80E-1F5D5FA51AF3}|">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3710b244-ea55-4c90-9b8a-aa7708974792" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8488d569-0dc9-4437-afa7-1a08be12e225" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/3.Scripts/Inventory/Slot.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/3.Scripts/Inventory/Inventory.cs">
     <Files>
-      <File FileName="Assets/3.Scripts/Player/PlayerController.cs" Line="14" Column="27" />
-      <File FileName="Assets/3.Scripts/Camera/FirstPersonCamera.cs" Line="26" Column="24" />
+      <File FileName="Assets/3.Scripts/Player/PlayerController.cs" Line="67" Column="37" />
+      <File FileName="Assets/3.Scripts/Camera/FirstPersonCamera.cs" />
       <File FileName="Assets/3.Scripts/Camera/ResourceItemRaycaster.cs" Line="14" Column="6" />
       <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/Animal.cs" Line="1" Column="1" />
-      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalBase.cs" Line="1" Column="1" />
-      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalData.cs" Line="17" Column="2" />
-      <File FileName="Assets/3.Scripts/ScriptableObject/Item/ItemData.cs" Line="1" Column="1" />
-      <File FileName="Assets/3.Scripts/Utils/TreeSpawner.cs" Line="9" Column="46" />
-      <File FileName="Assets/3.Scripts/Managers/UIManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/3.Scripts/ScriptableObject/Item/ResourceItem.cs" Line="56" Column="1" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalBase.cs" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalData.cs" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Item/ItemData.cs" Line="9" Column="52" />
+      <File FileName="Assets/3.Scripts/Utils/TreeSpawner.cs" Line="8" Column="46" />
+      <File FileName="Assets/3.Scripts/Managers/UIManager.cs" Line="10" Column="50" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Item/ResourceItem.cs" Line="10" Column="40" />
       <File FileName="Assets/3.Scripts/Interface/ITime.cs" />
-      <File FileName="Assets/3.Scripts/Interface/IDay.cs" />
-      <File FileName="Assets/3.Scripts/Inventory/Inventory.cs" Line="5" Column="39" />
-      <File FileName="Assets/3.Scripts/Inventory/Slot.cs" Line="5" Column="34" />
-      <File FileName="Assets/3.Scripts/Interface/IOnOff.cs" />
-      <File FileName="Assets/3.Scripts/Interface/IMove.cs" />
+      <File FileName="Assets/3.Scripts/Interface/IDay.cs" Line="1" Column="1" />
+      <File FileName="Assets/3.Scripts/Inventory/Inventory.cs" Line="15" Column="30" />
+      <File FileName="Assets/3.Scripts/Interface/IOnOff.cs" Line="4" Column="2" />
+      <File FileName="Assets/3.Scripts/Interface/IMove.cs" Line="1" Column="1" />
+      <File FileName="Assets/3.Scripts/Inventory/Slot.cs" Line="5" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -33,7 +32,9 @@
               <Node name="3.Scripts" expanded="True">
                 <Node name="Camera" expanded="True" />
                 <Node name="Interface" expanded="True" />
-                <Node name="Inventory" expanded="True" />
+                <Node name="Inventory" expanded="True">
+                  <Node name="Inventory.cs" selected="True" />
+                </Node>
                 <Node name="Managers" expanded="True" />
                 <Node name="Player" expanded="True" />
                 <Node name="ScriptableObject" expanded="True">
@@ -50,4 +51,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

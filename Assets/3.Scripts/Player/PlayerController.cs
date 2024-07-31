@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
@@ -62,6 +61,11 @@ public class PlayerController : MonoBehaviour
     private void CheckGround()
     {
         isGround = Physics.Raycast(transform.position, Vector3.down, 0.25f, LayerMask.GetMask("Ground"));
+    }
+
+    private void OnToggleInventory()
+    {
+        Inventory.Instance.ToggleInventory();
     }
 
     private void OnDrawGizmos()

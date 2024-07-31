@@ -13,6 +13,8 @@ public class Slot : MonoBehaviour, IOnOff
     public void Awake()
     {
         slotImage = GetComponent<Image>();
+
+        UpdateUI();
     }
 
     public void InsertItem(Sprite item)
