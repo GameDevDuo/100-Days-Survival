@@ -1,0 +1,87 @@
+Hello there, awesome person, who bought my art! Thank You for the purchase!
+I hope there won't be any problems managing models of this asset pack.
+If there still is something wrong, please, contact me directly.
+
+My email: Ieva.lickiene@gmail.com
+
+Have a nice experience! Eat well, sleep well and be nice to Your Mom! ;D 
+
+Best Regards,
+Ieva
+
+-----------------------------------------------------------------------------------------------------------------------
+
+The whole info about the asset pack is bellow.
+
+- Lumberyard Decorations -
+
+-  Set contains 26 meshes (16 base models plus 6 different variations made from original 16)
+
+Includes models of: 
+
+Circular Saw Machine
+2 Types of Wood Boxes
+2 Types of Sawdust Piles
+7 Types of Wood Logs
+4 Types of Wood Planks
+Axe
+
+- For optimization purposes some objects share same Materials and Textures.
+- All objects are polygonal, built in 3dsMax 2018 application.
+- Models are UV mapped and fully textured (PBR) 1024x1024 and 2048x2048 .pngs. Pack Includes texture sets for Standard Roughness Setup. 
+- All assets have Colliders applied to them.
+- Pack contains 26 Prefabs.
+- 5 Materials.
+- File Formats: .FBX
+
+- Model Units - 
+.fbx exported in Meters.
+
+- Polygons, Tris and Vertices-
+
+Base models:
+
+- Axe -                    315 polys;   618 tris;   313 vertices.
+- Box_A -                   42 polys;    84 tris;    56 vertices.
+- Box_B -                  200 polys;   408 tris;   232 vertices.
+- Circular_Saw_Machine - 1 584 polys; 2 976 tris; 1 711 vertices.
+- Sawdust_Big -             16 polys;    32 tris;    25 vertices.
+- Sawdust_Small -           16 polys;    32 tris;    25 vertices.
+- Wood_Logs_Long -         108 polys;   144 tris;    78 vertices.
+- Wood_Log_A -              36 polys;    48 tris;    26 vertices.
+- Wood_Log_B -              38 polys;    52 tris;    28 vertices.
+- Wood_Log_C -              36 polys;    48 tris;    26 vertices.
+- Wood_Log_D -              11 polys;    16 tris;    10 vertices.
+- Wood_Log_E -              11 polys;    16 tris;    10 vertices.
+- Wood_Log_F -               8 polys;    12 tris;     8 vertices.
+- Wood_Log_G -              14 polys;    20 tris;    12 vertices.
+- Wood_Planks_A -           78 polys;   156 tris;   104 vertices.
+- Wood_Planks_B -           18 polys;    36 tris;    24 vertices.
+- Wood_Planks_C -           18 polys;    36 tris;    24 vertices.
+- Wood_Planks_D -           30 polys;    60 tris;    40 vertices.
+
+Variation models:
+
+- Lumberyard_Decorations - 2 579 polys;   4 794 tris; 2 752 vertices.
+- Pile_of_Boxes -            484 polys;     984 tris;   576 vertices.
+- Sawdust_Big -               16 polys;      32 tris;    25 vertices.
+- Sawdust_Small -             16 polys;      32 tris;    25 vertices.
+- Stacked_Boxes -            260 polys;     528 tris;   312 vertices.
+- Wood_Chumps -               66 polys;      96 tris;    60 vertices.
+- Wood_Logs_Big_Pile -       348 polys;     969 tris;   464 vertices.
+- Wood_Logs_Small -          154 polys;     212 tris;   120 vertices.
+- Wood_Logs_Small_w_Axe -    469 polys;     830 tris;   433 vertices.
+- Wood_Planks_Big_Pile -     348 polys;     696 tris;   464 vertices.
+
+
+In total:                  7 319 polys;  14 240 tris; 7 983 vertices.
+
+
+
+PLEASE NOTE: If you need additional higher/lower resolution maps or just maps for another setup, contact Me! I will gladly provide them to You!
+
+Check asset preview on:
+Sketchfab - https://goo.gl/qhAes3
+Youtube - https://goo.gl/QyEQcF
+
+Best of Luck! Have fun!

@@ -1,0 +1,214 @@
+fileFormatVersion: 2
+guid: 2fc2c66893e72a749a2fd0bda5394d31
+timeCreated: 1515758609
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Axe
+    100002: Box_A
+    100004: Box_B
+    100006: Circular_Saw_Machine
+    100008: //RootNode
+    100010: Sawdust_Big
+    100012: Sawdust_Pile
+    100014: Sawdust_Small
+    100016: Wood_Log_A
+    100018: Wood_Log_B
+    100020: Wood_Log_C
+    100022: Wood_Log_D
+    100024: Wood_Log_E
+    100026: Wood_Log_F
+    100028: Wood_Log_G
+    100030: Wood_Logs_Long
+    100032: Wood_Logs_Smal
+    100034: Wood_Pile_A
+    100036: Wood_Pile_B
+    100038: Wood_Pile_C
+    100040: Wood_Pile_D
+    400000: Axe
+    400002: Box_A
+    400004: Box_B
+    400006: Circular_Saw_Machine
+    400008: //RootNode
+    400010: Sawdust_Big
+    400012: Sawdust_Pile
+    400014: Sawdust_Small
+    400016: Wood_Log_A
+    400018: Wood_Log_B
+    400020: Wood_Log_C
+    400022: Wood_Log_D
+    400024: Wood_Log_E
+    400026: Wood_Log_F
+    400028: Wood_Log_G
+    400030: Wood_Logs_Long
+    400032: Wood_Logs_Smal
+    400034: Wood_Pile_A
+    400036: Wood_Pile_B
+    400038: Wood_Pile_C
+    400040: Wood_Pile_D
+    2100000: Old_Circular_Saw
+    2100002: Box_A
+    2100004: Box_B
+    2100006: Wood_Pile_Sawdust
+    2100008: Wood_Logs_Axe
+    2300000: Axe
+    2300002: Box_A
+    2300004: Box_B
+    2300006: Circular_Saw_Machine
+    2300008: Sawdust_Big
+    2300010: Sawdust_Small
+    2300012: Wood_Log_A
+    2300014: Wood_Log_B
+    2300016: Wood_Log_C
+    2300018: Wood_Log_D
+    2300020: Wood_Log_E
+    2300022: Wood_Log_F
+    2300024: Wood_Log_G
+    2300026: Wood_Logs_Long
+    2300028: Wood_Pile_A
+    2300030: Wood_Pile_B
+    2300032: Wood_Pile_C
+    2300034: Wood_Pile_D
+    3300000: Axe
+    3300002: Box_A
+    3300004: Box_B
+    3300006: Circular_Saw_Machine
+    3300008: Sawdust_Big
+    3300010: Sawdust_Small
+    3300012: Wood_Log_A
+    3300014: Wood_Log_B
+    3300016: Wood_Log_C
+    3300018: Wood_Log_D
+    3300020: Wood_Log_E
+    3300022: Wood_Log_F
+    3300024: Wood_Log_G
+    3300026: Wood_Logs_Long
+    3300028: Wood_Pile_A
+    3300030: Wood_Pile_B
+    3300032: Wood_Pile_C
+    3300034: Wood_Pile_D
+    4300000: Circular_Saw_Machine
+    4300002: Box_A
+    4300004: Box_B
+    4300006: Wood_Pile_A
+    4300008: Wood_Pile_B
+    4300010: Wood_Pile_C
+    4300012: Wood_Pile_D
+    4300014: Sawdust_Small
+    4300016: Sawdust_Big
+    4300018: Wood_Logs_Long
+    4300020: Wood_Log_B
+    4300022: Wood_Log_C
+    4300024: Wood_Log_D
+    4300026: Wood_Log_G
+    4300028: Wood_Log_F
+    4300030: Wood_Log_E
+    4300032: Wood_Log_A
+    4300034: Axe
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Box_A
+    second: {fileID: 2100000, guid: ec0f602197bd6984f9ed8cdee751a5f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Box_B
+    second: {fileID: 2100000, guid: 6891a2e98e64ec446be5653488b16d36, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Old_Circular_Saw
+    second: {fileID: 2100000, guid: 7d654a4ca5ab97746bd8e99618b104d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood_Logs_Axe
+    second: {fileID: 2100000, guid: 7a8978a6cc556aa4382d66ddf1b92ffd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood_Pile_Sawdust
+    second: {fileID: 2100000, guid: 4431bd6bb45762a4d9cac845c2ef3768, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
