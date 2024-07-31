@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: CoconutPalmTree
   m_EditorClassIdentifier: 
   itemName: CoconutPalmTree
+  sprite: {fileID: 21300000, guid: 49d7b1e6a8cab453787a3ba1791fa69c, type: 3}
   collectionTime: 7.5

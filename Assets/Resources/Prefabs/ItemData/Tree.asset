@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Tree
   m_EditorClassIdentifier: 
   itemName: Tree
+  sprite: {fileID: 21300000, guid: 973c4e73cfa4b497d80dbb92755edc61, type: 3}
   collectionTime: 15

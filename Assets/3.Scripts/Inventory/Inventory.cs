@@ -44,7 +44,7 @@ public class Inventory : MonoBehaviour
         {
             if (slots[i].count == 0)
             {
-                slots[i].InsertItem(sprite);
+                slots[i].InsertItem(itemName, sprite);
                 return;
             }
         }

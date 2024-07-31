@@ -17,19 +17,30 @@ public class Slot : MonoBehaviour, IOnOff
         UpdateUI();
     }
 
-    public void InsertItem(Sprite item)
+    public void InsertItem(string name, Sprite sprite)
     {
-        slotImage.sprite = item;
+        itemName = name;
+        slotImage.sprite = sprite;
         count++;
 
         UpdateUI();
     }
-    public void InsertItem() => count++;
+    public void InsertItem()
+    {
+        count++;
+
+        UpdateUI();
+    }
 
     public void RemoveItem()
     {
         count--;
 
+        if (count == 0)
+        {
+            itemName = null;
+            slotImage.sprite = null;
+        }
         UpdateUI();
     }
 
@@ -37,6 +48,10 @@ public class Slot : MonoBehaviour, IOnOff
     {
         OnOff(countText.gameObject, count != 0);
 
+        if (count > 0)
+            transform.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
+        else
+            transform.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
         countText.text = $"{count}";
     }
 

@@ -21,9 +21,13 @@ public class ResourceItemRaycaster : MonoBehaviour
 
         if (Mouse.current.leftButton.isPressed)
         {
-            if (currentItem != null)
+            if (currentItem != null && !currentItem.isCollectible)
             {
                 currentItem.StartCollection();
+            }
+            else if (currentItem != null)
+            {
+                Inventory.Instance.AddResourceItem(currentItem);
             }
         }
         else

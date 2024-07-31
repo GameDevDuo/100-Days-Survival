@@ -303,8 +303,12 @@ MonoBehaviour:
     m_ActionName: UI/TrackedDeviceOrientation
   - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: 3ab00aee-0718-4061-9330-5a5bfad1c481
-    m_ActionName: Player/Collect[/Mouse/leftButton]
+    m_ActionId: 32f7a1a8-8fc0-4e4e-9068-9d6a0c1fcae0
+    m_ActionName: Player/Jump[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ba6162d2-7caa-4b97-b5b4-a769c83b80d5
+    m_ActionName: Player/ToggleInventory[/Keyboard/tab]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
