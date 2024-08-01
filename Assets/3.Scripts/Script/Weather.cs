@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Weather : WeatherBase
@@ -8,11 +9,17 @@ public class Weather : WeatherBase
 
     private void Start()
     {
-        
+        AbleWeatherList();
     }
 
     public override void AbleWeatherList()
     {
-        throw new System.NotImplementedException();
+        foreach (var weather in weatherData)
+        {
+            if (UIManager.Instance.day <= weather.WeatherDate)
+            {
+                ableWeather.Add(weather.WeatherObject);
+            }
+        }
     }
 }
