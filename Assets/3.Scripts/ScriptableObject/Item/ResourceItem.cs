@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ResourceItem : MonoBehaviour
@@ -68,7 +69,7 @@ public class ResourceItem : MonoBehaviour
     private void FallDown()
     {
         rb = gameObject.AddComponent<Rigidbody>();
-          
+
         Vector3 fallDirection = Camera.main.transform.forward;
         rb.AddForce(fallDirection * 1.25f, ForceMode.Impulse);
         StartCoroutine(IncreaseGravity());
@@ -76,11 +77,17 @@ public class ResourceItem : MonoBehaviour
 
     private IEnumerator IncreaseGravity()
     {
-        Vector3 originalGravity = Physics.gravity;
-        Physics.gravity = new Vector3(originalGravity.x, originalGravity.y * 5, originalGravity.z);
+        Vector3 original = Physics.gravity;
+        Vector3 custom = new Vector3(original.x, original.y * 5, original.z);
 
-        yield return new WaitForSeconds(8);
+        float duration = 7.5f;
+        float time = 0f;
 
-        Physics.gravity = originalGravity;
+        while (time < duration)
+        {
+            rb.AddForce(custom * rb.mass * Time.fixedDeltaTime, ForceMode.Acceleration);
+            time += Time.fixedDeltaTime;
+            yield return new WaitForFixedUpdate();
+        }
     }
 }

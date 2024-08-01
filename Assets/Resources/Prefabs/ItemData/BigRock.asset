@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc7cf8640d9b54dc2a7b150394e4545b, type: 3}
   m_Name: BigRock
   m_EditorClassIdentifier: 
-  itemName: Rock
+  itemName: BigRock
+  sprite: {fileID: 0}
   collectionTime: 5

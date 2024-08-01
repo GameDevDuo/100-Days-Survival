@@ -29,14 +29,18 @@ public class ResourceItemRaycaster : MonoBehaviour
             {
                 Inventory.Instance.AddResourceItem(currentItem);
                 Rigidbody itemRigidbody = currentItem.GetComponent<Rigidbody>();
-                if (itemRigidbody != null)
+                currentItem.gameObject.layer = 0;
+                if (currentItem.CompareTag("Tree") && itemRigidbody != null)
                 {
                     itemRigidbody.isKinematic = false;
                     itemRigidbody.mass = 100f;
                     itemRigidbody.drag = 6f;
-                    itemRigidbody.angularDrag = 2f;
+                    itemRigidbody.angularDrag = 2.5f;
                 }
-                currentItem.gameObject.layer = 0;
+                else
+                {
+                    Destroy(currentItem.gameObject);
+                }
             }
         }
         else

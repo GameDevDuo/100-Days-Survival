@@ -8,6 +8,10 @@ public class Inventory : MonoBehaviour
     public static Inventory Instance;
     [SerializeField] private Slot[] slots;
     [SerializeField] private GameObject inventoryUI;
+    [SerializeField] private GameObject player;
+    private PlayerController playerController;
+    private FirstPersonCamera firstPersonCamera;
+    private ResourceItemRaycaster resourceItemRaycaster;
 
     private void Awake()
     {
@@ -21,9 +25,24 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        playerController = player.GetComponent<PlayerController>();
+        firstPersonCamera = player.transform.GetChild(0).GetComponent<FirstPersonCamera>();
+        resourceItemRaycaster = player.transform.GetChild(0).GetComponent<ResourceItemRaycaster>();
+    }
+
     public void ToggleInventory()
     {
-        inventoryUI.SetActive(!inventoryUI.activeSelf);
+        bool isActive = !inventoryUI.activeSelf;
+        inventoryUI.SetActive(isActive);
+
+        playerController.enabled = !isActive;
+        firstPersonCamera.enabled = !isActive;
+        resourceItemRaycaster.enabled = !isActive;
+
+        Cursor.visible = isActive;
+        Cursor.lockState = isActive ? CursorLockMode.None : CursorLockMode.Locked;
     }
 
     public void AddResourceItem(ResourceItem item)
