@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86d2dd7f047567a46884cc67f4a0a665, type: 3}
   m_Name: Rain
   m_EditorClassIdentifier: 
-  weatherPre: {fileID: 0}
-  weatherDate: 2
+  weatherObject: {fileID: 0}
+  weatherDate: 0
