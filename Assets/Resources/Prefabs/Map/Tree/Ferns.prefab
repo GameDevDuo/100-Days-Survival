@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2673695654375786204}
   - component: {fileID: 4627692170904376361}
   - component: {fileID: 4248081448838194166}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ferns_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,8 +94,10 @@ GameObject:
   - component: {fileID: 3818052803836469824}
   - component: {fileID: 944844600136547858}
   - component: {fileID: 3506318467855339302}
+  - component: {fileID: 7163759138092088976}
   - component: {fileID: 5910515673530474444}
-  m_Layer: 0
+  - component: {fileID: -2519560981765346073}
+  m_Layer: 6
   m_Name: Ferns
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,6 +171,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7163759138092088976
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6809481121959456646}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: dad0b53bfba5bf148b12cdfa48770c8a, type: 3}
 --- !u!205 &5910515673530474444
 LODGroup:
   m_ObjectHideFlags: 0
@@ -196,6 +220,20 @@ LODGroup:
     renderers:
     - renderer: {fileID: 4627692170904376361}
   m_Enabled: 1
+--- !u!114 &-2519560981765346073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6809481121959456646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3cdcced73fa4858812737acceb101f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemData: {fileID: 11400000, guid: cf87c122affc243e0b490fe109d9241d, type: 2}
+  isCollectible: 0
 --- !u!1 &8063359380458352007
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,7 +245,7 @@ GameObject:
   - component: {fileID: 8078211951074256072}
   - component: {fileID: 9066569823162700703}
   - component: {fileID: 307186134412989069}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ferns_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
