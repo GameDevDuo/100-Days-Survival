@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 13698202}
   - component: {fileID: 19334346}
   - component: {fileID: 4794665040019841766}
+  - component: {fileID: -6347413314036796822}
   m_Layer: 6
   m_Name: Coconut_Palm_Tree_2
   m_TagString: Tree
@@ -133,3 +134,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: b7dae3c6038434a1fac009fc2ca45764, type: 2}
   isCollectible: 0
+--- !u!114 &-6347413314036796822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bba4f697f1f3f4f5282ebf9ad35f80d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeDuration: 5
