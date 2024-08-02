@@ -36,6 +36,11 @@ public class ResourceItemRaycaster : MonoBehaviour
                     itemRigidbody.mass = 100f;
                     itemRigidbody.drag = 6f;
                     itemRigidbody.angularDrag = 2.5f;
+
+                    if (currentItem.TryGetComponent(out ResourceItemFadeOut resourceItem))
+                    {
+                        StartCoroutine(resourceItem.BeginFadeOut());
+                    }
                 }
                 else
                 {
