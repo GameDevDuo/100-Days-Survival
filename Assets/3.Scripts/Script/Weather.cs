@@ -9,7 +9,7 @@ public class Weather : WeatherBase
 
     private void Start()
     {
-        AbleWeatherList();
+        //AbleWeatherList();
     }
 
     public override void AbleWeatherList()
