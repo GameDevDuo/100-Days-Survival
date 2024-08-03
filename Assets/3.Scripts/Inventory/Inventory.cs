@@ -12,6 +12,8 @@ public class Inventory : MonoBehaviour
     private PlayerController playerController;
     private FirstPersonCamera firstPersonCamera;
     private ResourceItemRaycaster resourceItemRaycaster;
+    private Rigidbody playerRigidbody;
+    private Animator playerAnimator;
 
     private void Awake()
     {
@@ -30,6 +32,8 @@ public class Inventory : MonoBehaviour
         playerController = player.GetComponent<PlayerController>();
         firstPersonCamera = player.transform.GetChild(0).GetComponent<FirstPersonCamera>();
         resourceItemRaycaster = player.transform.GetChild(0).GetComponent<ResourceItemRaycaster>();
+        playerRigidbody = player.GetComponent<Rigidbody>();
+        playerAnimator = player.GetComponent<Animator>();
     }
 
     public void ToggleInventory()
@@ -38,7 +42,6 @@ public class Inventory : MonoBehaviour
         {
             return;
         }
-
         bool isActive = !inventoryUI.activeSelf;
         inventoryUI.SetActive(isActive);
 
@@ -48,6 +51,12 @@ public class Inventory : MonoBehaviour
 
         Cursor.visible = isActive;
         Cursor.lockState = isActive ? CursorLockMode.None : CursorLockMode.Locked;
+
+        if (inventoryUI.activeSelf)
+        {
+            playerRigidbody.velocity = Vector3.zero;
+            playerAnimator.Play("Idle");
+        }
     }
 
     public void AddResourceItem(ResourceItem item)
