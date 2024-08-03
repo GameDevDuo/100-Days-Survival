@@ -9,6 +9,7 @@ public class ResourceItemRaycaster : MonoBehaviour
     [SerializeField] private LayerMask layerMask;
     private Camera playerCamera;
     private ResourceItem currentItem;
+    public bool isCollecting;
 
     void Start()
     {
@@ -24,6 +25,7 @@ public class ResourceItemRaycaster : MonoBehaviour
             if (currentItem != null && !currentItem.isCollectible)
             {
                 currentItem.StartCollection();
+                isCollecting = true;
             }
             else if (currentItem != null)
             {
@@ -46,6 +48,7 @@ public class ResourceItemRaycaster : MonoBehaviour
                 {
                     Destroy(currentItem.gameObject);
                 }
+                isCollecting = false;
             }
         }
         else
@@ -54,6 +57,7 @@ public class ResourceItemRaycaster : MonoBehaviour
             {
                 currentItem.StopCollection();
                 currentItem = null;
+                isCollecting = false;
             }
         }
     }
@@ -83,6 +87,7 @@ public class ResourceItemRaycaster : MonoBehaviour
                 {
                     currentItem.StopCollection();
                     currentItem = null;
+                    isCollecting = false;
                 }
             }
         }
@@ -92,6 +97,7 @@ public class ResourceItemRaycaster : MonoBehaviour
             {
                 currentItem.StopCollection();
                 currentItem = null;
+                isCollecting = false;
             }
         }
     }

@@ -34,6 +34,11 @@ public class Inventory : MonoBehaviour
 
     public void ToggleInventory()
     {
+        if (resourceItemRaycaster.isCollecting)
+        {
+            return;
+        }
+
         bool isActive = !inventoryUI.activeSelf;
         inventoryUI.SetActive(isActive);
 
