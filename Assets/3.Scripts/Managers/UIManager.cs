@@ -6,16 +6,14 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour, ITime, IDay
 {
     public static UIManager Instance;
-
     [SerializeField] private Image circularGauge;
+    [SerializeField] private GameObject sunLight;
     public Text timeText;
     public Text dateText;
-
     private int second;
     public int day;
     private int hours;
     private int minutes;
-
     private float gameTime;
 
     private void Awake()
@@ -23,6 +21,8 @@ public class UIManager : MonoBehaviour, ITime, IDay
         if (Instance == null)
         {
             Instance = this;
+
+            gameTime = 12 * 3600;
         }
         else
         {
@@ -34,6 +34,7 @@ public class UIManager : MonoBehaviour, ITime, IDay
     {
         AddTime();
         AddDate();
+        RotateSunLight();
     }
 
     public void ShowGauge(bool show)
@@ -51,7 +52,7 @@ public class UIManager : MonoBehaviour, ITime, IDay
         gameTime += Time.deltaTime * 60f;
 
         second = Mathf.FloorToInt(gameTime);
-        hours = (second / 3600) % 24; 
+        hours = (second / 3600) % 24;
         minutes = (second / 60) % 60;
 
         string time = hours >= 12 ? "PM" : "AM";
@@ -66,5 +67,13 @@ public class UIManager : MonoBehaviour, ITime, IDay
         day = second / 86400;
 
         dateText.text = string.Format("Day {0}", day + 1);
+    }
+
+    private void RotateSunLight()
+    {
+        float time = (hours * 60f + minutes) / 1440f;
+        float angle = time * 360f;
+
+        sunLight.transform.rotation = Quaternion.Euler(new Vector3(angle - 90, 170, 0));
     }
 }
