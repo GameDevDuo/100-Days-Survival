@@ -11,17 +11,21 @@ public class Animal : AnimalBase
     [SerializeField] private Terrain terrain;
     [SerializeField] private Transform centerPoint;
 
+    private Animator animator;
     private NavMeshAgent agent;
     private Collider animalCollider;
     private Collider terrainCollider;
 
     private Vector3 targetPosition;
 
+    private float hp;
+
     private void Start() => Init();
 
     protected override void Update()
     {
         base.Update();
+        Physics.OverlapSphere(centerPoint.position, animalData.FindRange, LayerMask.GetMask("Player"));
     }
     private Vector3 GetRandomPointInRange()
     {
@@ -47,46 +51,82 @@ public class Animal : AnimalBase
         return terrainCollider.bounds.Contains(point);
     }
 
-
     private void Init()
     {
+        animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         animalCollider = GetComponent<Collider>();
         terrainCollider = terrain.GetComponent<Collider>();
 
+        hp = animalData.MaxHP;
+
         ChangeState(State.Idle, RandomTime(IdleStateDuration));
+    }
+
+    private bool CheckForPlayer()
+    {
+        Collider[] colliders = Physics.OverlapSphere(centerPoint.position, animalData.FindRange, LayerMask.GetMask("Player"));
+        return colliders.Length > 0;
     }
 
     public override void Idle()
     {
-        currentTime -= Time.deltaTime;
-        if (currentTime <= 0)
+        if(hp <= 0)
         {
-            targetPosition = GetRandomPointInRange();
-            ChangeState(State.Move, RandomTime(MoveStateDuration));
+            ChangeState(State.Dead);
+        }
+        else
+        {
+            if(CheckForPlayer())
+            {
+                ChangeState(State.Attak);
+            }
+            else
+            {
+                animator.Play("idle");
+                currentTime -= Time.deltaTime;
+                if (currentTime <= 0)
+                {
+                    targetPosition = GetRandomPointInRange();
+                    ChangeState(State.Move, RandomTime(MoveStateDuration));
+                }
+            }
         }
     }
 
     public override void Move()
     {
-        agent.SetDestination(targetPosition);
-
-        currentTime -= Time.deltaTime;
-        if (currentTime <= 0)
+        if(hp <= 0)
         {
-            ChangeState(State.Idle, RandomTime(IdleStateDuration));
+            ChangeState(State.Dead);
+        }
+        else
+        {
+            if (CheckForPlayer())
+            {
+                ChangeState(State.Attak);
+            }
+            else
+            {
+                animator.Play("walk");
+                agent.SetDestination(targetPosition);
+
+                currentTime -= Time.deltaTime;
+                if (currentTime <= 0)
+                {
+                    ChangeState(State.Idle, RandomTime(IdleStateDuration));
+                }
+            }
         }
     }
 
     public override void Attak()
     {
-        // TODO: Implement attack behavior
-        Debug.Log("Attak");
+        
     }
 
     public override void Dead()
     {
-        // TODO: Implement dead behavior
-        Debug.Log("Dead");
+        animator.Play("die");
     }
 }
