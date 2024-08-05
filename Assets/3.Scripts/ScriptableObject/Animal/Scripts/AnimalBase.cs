@@ -44,6 +44,11 @@ public abstract class AnimalBase : MonoBehaviour, IMove
         currentState = newState;
     }
 
+    public void ChangeState(State newState)
+    {
+        currentState = newState;
+    }
+
     public float RandomTime(float maxTime)
     {
         return currentTime = Random.Range(minTime, maxTime);
