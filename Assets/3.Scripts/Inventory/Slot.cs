@@ -53,7 +53,7 @@ public class Slot : MonoBehaviour, IOnOff, IBeginDragHandler, IDragHandler, IEnd
 
     private void UpdateUI()
     {
-        OnOff(countText.gameObject, count != 0);
+        OnOff(countText.gameObject, count > 1);
 
         if (count > 0)
             transform.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);

@@ -1,23 +1,20 @@
 ﻿<Properties StartupConfiguration="{1F604ABA-97D5-7786-F80E-1F5D5FA51AF3}|">
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="386302e3-57c4-44b8-add2-d327099961f9" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/3.Scripts/Inventory/Inventory.cs">
     <Files>
       <File FileName="Assets/3.Scripts/Managers/UIManager.cs" Line="1" Column="26" IsPinned="True" />
       <File FileName="Assets/3.Scripts/Managers/GameManager.cs" Line="7" Column="40" IsPinned="True" />
-      <File FileName="Assets/3.Scripts/Player/PlayerController.cs" Line="22" Column="6" />
+      <File FileName="Assets/3.Scripts/Player/PlayerController.cs" />
       <File FileName="Assets/3.Scripts/Camera/FirstPersonCamera.cs" />
-      <File FileName="Assets/3.Scripts/Camera/ResourceItemRaycaster.cs" Line="1" Column="1" />
-      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalData.cs" Line="1" Column="1" />
+      <File FileName="Assets/3.Scripts/Camera/ResourceItemRaycaster.cs" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalData.cs" />
       <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/Animal.cs" Line="6" Column="43" />
       <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalBase.cs" />
       <File FileName="Assets/3.Scripts/ScriptableObject/Item/ItemData.cs" />
       <File FileName="Assets/3.Scripts/ScriptableObject/Item/ResourceItem.cs" />
       <File FileName="Assets/3.Scripts/Interface/ITime.cs" />
       <File FileName="Assets/3.Scripts/Interface/IDay.cs" />
-      <File FileName="Assets/3.Scripts/Inventory/Inventory.cs" Line="47" Column="48" />
-      <File FileName="Assets/3.Scripts/Inventory/Slot.cs" Line="14" Column="33" />
+      <File FileName="Assets/3.Scripts/Inventory/Inventory.cs" Line="21" Column="34" />
+      <File FileName="Assets/3.Scripts/Inventory/Slot.cs" />
       <File FileName="Assets/3.Scripts/Interface/IOnOff.cs" />
       <File FileName="Assets/3.Scripts/Interface/IMove.cs" />
       <File FileName="Assets/3.Scripts/Camera/ResourceItemFadeOut.cs" />
@@ -49,8 +46,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3644af97-b189-4fe6-80e9-591b2731f7a8" />
 </Properties>

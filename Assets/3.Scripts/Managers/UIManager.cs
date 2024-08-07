@@ -66,7 +66,7 @@ public class UIManager : MonoBehaviour, ITime, IDay
     {
         day = second / 86400;
 
-        dateText.text = string.Format("Day {0}", day + 1);
+        dateText.text = string.Format("DAY {0}", day + 1);
     }
 
     private void RotateSunLight()
