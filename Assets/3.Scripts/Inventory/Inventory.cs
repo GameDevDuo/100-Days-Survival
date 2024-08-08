@@ -16,6 +16,7 @@ public class Inventory : MonoBehaviour
     private PlayerController playerController;
     private FirstPersonCamera firstPersonCamera;
     private ResourceItemRaycaster resourceItemRaycaster;
+    private IKController iKController;
     private Rigidbody playerRigidbody;
     private Animator playerAnimator;
     private int selectedSlot = 0;
@@ -37,6 +38,7 @@ public class Inventory : MonoBehaviour
         playerController = player.GetComponent<PlayerController>();
         firstPersonCamera = player.transform.GetChild(0).GetComponent<FirstPersonCamera>();
         resourceItemRaycaster = player.transform.GetChild(0).GetComponent<ResourceItemRaycaster>();
+        iKController = player.GetComponent<IKController>();
         playerRigidbody = player.GetComponent<Rigidbody>();
         playerAnimator = player.GetComponent<Animator>();
     }
@@ -56,15 +58,14 @@ public class Inventory : MonoBehaviour
             if (Keyboard.current[Key.Digit1 + i - 1].wasPressedThisFrame)
             {
                 selectedSlot = i - 1;
-                UpdateHotbarUI();
                 break;
             }
         }
         if (Mathf.Abs(scrollValue) >= scrollSensitivity)
         {
             selectedSlot = (selectedSlot - (int)Mathf.Sign(scrollValue) + 6) % 6;
-            UpdateHotbarUI();
         }
+        UpdateHotbarUI();
     }
 
     private void UpdateHotbarUI()
@@ -75,6 +76,19 @@ public class Inventory : MonoBehaviour
             {
                 hotbarSlots[i].sprite = currentSlotSprite;
                 hotbarSlots[i].color = new Color(1f, 1f, 1f, 0.392f);
+
+                Sprite sprite = hotbarSlots[i].transform.GetChild(0).GetComponent<Image>().sprite;
+
+                if (sprite != null)
+                {
+                    iKController.itemPrefab = Resources.Load<GameObject>($"Prefabs/Item/{sprite.name}");
+                    iKController.iKActive = true;
+                }
+                else
+                {
+                    iKController.itemPrefab = null;
+                    iKController.iKActive = false;
+                }
             }
             else
             {
