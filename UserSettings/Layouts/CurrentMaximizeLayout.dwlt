@@ -23,7 +23,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 332
+  controlID: 518
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -102,18 +102,18 @@ MonoBehaviour:
       y: 21
       width: 820
       height: 460
-    m_Scale: {x: 1.7783834, y: 1.7783834}
-    m_Translation: {x: 410, y: 230}
+    m_Scale: {x: 1.7287441, y: 1.7287441}
+    m_Translation: {x: 409.99994, y: 230}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -230.54646
-      y: -129.33095
-      width: 461.09293
-      height: 258.6619
+      x: -237.16635
+      y: -133.04456
+      width: 474.33276
+      height: 266.0891
     m_MinimalGUI: 1
   m_defaultScale: 0.8518519
   m_LastWindowPixelSize: {x: 1640, y: 962}
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 333
+  controlID: 519
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 334
+  controlID: 520
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1491,7 +1491,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 310
+  controlID: 496
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1700,7 +1700,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 218
+  controlID: 402
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1772,7 +1772,7 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets/5.Assets
+    - Assets/3.Scripts/Player
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1780,15 +1780,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/5.Assets
+  - Assets/3.Scripts/Player
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /Users/junghyun/Desktop/100-Days-Survival/100-Days-Survival
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 18760000
-    m_LastClickedID: 30232
+    m_SelectedIDs: fe770000
+    m_LastClickedID: 30718
     m_ExpandedIDs: 000000000a7600000c7600000e76000010760000127600001476000016760000187600001a7600001c7600001e76000020760000227600002476000026760000287600002a7600002c76000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
