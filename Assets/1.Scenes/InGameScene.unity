@@ -1121,9 +1121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab69dbc290fdd44c3bdb87be3bcc017f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rightHandObj: {fileID: 1982597899}
-  leftHandObj: {fileID: 1971759754}
-  itemPrefab: {fileID: 0}
+  rightHandObj: {fileID: 1033555206}
   iKActive: 0
 --- !u!114 &112678257
 MonoBehaviour:

@@ -76,19 +76,6 @@ public class Inventory : MonoBehaviour
             {
                 hotbarSlots[i].sprite = currentSlotSprite;
                 hotbarSlots[i].color = new Color(1f, 1f, 1f, 0.392f);
-
-                Sprite sprite = hotbarSlots[i].transform.GetChild(0).GetComponent<Image>().sprite;
-
-                if (sprite != null)
-                {
-                    iKController.itemPrefab = Resources.Load<GameObject>($"Prefabs/Item/{sprite.name}");
-                    iKController.iKActive = true;
-                }
-                else
-                {
-                    iKController.itemPrefab = null;
-                    iKController.iKActive = false;
-                }
             }
             else
             {
