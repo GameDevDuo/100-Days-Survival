@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class AttakAnimal : AnimalBase
+public class AttackAnimal : AnimalBase
 {
     private const float rangeRadius = 10f;
     private const float IdleStateDuration = 2.5f;
@@ -65,7 +65,11 @@ public class AttakAnimal : AnimalBase
     private bool CheckForPlayer()
     {
         Collider[] colliders = Physics.OverlapSphere(centerPoint.position, animalData.FindRange, LayerMask.GetMask("Player"));
-        targetPosition = colliders[0].transform.position;
+        if(colliders.Length > 0)
+        {
+            Vector3 playerPos = colliders[0].transform.position;
+            targetPosition = new Vector3(playerPos.x - animalData.AttakDistance, playerPos.y, playerPos.z - animalData.AttakDistance);
+        }
         return colliders.Length > 0;
     }
 
@@ -83,11 +87,11 @@ public class AttakAnimal : AnimalBase
             }
             else
             {
-                animator.Play("idle");
                 currentTime -= Time.deltaTime;
                 if (currentTime <= 0)
                 {
                     targetPosition = GetRandomPointInRange();
+                    animator.Play("walk");
                     ChangeState(State.Move, RandomTime(MoveStateDuration));
                 }
             }
@@ -108,12 +112,12 @@ public class AttakAnimal : AnimalBase
             }
             else
             {
-                animator.Play("walk");
                 agent.SetDestination(targetPosition);
 
                 currentTime -= Time.deltaTime;
                 if (currentTime <= 0)
                 {
+                    animator.Play("idle");
                     ChangeState(State.Idle, RandomTime(IdleStateDuration));
                 }
             }
@@ -123,6 +127,10 @@ public class AttakAnimal : AnimalBase
     public override void Attak()
     {
         agent.SetDestination(targetPosition);
+        if(targetPosition == transform.position)
+        {
+            animator.Play("attack");
+        }
     }
 
     public override void Dead()

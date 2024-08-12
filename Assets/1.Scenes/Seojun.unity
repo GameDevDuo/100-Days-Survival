@@ -3555,7 +3555,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1600129149}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 323d2f3451fddcc4f871cab428ed86f8, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c012e096c89f854d9ec89f6359cb176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animalData: {fileID: 11400000, guid: 836e0342dec561a41989fac17062f4ac, type: 2}
