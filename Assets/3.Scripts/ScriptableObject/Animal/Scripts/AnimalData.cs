@@ -21,6 +21,6 @@ public class AnimalData : ScriptableObject
     [SerializeField] private float findRange;
     public float FindRange { get {  return findRange; } }
 
-    [SerializeField] private GameObject[] rewardItem;
-    public GameObject[] RewradItem { get { return rewardItem; } }
+    [SerializeField] private Sprite[] rewardItem;
+    public Sprite[] RewradItem { get { return rewardItem; } }
 }
