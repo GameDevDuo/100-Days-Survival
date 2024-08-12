@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Animal : AnimalBase
+public class AttakAnimal : AnimalBase
 {
     private const float rangeRadius = 10f;
     private const float IdleStateDuration = 2.5f;
@@ -65,49 +65,64 @@ public class Animal : AnimalBase
     private bool CheckForPlayer()
     {
         Collider[] colliders = Physics.OverlapSphere(centerPoint.position, animalData.FindRange, LayerMask.GetMask("Player"));
+        targetPosition = colliders[0].transform.position;
         return colliders.Length > 0;
     }
 
     public override void Idle()
     {
-        if (hp <= 0)
+        if(hp <= 0)
         {
             ChangeState(State.Dead);
         }
         else
         {
-            currentTime -= Time.deltaTime;
-            if (currentTime <= 0)
+            if(CheckForPlayer())
             {
-                targetPosition = GetRandomPointInRange();
-                animator.Play("walk");
-                ChangeState(State.Move, RandomTime(MoveStateDuration));
+                ChangeState(State.Attak);
+            }
+            else
+            {
+                animator.Play("idle");
+                currentTime -= Time.deltaTime;
+                if (currentTime <= 0)
+                {
+                    targetPosition = GetRandomPointInRange();
+                    ChangeState(State.Move, RandomTime(MoveStateDuration));
+                }
             }
         }
     }
 
     public override void Move()
     {
-        if (hp <= 0)
+        if(hp <= 0)
         {
             ChangeState(State.Dead);
         }
         else
         {
-            agent.SetDestination(targetPosition);
-
-            currentTime -= Time.deltaTime;
-            if (currentTime <= 0)
+            if (CheckForPlayer())
             {
-                animator.Play("idle");
-                ChangeState(State.Idle, RandomTime(IdleStateDuration));
+                ChangeState(State.Attak);
+            }
+            else
+            {
+                animator.Play("walk");
+                agent.SetDestination(targetPosition);
+
+                currentTime -= Time.deltaTime;
+                if (currentTime <= 0)
+                {
+                    ChangeState(State.Idle, RandomTime(IdleStateDuration));
+                }
             }
         }
     }
 
     public override void Attak()
     {
-
+        agent.SetDestination(targetPosition);
     }
 
     public override void Dead()
