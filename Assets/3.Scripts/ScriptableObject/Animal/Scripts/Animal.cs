@@ -107,7 +107,7 @@ public class Animal : AnimalBase
 
     public override void Attak()
     {
-
+        throw new System.NotImplementedException();
     }
 
     public override void Dead()
