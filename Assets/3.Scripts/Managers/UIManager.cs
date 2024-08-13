@@ -49,7 +49,7 @@ public class UIManager : MonoBehaviour, ITime, IDay
 
     public void AddTime()
     {
-        gameTime += Time.deltaTime * 600f;
+        gameTime += Time.deltaTime * 60f;
 
         second = Mathf.FloorToInt(gameTime);
         hours = (second / 3600) % 24;
