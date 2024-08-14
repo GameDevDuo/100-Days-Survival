@@ -15,3 +15,5 @@ MonoBehaviour:
   itemName: Ferns
   sprite: {fileID: 21300000, guid: 546226bca770445a2ae59318492bc9e4, type: 3}
   collectionTime: 1.5
+  toolSprite:
+  - {fileID: 0}

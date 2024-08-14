@@ -9,4 +9,6 @@ public class ItemData : ScriptableObject
     public Sprite Sprite { get { return sprite; } }
     [SerializeField] private float collectionTime;
     public float CollectionTime { get { return collectionTime; } }
+    [SerializeField] private Sprite[] toolSprite;
+    public Sprite[] ToolSprite { get { return toolSprite; } }
 }

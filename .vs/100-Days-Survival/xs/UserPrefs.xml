@@ -1,32 +1,31 @@
 ﻿<Properties StartupConfiguration="{1F604ABA-97D5-7786-F80E-1F5D5FA51AF3}|">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="35fcbef2-fe99-434e-a1b8-ce0a8ce0813f" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9061ce3f-f3ae-4519-94d2-c8009c646f16" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/3.Scripts/Inventory/Inventory.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/3.Scripts/Player/PlayerController.cs">
     <Files>
-      <File FileName="Assets/3.Scripts/Managers/UIManager.cs" Line="40" Column="37" IsPinned="True" />
+      <File FileName="Assets/3.Scripts/Managers/UIManager.cs" Line="15" Column="23" IsPinned="True" />
       <File FileName="Assets/3.Scripts/Managers/GameManager.cs" Line="17" Column="33" IsPinned="True" />
-      <File FileName="Assets/3.Scripts/Player/PlayerController.cs" Line="1" Column="1" />
-      <File FileName="Assets/3.Scripts/Camera/FirstPersonCamera.cs" />
+      <File FileName="Assets/3.Scripts/Player/PlayerController.cs" Line="48" Column="30" />
+      <File FileName="Assets/3.Scripts/Camera/FirstPersonCamera.cs" Line="10" Column="47" />
       <File FileName="Assets/3.Scripts/Camera/ResourceItemRaycaster.cs" Line="8" Column="50" />
       <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalData.cs" />
       <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/Animal.cs" />
-      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalBase.cs" />
-      <File FileName="Assets/3.Scripts/ScriptableObject/Item/ItemData.cs" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalBase.cs" Line="1" Column="1" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Item/ItemData.cs" Line="1" Column="1" />
       <File FileName="Assets/3.Scripts/ScriptableObject/Item/ResourceItem.cs" Line="4" Column="1" />
       <File FileName="Assets/3.Scripts/Interface/ITime.cs" Line="1" Column="1" />
       <File FileName="Assets/3.Scripts/Interface/IDay.cs" />
-      <File FileName="Assets/3.Scripts/Inventory/Inventory.cs" Line="77" Column="59" />
-      <File FileName="Assets/3.Scripts/Inventory/Slot.cs" />
+      <File FileName="Assets/3.Scripts/Inventory/Inventory.cs" Line="41" Column="58" />
+      <File FileName="Assets/3.Scripts/Inventory/Slot.cs" Line="1" Column="1" />
       <File FileName="Assets/3.Scripts/Interface/IOnOff.cs" />
       <File FileName="Assets/3.Scripts/Player/IKController.cs" Line="7" Column="1" />
       <File FileName="Assets/3.Scripts/Interface/IMove.cs" />
-      <File FileName="Assets/3.Scripts/Camera/ResourceItemFadeOut.cs" Line="1" Column="1" />
-      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/Animals/Wolf.cs" />
+      <File FileName="Assets/3.Scripts/Camera/ResourceItemFadeOut.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -36,12 +35,13 @@
               <Node name="3.Scripts" expanded="True">
                 <Node name="Camera" expanded="True" />
                 <Node name="Interface" expanded="True" />
-                <Node name="Inventory" expanded="True">
-                  <Node name="Inventory.cs" selected="True" />
-                </Node>
+                <Node name="Inventory" expanded="True" />
                 <Node name="Managers" expanded="True" />
                 <Node name="Player" expanded="True" />
                 <Node name="ScriptableObject" expanded="True">
+                  <Node name="Animal" expanded="True">
+                    <Node name="Scripts" expanded="True" />
+                  </Node>
                   <Node name="Item" expanded="True" />
                 </Node>
               </Node>

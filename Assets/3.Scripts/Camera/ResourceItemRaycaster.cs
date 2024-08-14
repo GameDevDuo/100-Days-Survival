@@ -9,6 +9,7 @@ public class ResourceItemRaycaster : MonoBehaviour
     [SerializeField] private LayerMask layerMask;
     private Camera playerCamera;
     private ResourceItem currentItem;
+    public Sprite toolSprite;
     public bool isCollecting;
 
     void Start()
@@ -24,8 +25,15 @@ public class ResourceItemRaycaster : MonoBehaviour
         {
             if (currentItem != null && !currentItem.isCollectible)
             {
-                currentItem.StartCollection();
-                isCollecting = true;
+                if (IsCheckTool(currentItem))
+                {
+                    currentItem.StartCollection();
+                    isCollecting = true;
+                }
+                else
+                {
+                    Debug.Log("올바른 도구가 필요합니다!");
+                }
             }
             else if (currentItem != null)
             {
@@ -100,6 +108,18 @@ public class ResourceItemRaycaster : MonoBehaviour
                 isCollecting = false;
             }
         }
+    }
+
+    bool IsCheckTool(ResourceItem item)
+    {
+        foreach (Sprite tool in item.itemData.ToolSprite)
+        {
+            if (tool == toolSprite)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     private void OnDrawGizmos()
