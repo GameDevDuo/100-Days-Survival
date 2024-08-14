@@ -17,6 +17,7 @@ public class Inventory : MonoBehaviour
     private FirstPersonCamera firstPersonCamera;
     private ResourceItemRaycaster resourceItemRaycaster;
     private Rigidbody playerRigidbody;
+    private Animator playerAnimator;
     private int selectedSlot = 0;
 
     private void Awake()
@@ -37,6 +38,7 @@ public class Inventory : MonoBehaviour
         firstPersonCamera = player.transform.GetChild(0).GetComponent<FirstPersonCamera>();
         resourceItemRaycaster = player.transform.GetChild(0).GetComponent<ResourceItemRaycaster>();
         playerRigidbody = player.GetComponent<Rigidbody>();
+        playerAnimator = player.GetComponent<Animator>();
     }
 
     private void Update()
@@ -72,13 +74,6 @@ public class Inventory : MonoBehaviour
             {
                 hotbarSlots[i].sprite = currentSlotSprite;
                 hotbarSlots[i].color = new Color(1f, 1f, 1f, 0.392f);
-
-                Sprite sprtie = hotbarSlots[i].transform.GetChild(0).GetComponent<Image>().sprite;
-
-                if (sprtie != null)
-                {
-                    Debug.Log(sprtie.name);
-                }
             }
             else
             {
@@ -107,6 +102,7 @@ public class Inventory : MonoBehaviour
         if (inventoryUI.activeSelf)
         {
             playerRigidbody.velocity = Vector3.zero;
+            playerAnimator.Play("Idle");
         }
     }
 
