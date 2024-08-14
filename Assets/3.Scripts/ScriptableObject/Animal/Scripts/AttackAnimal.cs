@@ -11,12 +11,14 @@ public class AttackAnimal : AnimalBase
     [SerializeField] private Terrain terrain;
     [SerializeField] private Transform centerPoint;
 
+    private GameObject player;
     private Animator animator;
     private NavMeshAgent agent;
     private Collider animalCollider;
     private Collider terrainCollider;
 
     private Vector3 targetPosition;
+    private Vector3 playerPos;
 
     private float hp;
 
@@ -62,13 +64,12 @@ public class AttackAnimal : AnimalBase
         ChangeState(State.Idle, RandomTime(IdleStateDuration));
     }
 
-    private bool CheckForPlayer()
+    private bool CheckForPlayer(ref GameObject collider)
     {
         Collider[] colliders = Physics.OverlapSphere(centerPoint.position, animalData.FindRange, LayerMask.GetMask("Player"));
         if(colliders.Length > 0)
         {
-            Vector3 playerPos = colliders[0].transform.position;
-            targetPosition = new Vector3(playerPos.x - animalData.AttakDistance, playerPos.y, playerPos.z - animalData.AttakDistance);
+            collider = colliders[0].gameObject;
         }
         return colliders.Length > 0;
     }
@@ -81,17 +82,18 @@ public class AttackAnimal : AnimalBase
         }
         else
         {
-            if(CheckForPlayer())
+            if(CheckForPlayer(ref player))
             {
                 ChangeState(State.Attak);
             }
             else
             {
+                animator.Play("idle");
                 currentTime -= Time.deltaTime;
+
                 if (currentTime <= 0)
                 {
                     targetPosition = GetRandomPointInRange();
-                    animator.Play("walk");
                     ChangeState(State.Move, RandomTime(MoveStateDuration));
                 }
             }
@@ -106,18 +108,18 @@ public class AttackAnimal : AnimalBase
         }
         else
         {
-            if (CheckForPlayer())
+            if (CheckForPlayer(ref player))
             {
                 ChangeState(State.Attak);
             }
             else
             {
                 agent.SetDestination(targetPosition);
-
+                animator.Play("walk");
                 currentTime -= Time.deltaTime;
+
                 if (currentTime <= 0)
                 {
-                    animator.Play("idle");
                     ChangeState(State.Idle, RandomTime(IdleStateDuration));
                 }
             }
@@ -126,10 +128,13 @@ public class AttackAnimal : AnimalBase
 
     public override void Attak()
     {
-        agent.SetDestination(targetPosition);
-        if(targetPosition == transform.position)
+        if(Physics.OverlapSphere(transform.position, animalData.AttakDistance, LayerMask.GetMask("Player")).Length > 0)
         {
             animator.Play("attack");
+        }
+        else
+        {
+            targetPosition = player.transform.position;
         }
     }
 
