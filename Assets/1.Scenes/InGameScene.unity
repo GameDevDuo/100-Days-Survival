@@ -404,6 +404,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 64
+  toolSprite: {fileID: 0}
   isCollecting: 0
 --- !u!1 &60664697
 GameObject:
@@ -950,7 +951,6 @@ GameObject:
   - component: {fileID: 112678253}
   - component: {fileID: 112678252}
   - component: {fileID: 112678255}
-  - component: {fileID: 112678257}
   - component: {fileID: 112678251}
   - component: {fileID: 112678256}
   - component: {fileID: 112678250}
@@ -1122,79 +1122,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab69dbc290fdd44c3bdb87be3bcc017f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &112678257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 112678249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2d8418b0b9634b1892b0268dd9c2743, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boneShape: 1
-  drawBones: 1
-  drawTripods: 0
-  boneSize: 1
-  tripodSize: 1
-  boneColor: {r: 0.37870058, g: 1, b: 0.3537736, a: 0.5}
-  m_Transforms:
-  - {fileID: 168414510}
-  - {fileID: 1169388408}
-  - {fileID: 1417266766}
-  - {fileID: 954444226}
-  - {fileID: 1838688354}
-  - {fileID: 1308669073}
-  - {fileID: 1423002602}
-  - {fileID: 1752124162}
-  - {fileID: 1657091110}
-  - {fileID: 731631324}
-  - {fileID: 186553717}
-  - {fileID: 60664698}
-  - {fileID: 1166459863}
-  - {fileID: 1513712722}
-  - {fileID: 275376689}
-  - {fileID: 577572595}
-  - {fileID: 616316022}
-  - {fileID: 1319364883}
-  - {fileID: 423086864}
-  - {fileID: 1744290143}
-  - {fileID: 1019199737}
-  - {fileID: 273597884}
-  - {fileID: 1971759754}
-  - {fileID: 1792811917}
-  - {fileID: 1768631419}
-  - {fileID: 669380044}
-  - {fileID: 215568498}
-  - {fileID: 1646305945}
-  - {fileID: 1170096320}
-  - {fileID: 1711889041}
-  - {fileID: 1787290447}
-  - {fileID: 1329625142}
-  - {fileID: 1630766463}
-  - {fileID: 170562524}
-  - {fileID: 1033555206}
-  - {fileID: 185755814}
-  - {fileID: 466407933}
-  - {fileID: 892744643}
-  - {fileID: 634772820}
-  - {fileID: 432131004}
-  - {fileID: 1566905760}
-  - {fileID: 1982597899}
-  - {fileID: 2038129794}
-  - {fileID: 534796645}
-  - {fileID: 859305657}
-  - {fileID: 206004189}
-  - {fileID: 1033730422}
-  - {fileID: 1805273043}
-  - {fileID: 591411025}
-  - {fileID: 1411807760}
-  - {fileID: 1592082062}
-  - {fileID: 1846960653}
-  - {fileID: 159219503}
-  - {fileID: 1186311368}
 --- !u!43 &141793864
 Mesh:
   m_ObjectHideFlags: 0
