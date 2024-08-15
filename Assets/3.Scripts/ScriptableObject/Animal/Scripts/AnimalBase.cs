@@ -17,8 +17,8 @@ public abstract class AnimalBase : MonoBehaviour, IMove
 
     protected virtual void Update()
     {
-        switch (currentState) 
-        { 
+        switch (currentState)
+        {
             case State.Idle:
                 Idle();
                 break;
@@ -26,7 +26,7 @@ public abstract class AnimalBase : MonoBehaviour, IMove
                 Move();
                 break;
             case State.Attak:
-                Attak();
+                Attack();
                 break;
             case State.Dead:
                 Dead();
@@ -36,7 +36,10 @@ public abstract class AnimalBase : MonoBehaviour, IMove
 
     public abstract void Idle();
     public abstract void Move();
-    public abstract void Attak();
+    public virtual void Attack()
+    {
+        //attack Logjc
+    }
     public abstract void Dead();
 
     public void ChangeState(State newState, float time)

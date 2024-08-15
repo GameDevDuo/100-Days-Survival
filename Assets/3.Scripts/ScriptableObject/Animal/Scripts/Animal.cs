@@ -9,15 +9,13 @@ public class Animal : AnimalBase
 
     [SerializeField] private AnimalData animalData;
     [SerializeField] private Terrain terrain;
-    [SerializeField] private Transform centerPoint;
 
+    private Transform centerPoint;
     private Animator animator;
     private NavMeshAgent agent;
-    private Collider animalCollider;
     private Collider terrainCollider;
 
     private Vector3 targetPosition;
-
     private float hp;
 
     private void Start() => Init();
@@ -26,6 +24,7 @@ public class Animal : AnimalBase
     {
         base.Update();
     }
+
     private Vector3 GetRandomPointInRange()
     {
         Vector3 randomPoint;
@@ -52,20 +51,13 @@ public class Animal : AnimalBase
 
     private void Init()
     {
+        centerPoint = this.transform;
         animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
-        animalCollider = GetComponent<Collider>();
         terrainCollider = terrain.GetComponent<Collider>();
-
         hp = animalData.MaxHP;
 
         ChangeState(State.Idle, RandomTime(IdleStateDuration));
-    }
-
-    private bool CheckForPlayer()
-    {
-        Collider[] colliders = Physics.OverlapSphere(centerPoint.position, animalData.FindRange, LayerMask.GetMask("Player"));
-        return colliders.Length > 0;
     }
 
     public override void Idle()
@@ -76,11 +68,12 @@ public class Animal : AnimalBase
         }
         else
         {
+            animator.Play("idle");
             currentTime -= Time.deltaTime;
+
             if (currentTime <= 0)
             {
                 targetPosition = GetRandomPointInRange();
-                animator.Play("walk");
                 ChangeState(State.Move, RandomTime(MoveStateDuration));
             }
         }
@@ -94,24 +87,20 @@ public class Animal : AnimalBase
         }
         else
         {
+            animator.Play("walk");
             agent.SetDestination(targetPosition);
 
             currentTime -= Time.deltaTime;
             if (currentTime <= 0)
             {
-                animator.Play("idle");
                 ChangeState(State.Idle, RandomTime(IdleStateDuration));
             }
         }
     }
 
-    public override void Attak()
-    {
-        throw new System.NotImplementedException();
-    }
-
     public override void Dead()
     {
         animator.Play("die");
+        agent.isStopped = true;
     }
 }

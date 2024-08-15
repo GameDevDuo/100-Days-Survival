@@ -13,10 +13,10 @@ public class AnimalData : ScriptableObject
     public float Damage { get { return damage; } }
 
     [SerializeField] private float attakDistance;
-    public float AttakDistance { get { return attakDistance; } }
+    public float AttackDistance { get { return attakDistance; } }
 
     [SerializeField] private float attakSpeed;
-    public float AttakSpeed { get { return attakSpeed; } }
+    public float AttackSpeed { get { return attakSpeed; } }
 
     [SerializeField] private float findRange;
     public float FindRange { get {  return findRange; } }
