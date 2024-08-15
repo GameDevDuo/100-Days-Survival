@@ -422,6 +422,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 8
+  hologramPrefab: {fileID: 7596833486778974306, guid: 426bd0f1b71ef4dcf84152e79b28219a, type: 3}
 --- !u!1 &60664697
 GameObject:
   m_ObjectHideFlags: 0

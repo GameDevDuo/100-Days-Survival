@@ -8,7 +8,6 @@ public class Inventory : MonoBehaviour
 {
     public static Inventory Instance;
     [SerializeField] private Slot[] slots;
-    [SerializeField] private Image[] hotbarSlots;
     [SerializeField] private GameObject inventoryUI;
     [SerializeField] private GameObject player;
     [SerializeField] private Sprite currentSlotSprite;
@@ -18,7 +17,8 @@ public class Inventory : MonoBehaviour
     private ResourceItemRaycaster resourceItemRaycaster;
     private Rigidbody playerRigidbody;
     private Animator playerAnimator;
-    private int selectedSlot = 0;
+    public Image[] hotbarSlots;
+    public int selectedSlot = 0;
 
     private void Awake()
     {
