@@ -59,7 +59,8 @@ public class BuildHandler : MonoBehaviour
 
                             if (Mouse.current.rightButton.wasPressedThisFrame)
                             {
-                                Instantiate(Resources.Load<GameObject>($"Prefabs/Map/Build/{sprite.name}"), hit.point, hologram.transform.rotation);
+                                GameObject instantiatedObject = Instantiate(Resources.Load<GameObject>($"Prefabs/Map/Build/{sprite.name}"), hit.point, hologram.transform.rotation);
+                                EnableParticles(instantiatedObject);
                                 inventory.hotbarSlots[inventory.selectedSlot].transform.GetChild(0).GetComponent<Slot>().RemoveItem();
                                 Destroy(hologram);
                             }
@@ -77,12 +78,12 @@ public class BuildHandler : MonoBehaviour
 
     private void SetHologramMaterial(GameObject hologram)
     {
-        Renderer[] render = hologram.GetComponentsInChildren<Renderer>();
-        foreach (Renderer renderer in render)
+        Renderer[] renderers = hologram.GetComponentsInChildren<Renderer>();
+        foreach (Renderer renderer in renderers)
         {
             Material material = new Material(Shader.Find("Standard"));
-            material.color = new Color(0, 1, 0, 0.5f); 
-            material.SetFloat("_Mode", 3); 
+            material.color = new Color(0, 1, 0, 0.5f);
+            material.SetFloat("_Mode", 3);
             material.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
             material.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
             material.SetInt("_ZWrite", 0);
@@ -92,6 +93,22 @@ public class BuildHandler : MonoBehaviour
             material.renderQueue = 3000;
 
             renderer.material = material;
+        }
+        ParticleSystem[] particleSystems = hologram.GetComponentsInChildren<ParticleSystem>();
+        foreach (ParticleSystem ps in particleSystems)
+        {
+            ps.Stop();
+            ps.gameObject.SetActive(false);
+        }
+    }
+
+    private void EnableParticles(GameObject hologram)
+    {
+        ParticleSystem[] particleSystems = hologram.GetComponentsInChildren<ParticleSystem>();
+        foreach (ParticleSystem ps in particleSystems)
+        {
+            ps.gameObject.SetActive(true);
+            ps.Play();
         }
     }
 
