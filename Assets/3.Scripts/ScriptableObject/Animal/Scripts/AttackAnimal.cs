@@ -5,12 +5,12 @@ public class AttackAnimal : AnimalBase
 {
     private const float rangeRadius = 10f;
     private const float IdleStateDuration = 2.5f;
-    private const float MoveStateDuration = 5f;
+    private const float MoveStateDuration = 7f;
 
     [SerializeField] private AnimalData animalData;
     [SerializeField] private Terrain terrain;
-    [SerializeField] private Transform centerPoint;
 
+    private Transform centerPoint;
     private GameObject player;
     private Animator animator;
     private NavMeshAgent agent;
@@ -18,7 +18,6 @@ public class AttackAnimal : AnimalBase
     private Collider terrainCollider;
 
     private Vector3 targetPosition;
-    private Vector3 playerPos;
 
     private float hp;
 
@@ -28,6 +27,7 @@ public class AttackAnimal : AnimalBase
     {
         base.Update();
     }
+
     private Vector3 GetRandomPointInRange()
     {
         Vector3 randomPoint;
@@ -54,6 +54,7 @@ public class AttackAnimal : AnimalBase
 
     private void Init()
     {
+        centerPoint = this.transform;
         animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         animalCollider = GetComponent<Collider>();
@@ -64,25 +65,27 @@ public class AttackAnimal : AnimalBase
         ChangeState(State.Idle, RandomTime(IdleStateDuration));
     }
 
-    private bool CheckForPlayer(ref GameObject collider)
+    private bool CheckForPlayer()
     {
         Collider[] colliders = Physics.OverlapSphere(centerPoint.position, animalData.FindRange, LayerMask.GetMask("Player"));
-        if(colliders.Length > 0)
+        if (colliders.Length > 0)
         {
-            collider = colliders[0].gameObject;
+            player = colliders[0].gameObject;
+            return true;
         }
-        return colliders.Length > 0;
+        player = null;
+        return false;
     }
 
     public override void Idle()
     {
-        if(hp <= 0)
+        if (hp <= 0)
         {
             ChangeState(State.Dead);
         }
         else
         {
-            if(CheckForPlayer(ref player))
+            if (CheckForPlayer())
             {
                 ChangeState(State.Attak);
             }
@@ -102,13 +105,13 @@ public class AttackAnimal : AnimalBase
 
     public override void Move()
     {
-        if(hp <= 0)
+        if (hp <= 0)
         {
             ChangeState(State.Dead);
         }
         else
         {
-            if (CheckForPlayer(ref player))
+            if (CheckForPlayer())
             {
                 ChangeState(State.Attak);
             }
@@ -126,20 +129,36 @@ public class AttackAnimal : AnimalBase
         }
     }
 
-    public override void Attak()
+    public override void Attack()
     {
-        if(Physics.OverlapSphere(transform.position, animalData.AttakDistance, LayerMask.GetMask("Player")).Length > 0)
+        if (hp <= 0)
         {
-            animator.Play("attack");
+            ChangeState(State.Dead);
         }
         else
         {
-            targetPosition = player.transform.position;
+            float distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
+
+            if (distanceToPlayer <= animalData.AttackDistance)
+            {
+                agent.ResetPath();
+                animator.Play("attack");
+            }
+            else if (distanceToPlayer <= animalData.FindRange)
+            {
+                agent.SetDestination(player.transform.position);
+                animator.Play("run");
+            }
+            else
+            {
+                ChangeState(State.Idle, RandomTime(IdleStateDuration));
+            }
         }
     }
 
     public override void Dead()
     {
         animator.Play("die");
+        agent.isStopped = true;
     }
 }
