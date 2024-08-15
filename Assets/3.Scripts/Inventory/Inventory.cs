@@ -53,15 +53,15 @@ public class Inventory : MonoBehaviour
 
         for (int i = 0; i < hotbarSlots.Length; i++)
         {
-            if (Keyboard.current[Key.Digit1 + i - 1].wasPressedThisFrame)
+            if (Keyboard.current[Key.Digit1 + i].wasPressedThisFrame)
             {
-                selectedSlot = i - 1;
+                selectedSlot = i;
                 break;
             }
         }
         if (Mathf.Abs(scrollValue) >= scrollSensitivity)
         {
-            selectedSlot = (selectedSlot - (int)Mathf.Sign(scrollValue) + 6) % 6;
+            selectedSlot = (selectedSlot - (int)Mathf.Sign(scrollValue) + hotbarSlots.Length) % hotbarSlots.Length;
         }
         UpdateHotbarUI();
     }
