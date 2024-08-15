@@ -9,6 +9,8 @@ public class ItemData : ScriptableObject
     public Sprite Sprite { get { return sprite; } }
     [SerializeField] private float collectionTime;
     public float CollectionTime { get { return collectionTime; } }
+    [SerializeField] private bool isBuildable;
+    public bool IsBuildable { get { return isBuildable; } }
     [SerializeField] private Sprite[] toolSprite;
     public Sprite[] ToolSprite { get { return toolSprite; } }
 }
