@@ -51,7 +51,7 @@ public class Inventory : MonoBehaviour
         float scrollValue = Mouse.current.scroll.ReadValue().y;
         float scrollSensitivity = 0.1f;
 
-        for (int i = 0; i <= hotbarSlots.Length; i++)
+        for (int i = 0; i < hotbarSlots.Length; i++)
         {
             if (Keyboard.current[Key.Digit1 + i - 1].wasPressedThisFrame)
             {
@@ -75,14 +75,22 @@ public class Inventory : MonoBehaviour
                 hotbarSlots[i].sprite = currentSlotSprite;
                 hotbarSlots[i].color = new Color(1f, 1f, 1f, 0.392f);
 
-                Sprite sprite = hotbarSlots[i].transform.GetChild(0).GetComponent<Image>().sprite;
-                if (sprite != null)
+                if (hotbarSlots[i].transform.childCount > 0)
                 {
-                    resourceItemRaycaster.toolSprite = sprite;
-                }
-                else
-                {
-                    resourceItemRaycaster.toolSprite = null;
+                    Transform childTransform = hotbarSlots[i].transform.GetChild(0);
+                    if (childTransform != null)
+                    {
+                        Image childImage = childTransform.GetComponent<Image>();
+                        if (childImage != null)
+                        {
+                            Sprite sprite = childImage.sprite;
+                            resourceItemRaycaster.toolSprite = sprite;
+                        }
+                        else
+                        {
+                            resourceItemRaycaster.toolSprite = null;
+                        }
+                    }
                 }
             }
             else
