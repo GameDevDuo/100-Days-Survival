@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c3cdcced73fa4858812737acceb101f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: 75e7a5b6779dd448387ac23fa737d0c4, type: 2}
+  itemData: {fileID: 11400000, guid: cf87c122affc243e0b490fe109d9241d, type: 2}
   isCollectible: 0
 --- !u!1 &8063359380458352007
 GameObject:
