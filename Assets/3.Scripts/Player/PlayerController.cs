@@ -68,6 +68,11 @@ public class PlayerController : MonoBehaviour
         Inventory.Instance.ToggleInventory();
     }
 
+    private void OnToggleCraftingTable()
+    {
+        Craftingtable.Instance.ToggleCraftingTable();
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;

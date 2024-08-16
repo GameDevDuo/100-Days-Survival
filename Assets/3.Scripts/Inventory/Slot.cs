@@ -23,10 +23,11 @@ public class Slot : MonoBehaviour, IOnOff, IBeginDragHandler, IDragHandler, IEnd
         UpdateUI();
     }
 
-    public void InsertItem(string name, Sprite sprite)
+    public void InsertItem(string name = null, Sprite sprite = null)
     {
         itemName = name;
         slotImage.sprite = sprite;
+
         count++;
 
         UpdateUI();

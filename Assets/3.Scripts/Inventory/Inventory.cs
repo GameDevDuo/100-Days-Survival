@@ -7,8 +7,6 @@ using UnityEngine.InputSystem;
 public class Inventory : MonoBehaviour
 {
     public static Inventory Instance;
-    [SerializeField] private Slot[] slots;
-    [SerializeField] private GameObject inventoryUI;
     [SerializeField] private GameObject player;
     [SerializeField] private Sprite currentSlotSprite;
     [SerializeField] private Sprite previousSlotSprite;
@@ -17,7 +15,9 @@ public class Inventory : MonoBehaviour
     private ResourceItemRaycaster resourceItemRaycaster;
     private Rigidbody playerRigidbody;
     private Animator playerAnimator;
+    public GameObject inventoryUI;
     public Image[] hotbarSlots;
+    public Slot[] slots;
     public int selectedSlot = 0;
 
     private void Awake()
@@ -110,17 +110,42 @@ public class Inventory : MonoBehaviour
         bool isActive = !inventoryUI.activeSelf;
         inventoryUI.SetActive(isActive);
 
-        playerController.enabled = !isActive;
-        firstPersonCamera.enabled = !isActive;
-        resourceItemRaycaster.enabled = !isActive;
+        if (!Craftingtable.Instance.craftingTableUI.activeSelf)
+        {
+            playerController.enabled = !isActive;
+            firstPersonCamera.enabled = !isActive;
+            resourceItemRaycaster.enabled = !isActive;
 
-        Cursor.visible = isActive;
-        Cursor.lockState = isActive ? CursorLockMode.None : CursorLockMode.Locked;
-
+            Cursor.visible = isActive;
+            Cursor.lockState = isActive ? CursorLockMode.None : CursorLockMode.Locked;
+        }
         if (inventoryUI.activeSelf)
         {
             playerRigidbody.velocity = Vector3.zero;
             playerAnimator.Play("Idle");
+        }
+    }
+
+    public void AddCraftingItem(string name, Sprite itemSprite)
+    {
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (slots[i].itemName == name)
+            {
+                if (slots[i].count < 64)
+                {
+                    slots[i].InsertItem();
+                    return;
+                }
+            }
+        }
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (slots[i].count == 0)
+            {
+                slots[i].InsertItem(name, itemSprite);
+                return;
+            }
         }
     }
 
