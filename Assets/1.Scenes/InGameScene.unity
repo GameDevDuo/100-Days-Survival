@@ -4689,6 +4689,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c32abb9714d4fe1aeb78dc8c6e866b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 112678249}
+  currentSlotSprite: {fileID: 21300000, guid: 7f0708e0abe384f9da8f40dbb542e173, type: 3}
+  previousSlotSprite: {fileID: 21300000, guid: e4dced432158f4d61877f4d45f15df2c, type: 3}
+  inventoryUI: {fileID: 102997958}
+  hotbarSlots:
+  - {fileID: 794440044}
+  - {fileID: 951009868}
+  - {fileID: 1040419902}
+  - {fileID: 87131095}
+  - {fileID: 2038609637}
+  - {fileID: 737594679}
   slots:
   - {fileID: 1494978520}
   - {fileID: 1836008812}
@@ -4720,17 +4731,6 @@ MonoBehaviour:
   - {fileID: 291301481}
   - {fileID: 75618124}
   - {fileID: 1900668518}
-  player: {fileID: 112678249}
-  currentSlotSprite: {fileID: 21300000, guid: 7f0708e0abe384f9da8f40dbb542e173, type: 3}
-  previousSlotSprite: {fileID: 21300000, guid: e4dced432158f4d61877f4d45f15df2c, type: 3}
-  inventoryUI: {fileID: 102997958}
-  hotbarSlots:
-  - {fileID: 794440044}
-  - {fileID: 951009868}
-  - {fileID: 1040419902}
-  - {fileID: 87131095}
-  - {fileID: 2038609637}
-  - {fileID: 737594679}
   selectedSlot: 0
 --- !u!114 &791653821
 MonoBehaviour:
@@ -15764,13 +15764,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1063754399}
     m_Modifications:
+    - target: {fileID: 574768228741363159, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
+      propertyPath: m_Text
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 649492764361144795, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Name
       value: table
       objectReference: {fileID: 0}
+    - target: {fileID: 1460818054477750376, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c54ff2da502e44c56b6bdf04f2ac487b, type: 3}
+    - target: {fileID: 1460818054477750376, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1949109113993292527, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 973c4e73cfa4b497d80dbb92755edc61, type: 3}
+    - target: {fileID: 1949109113993292527, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3341923151748841804, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Name
       value: Bonfire
+      objectReference: {fileID: 0}
+    - target: {fileID: 3528897679592569908, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
+      propertyPath: m_Text
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3979343921595372068, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Type
@@ -15871,6 +15895,18 @@ PrefabInstance:
     - target: {fileID: 5103803022033552881, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Color.a
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5164145484149511937, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
+      propertyPath: m_Text
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5465534346331477563, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 49d7b1e6a8cab453787a3ba1791fa69c, type: 3}
+    - target: {fileID: 5465534346331477563, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
