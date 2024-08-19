@@ -6,6 +6,6 @@ public class WeatherData : ScriptableObject
     [SerializeField] private GameObject weatherObject;
     public GameObject WeatherObject { get { return weatherObject; } }
 
-    [SerializeField] private int weatherDate;
-    public int WeatherDate { get { return weatherDate; } }
+    [SerializeField] private int generateDate;
+    public int GenerateDate { get { return generateDate; } }
 }
