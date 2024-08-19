@@ -9,14 +9,14 @@ public class Weather : WeatherBase
 
     private void Start()
     {
-        //AbleWeatherList();
+        AbleWeatherList();
     }
 
     public override void AbleWeatherList()
     {
         foreach (var weather in weatherData)
         {
-            if (UIManager.Instance.day <= weather.WeatherDate)
+            if (UIManager.Instance.day <= weather.GenerateDate)
             {
                 ableWeather.Add(weather.WeatherObject);
             }

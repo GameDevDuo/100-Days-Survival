@@ -10,10 +10,10 @@ public class UIManager : MonoBehaviour, ITime, IDay
     [SerializeField] private GameObject sunLight;
     public Text timeText;
     public Text dateText;
-    private int second;
     public int day;
-    private int hours;
+    private int second;
     private int minutes;
+    private int hours;
     private float gameTime;
 
     private void Awake()
@@ -66,7 +66,7 @@ public class UIManager : MonoBehaviour, ITime, IDay
     {
         day = second / 86400;
 
-        dateText.text = string.Format("DAY {0}", day + 1);
+        dateText.text = string.Format("DAY {0}", day);
     }
 
     private void RotateSunLight()
