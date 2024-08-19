@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Bonfire
   m_EditorClassIdentifier: 
   itemName: Bonfire
-  sprite: {fileID: 21300000, guid: 6a1d8468c08184c5e952ce0ad0221786, type: 3}
+  sprite: {fileID: 21300000, guid: f4f41190f7a74cf4eace495c77494c19, type: 3}
   collectionTime: 5
   isBuildable: 1
-  toolSprite:
-  - {fileID: 0}
+  toolSprite: []

@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public struct Craft
 {
     public Button craftingSlot;
-    public GameObject[] inputItemSlot;
 }
 
 public class Craftingtable : MonoBehaviour
