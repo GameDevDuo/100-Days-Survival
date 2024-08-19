@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc7cf8640d9b54dc2a7b150394e4545b, type: 3}
-  m_Name: Bonfire
+  m_Name: StonePick
   m_EditorClassIdentifier: 
-  itemName: Bonfire
-  sprite: {fileID: 21300000, guid: f4f41190f7a74cf4eace495c77494c19, type: 3}
+  itemName: StonePick
+  sprite: {fileID: 21300000, guid: aa8fa20837202344aad0095517d53bc4, type: 3}
   collectionTime: 0
-  isBuildable: 1
+  isBuildable: 0
   toolSprite: []
