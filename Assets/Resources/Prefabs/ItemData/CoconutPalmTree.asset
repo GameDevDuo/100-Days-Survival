@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: CoconutPalmTree
   m_EditorClassIdentifier: 
   itemName: Coconut
-  sprite: {fileID: 21300000, guid: 49d7b1e6a8cab453787a3ba1791fa69c, type: 3}
+  sprite: {fileID: 21300000, guid: e07db08207a151b4ea951f720ecdc1f3, type: 3}
   collectionTime: 7.5
   isBuildable: 0
   toolSprite:
-  - {fileID: 21300000, guid: c54ff2da502e44c56b6bdf04f2ac487b, type: 3}
+  - {fileID: 21300000, guid: 1a2c8df41b5e407449901242f514e4f1, type: 3}
