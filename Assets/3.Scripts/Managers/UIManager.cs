@@ -6,11 +6,26 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour, ITime, IDay
 {
     public static UIManager Instance;
+
     [SerializeField] private Image circularGauge;
     [SerializeField] private GameObject sunLight;
     public Text timeText;
     public Text dateText;
-    public int day;
+
+    private int day;
+    public int Day
+    {
+        get { return day; }
+
+        set
+        {
+            if(day != value)
+            {
+                WeatherManager.Instance.AbleWeatherList();
+            }
+            day = value;
+        }
+    }
     private int second;
     private int minutes;
     private int hours;
@@ -64,7 +79,10 @@ public class UIManager : MonoBehaviour, ITime, IDay
 
     public void AddDate()
     {
-        day = second / 86400;
+        if(second % 86400 == 0)
+        {
+            day++;
+        }
 
         dateText.text = string.Format("DAY {0}", day);
     }
