@@ -1,9 +1,10 @@
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class Weather : WeatherBase
+public class WeatherManager : WeatherBase
 {
+    public static WeatherManager Instance;
+
     private List<WeatherData> weatherData;
     private List<GameObject> ableWeather;
 
@@ -16,7 +17,7 @@ public class Weather : WeatherBase
     {
         foreach (var weather in weatherData)
         {
-            if (UIManager.Instance.day <= weather.GenerateDate)
+            if (UIManager.Instance.Day <= weather.GenerateDate)
             {
                 ableWeather.Add(weather.WeatherObject);
             }
