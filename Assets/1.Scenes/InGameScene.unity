@@ -1400,7 +1400,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 574768228741363159, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Text
-      value: 
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 649492764361144795, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Name
@@ -1409,22 +1409,22 @@ PrefabInstance:
     - target: {fileID: 1460818054477750376, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 63533c51611828543b56396d01bdcc5e, type: 3}
     - target: {fileID: 1460818054477750376, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1949109113993292527, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 1a2c8df41b5e407449901242f514e4f1, type: 3}
     - target: {fileID: 1949109113993292527, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3341923151748841804, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Name
-      value: item
+      value: StonePick
       objectReference: {fileID: 0}
     - target: {fileID: 3979343921595372068, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Type
@@ -1525,10 +1525,10 @@ PrefabInstance:
     - target: {fileID: 5465534346331477563, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: e07db08207a151b4ea951f720ecdc1f3, type: 3}
     - target: {fileID: 5465534346331477563, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6678,6 +6678,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 676028951}
   m_CullTransparentMesh: 1
+--- !u!114 &677521597 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 730033678313787268, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
+  m_PrefabInstance: {fileID: 695845002}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &690136399
 GameObject:
   m_ObjectHideFlags: 0
@@ -6814,22 +6825,26 @@ PrefabInstance:
     - target: {fileID: 1460818054477750376, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 1a2c8df41b5e407449901242f514e4f1, type: 3}
     - target: {fileID: 1460818054477750376, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1949109113993292527, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 101de9b13688cf44cb955d48eab6987a, type: 3}
     - target: {fileID: 1949109113993292527, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3341923151748841804, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Name
-      value: item
+      value: Bonfire
+      objectReference: {fileID: 0}
+    - target: {fileID: 3528897679592569908, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
+      propertyPath: m_Text
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3979343921595372068, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Type
@@ -6838,10 +6853,10 @@ PrefabInstance:
     - target: {fileID: 3979343921595372068, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: f4f41190f7a74cf4eace495c77494c19, type: 3}
     - target: {fileID: 3979343921595372068, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3998464976756830346, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Pivot.x
@@ -6925,15 +6940,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5164145484149511937, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Text
-      value: 
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5465534346331477563, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: e07db08207a151b4ea951f720ecdc1f3, type: 3}
     - target: {fileID: 5465534346331477563, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8962,6 +8977,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &853258679 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 730033678313787268, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
+  m_PrefabInstance: {fileID: 2089563083}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &859305656
 GameObject:
   m_ObjectHideFlags: 0
@@ -9899,6 +9925,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slots:
   - craftingSlot: {fileID: 1675543247}
+  - craftingSlot: {fileID: 853258679}
+  - craftingSlot: {fileID: 1610246473}
+  - craftingSlot: {fileID: 677521597}
   player: {fileID: 112678249}
   craftingTableUI: {fileID: 731265666}
 --- !u!114 &920875825
@@ -9914,17 +9943,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   genres:
-  - name: 
-    genreObject: {fileID: 690136399}
+  - genreObject: {fileID: 690136399}
     genreButton: {fileID: 1100551160}
-  - name: 
-    genreObject: {fileID: 919353653}
+  - genreObject: {fileID: 919353653}
     genreButton: {fileID: 2075556332}
-  - name: 
-    genreObject: {fileID: 710051065}
+  - genreObject: {fileID: 710051065}
     genreButton: {fileID: 270515334}
-  - name: 
-    genreObject: {fileID: 516634606}
+  - genreObject: {fileID: 516634606}
     genreButton: {fileID: 948109391}
   defaultButtonColor: {r: 0.39607844, g: 0.3764706, b: 0.31764707, a: 1}
   selectedButtonColor: {r: 0.33333334, g: 0.6862745, b: 0.3137255, a: 0.6862745}
@@ -16067,6 +16092,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3998464976756830346, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
   m_PrefabInstance: {fileID: 1604986360}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1610246473 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 730033678313787268, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
+  m_PrefabInstance: {fileID: 1694098758}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1612546749
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16862,6 +16898,10 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3341923151748841804, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
+      propertyPath: m_Name
+      value: Line
+      objectReference: {fileID: 0}
     - target: {fileID: 3979343921595372068, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Type
       value: 0
@@ -16869,10 +16909,10 @@ PrefabInstance:
     - target: {fileID: 3979343921595372068, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 63533c51611828543b56396d01bdcc5e, type: 3}
     - target: {fileID: 3979343921595372068, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3998464976756830346, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Pivot.x
@@ -16954,13 +16994,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5164145484149511937, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
+      propertyPath: m_Text
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5465534346331477563, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: ad687199fda841946ad66dafe2ac2938, type: 3}
     - target: {fileID: 5465534346331477563, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22059,7 +22103,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 574768228741363159, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Text
-      value: 
+      value: '3
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 649492764361144795, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Name
@@ -22068,22 +22114,26 @@ PrefabInstance:
     - target: {fileID: 1460818054477750376, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 63533c51611828543b56396d01bdcc5e, type: 3}
     - target: {fileID: 1460818054477750376, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1949109113993292527, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 1a2c8df41b5e407449901242f514e4f1, type: 3}
     - target: {fileID: 1949109113993292527, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3341923151748841804, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Name
-      value: item
+      value: StoneAxe
+      objectReference: {fileID: 0}
+    - target: {fileID: 3528897679592569908, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
+      propertyPath: m_Text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3979343921595372068, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Type
@@ -22184,10 +22234,10 @@ PrefabInstance:
     - target: {fileID: 5465534346331477563, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 101de9b13688cf44cb955d48eab6987a, type: 3}
     - target: {fileID: 5465534346331477563, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

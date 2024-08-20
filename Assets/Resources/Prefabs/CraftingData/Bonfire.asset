@@ -16,8 +16,8 @@ MonoBehaviour:
   - resultItem: {fileID: 21300000, guid: f4f41190f7a74cf4eace495c77494c19, type: 3}
     ingredients:
     - itemSprite: {fileID: 21300000, guid: e07db08207a151b4ea951f720ecdc1f3, type: 3}
-      count: 5
+      count: 3
     - itemSprite: {fileID: 21300000, guid: 101de9b13688cf44cb955d48eab6987a, type: 3}
-      count: 5
+      count: 1
     - itemSprite: {fileID: 21300000, guid: 1a2c8df41b5e407449901242f514e4f1, type: 3}
       count: 5

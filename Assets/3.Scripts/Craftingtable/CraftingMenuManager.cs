@@ -6,7 +6,6 @@ public class CraftingMenuManager : MonoBehaviour
     [System.Serializable]
     public struct Genre
     {
-        public string name; 
         public GameObject genreObject;
         public Button genreButton;
     }
