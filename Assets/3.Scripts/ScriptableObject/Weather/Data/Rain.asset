@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: Rain
   m_EditorClassIdentifier: 
   weatherObject: {fileID: 5775603268860313467, guid: 55d7d15c4c07c454bbb87a2d9da501fa, type: 3}
+  weatherPercent: 0.15
   generateDate: 0
+  generateTerm: 1
+  weatherNum: 1

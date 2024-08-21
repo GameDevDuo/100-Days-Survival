@@ -17,4 +17,7 @@ public class WeatherData : ScriptableObject
 
     [SerializeField] private int weatherNum;
     public int WeatherNum { get { return weatherNum; } }
+
+    [SerializeField] private bool isAdded = false;
+    public bool IsAdded { get { return isAdded; } set { isAdded = value; } }
 }
