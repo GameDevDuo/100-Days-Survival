@@ -81,7 +81,7 @@ public class UIManager : MonoBehaviour, ITime, IDay
     public void AddDate()
     {
         //86400
-        if(second % 100 == 0)
+        if(second % 86400 == 0)
         {
             Day++;
         }
