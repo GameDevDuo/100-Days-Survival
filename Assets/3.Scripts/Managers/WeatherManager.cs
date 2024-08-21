@@ -46,7 +46,8 @@ public class WeatherManager : WeatherBase
             if(final.Value.GenerateTerm == weatherIndex[final.Key - 1])
             {
                 weatherIndex[final.Key - 1] = 0;
-                //È®·üÀ» ÅëÇÑ ³¯¾¾ »ý¼º
+                //È®·ü¿¡ µû¶ó ³¯¾¾ »ý¼º
+                Instantiate(final.Value.WeatherObject, new Vector3(0f, 0f, 0f), Quaternion.identity);
             }
             else
             {
