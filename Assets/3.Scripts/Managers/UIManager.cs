@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour, ITime, IDay
     public Text timeText;
     public Text dateText;
 
-    private int day;
+    private int day = 0;
     public int Day
     {
         get { return day; }
@@ -22,6 +22,7 @@ public class UIManager : MonoBehaviour, ITime, IDay
             if(day != value)
             {
                 WeatherManager.Instance.AbleWeatherList();
+                Debug.Log("weather");
             }
             day = value;
         }
@@ -79,12 +80,13 @@ public class UIManager : MonoBehaviour, ITime, IDay
 
     public void AddDate()
     {
+        //86400
         if(second % 86400 == 0)
         {
-            day++;
+            Day++;
         }
 
-        dateText.text = string.Format("DAY {0}", day);
+        dateText.text = string.Format("DAY {0}", Day);
     }
 
     private void RotateSunLight()

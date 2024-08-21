@@ -10,18 +10,30 @@ public class WeatherManager : WeatherBase
     //화산폭발 - 50일 확정 이후에 10일마다 3% 100일 확정
     //지진 - 50일부터 10일마다 3% 확률
 
-
     public static WeatherManager Instance;
 
+    [SerializeField]
     private List<WeatherData> weatherData;
-    private Dictionary<int, WeatherData> ableWeather;
+    private Dictionary<int, WeatherData> ableWeather = new Dictionary<int, WeatherData>();
 
     private int[] weatherIndex = new int[6];
 
+    private void Awake()
+    {
+        if(Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     private void Start()
     {
         AbleWeatherList();
         GenerateWeather(ableWeather);
+
         for(int i = 0; i < weatherIndex.Length; i++)
         {
             weatherIndex[i] = 0;
@@ -32,11 +44,14 @@ public class WeatherManager : WeatherBase
     {
         foreach (var weather in weatherData)
         {
-            if (UIManager.Instance.Day <= weather.GenerateDate)
+            if (UIManager.Instance.Day <= weather.GenerateDate && !weather.IsAdded)
             {
                 ableWeather.Add(weather.WeatherNum, weather);
+                weather.IsAdded = true;
             }
         }
+
+        GenerateWeather(ableWeather);
     }
 
     public void GenerateWeather(Dictionary<int, WeatherData> weather)
@@ -46,7 +61,10 @@ public class WeatherManager : WeatherBase
             if(final.Value.GenerateTerm == weatherIndex[final.Key - 1])
             {
                 weatherIndex[final.Key - 1] = 0;
-                //확률을 통한 날씨 생성
+                if(Random.Range(0.00f, 1.00f) >= final.Value.WeatherPercent)
+                {
+                    Instantiate(final.Value.WeatherObject, transform);
+                }
             }
             else
             {
