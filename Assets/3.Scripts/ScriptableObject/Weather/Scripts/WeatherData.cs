@@ -13,5 +13,8 @@ public class WeatherData : ScriptableObject
     public int GenerateDate { get { return generateDate; } }
 
     [SerializeField] private int generateTerm;
-    public int GenerateTerm { get { return generateTerm; } }
+    public int GenerateTerm { get { return generateTerm; } set { generateTerm = value; } }
+
+    [SerializeField] private int weatherNum;
+    public int WeatherNum { get { return weatherNum; } }
 }
