@@ -8,6 +8,7 @@ public class ResourceItem : MonoBehaviour
     private Rigidbody rb;
     private float currentCollectTime = 0.0f;
     private bool isBeingCollected = false;
+    public float collectionTime = 0.0f;
     public bool isCollectible = false;
 
     public void StartCollection()
@@ -36,11 +37,11 @@ public class ResourceItem : MonoBehaviour
         if (isBeingCollected)
         {
             currentCollectTime += Time.deltaTime;
-            float progress = currentCollectTime / itemData.CollectionTime;
+            float progress = currentCollectTime / collectionTime;
 
             UIManager.Instance.UpdateGauge(progress);
 
-            if (currentCollectTime >= itemData.CollectionTime)
+            if (currentCollectTime >= collectionTime)
             {
                 FinishCollection();
             }
@@ -63,7 +64,7 @@ public class ResourceItem : MonoBehaviour
 
     public float GetCurrentProgress()
     {
-        return currentCollectTime / itemData.CollectionTime;
+        return currentCollectTime / collectionTime;
     }
 
     private void FallDown()

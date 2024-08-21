@@ -112,8 +112,11 @@ public class ResourceItemRaycaster : MonoBehaviour
 
     bool IsCheckTool(ResourceItem item)
     {
-        foreach (Sprite tool in item.itemData.ToolSprite)
+        for (int i = 0; i < item.itemData.ToolSprite.Length; i++)
         {
+            Sprite tool = item.itemData.ToolSprite[i];
+            item.collectionTime = item.itemData.CollectionTime[i];
+
             if (tool == toolSprite)
             {
                 return true;
