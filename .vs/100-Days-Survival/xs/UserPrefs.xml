@@ -1,28 +1,26 @@
 ﻿<Properties StartupConfiguration="{1F604ABA-97D5-7786-F80E-1F5D5FA51AF3}|">
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0b9c5030-e45f-44c7-9995-b3effa1cb58c" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/3.Scripts/Managers/GameManager.cs">
     <Files>
       <File FileName="Assets/3.Scripts/Managers/UIManager.cs" Line="8" Column="38" IsPinned="True" />
       <File FileName="Assets/3.Scripts/Managers/GameManager.cs" Line="21" Column="17" IsPinned="True" />
       <File FileName="Assets/3.Scripts/Player/PlayerController.cs" Line="24" Column="23" />
       <File FileName="Assets/3.Scripts/Inventory/BuildHandler.cs" Line="25" Column="92" />
-      <File FileName="Assets/3.Scripts/Camera/ResourceItemRaycaster.cs" Line="8" Column="50" />
+      <File FileName="Assets/3.Scripts/Camera/ResourceItemRaycaster.cs" Line="122" Column="29" />
       <File FileName="Assets/3.Scripts/Camera/FirstPersonCamera.cs" Line="40" Column="2" />
       <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalData.cs" Line="20" Column="1" />
       <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/Animal.cs" Line="1" Column="1" />
       <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalBase.cs" Line="1" Column="1" />
-      <File FileName="Assets/3.Scripts/ScriptableObject/Item/ItemData.cs" Line="1" Column="1" />
-      <File FileName="Assets/3.Scripts/ScriptableObject/Item/ResourceItem.cs" />
-      <File FileName="Assets/3.Scripts/Interface/ITime.cs" />
-      <File FileName="Assets/3.Scripts/Interface/IDay.cs" />
-      <File FileName="Assets/3.Scripts/Inventory/Inventory.cs" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Item/ItemData.cs" Line="10" Column="53" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Item/ResourceItem.cs" Line="3" Column="19" />
+      <File FileName="Assets/3.Scripts/Interface/ITime.cs" Line="1" Column="1" />
+      <File FileName="Assets/3.Scripts/Interface/IDay.cs" Line="1" Column="1" />
+      <File FileName="Assets/3.Scripts/Inventory/Inventory.cs" Line="16" Column="39" />
       <File FileName="Assets/3.Scripts/Craftingtable/Craftingtable.cs" />
       <File FileName="Assets/3.Scripts/Inventory/Slot.cs" />
       <File FileName="Assets/3.Scripts/Interface/IOnOff.cs" />
       <File FileName="Assets/3.Scripts/Player/IKController.cs" />
       <File FileName="Assets/3.Scripts/Interface/IMove.cs" />
       <File FileName="Assets/3.Scripts/Camera/ResourceItemFadeOut.cs" />
-      <File FileName="Assets/3.Scripts/Script/Weather.cs" />
       <File FileName="Assets/3.Scripts/Player/Player.cs" />
       <File FileName="Assets/3.Scripts/ScriptableObject/Crafting/CraftingData.cs" />
       <File FileName="Assets/3.Scripts/Craftingtable/CraftingMenuManager.cs" />
@@ -37,9 +35,10 @@
                 <Node name="Craftingtable" expanded="True" />
                 <Node name="Interface" expanded="True" />
                 <Node name="Inventory" expanded="True" />
-                <Node name="Managers" expanded="True" />
+                <Node name="Managers" expanded="True">
+                  <Node name="GameManager.cs" selected="True" />
+                </Node>
                 <Node name="Player" expanded="True" />
-                <Node name="Script" expanded="True" />
                 <Node name="ScriptableObject" expanded="True">
                   <Node name="Animal" expanded="True">
                     <Node name="Scripts" expanded="True" />
@@ -54,10 +53,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="75b96f73-f321-413c-897e-50fd151d6ea3" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

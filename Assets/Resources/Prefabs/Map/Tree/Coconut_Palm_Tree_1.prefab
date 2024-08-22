@@ -133,6 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: b7dae3c6038434a1fac009fc2ca45764, type: 2}
+  collectionTime: 0
   isCollectible: 0
 --- !u!114 &3926558909299241717
 MonoBehaviour:
