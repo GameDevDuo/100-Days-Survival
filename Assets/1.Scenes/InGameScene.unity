@@ -194,6 +194,7 @@ GameObject:
   - component: {fileID: 19989166}
   - component: {fileID: 19989169}
   - component: {fileID: 19989170}
+  - component: {fileID: 19989171}
   - component: {fileID: 19989165}
   m_Layer: 0
   m_Name: Main Camera
@@ -310,6 +311,14 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: ba6162d2-7caa-4b97-b5b4-a769c83b80d5
     m_ActionName: Player/ToggleInventory[/Keyboard/tab]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: aebbadd3-1043-498b-8f52-afe173bbbb6a
+    m_ActionName: Player/Attack[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5b914c20-4fb5-42df-9d0b-f533080adac9
+    m_ActionName: Player/ToggleCraftingTable[/Keyboard/q]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -422,6 +431,22 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &19989171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19989163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0e8abdd74d804b3ba754bf1f2eed794, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  distance: 3
 --- !u!1001 &20378723
 PrefabInstance:
   m_ObjectHideFlags: 0

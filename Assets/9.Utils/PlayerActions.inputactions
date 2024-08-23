@@ -33,6 +33,15 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "Attack",
+                    "type": "Button",
+                    "id": "aebbadd3-1043-498b-8f52-afe173bbbb6a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "ToggleInventory",
                     "type": "Button",
                     "id": "ba6162d2-7caa-4b97-b5b4-a769c83b80d5",
@@ -225,6 +234,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "ToggleCraftingTable",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2417a460-ca5a-4916-9576-f51a94fe1208",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

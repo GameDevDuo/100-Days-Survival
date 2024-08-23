@@ -114,7 +114,7 @@ public class BuildHandler : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
+        Gizmos.color = Color.blue;
         Gizmos.DrawRay(transform.position, transform.forward * distance);
     }
 }
