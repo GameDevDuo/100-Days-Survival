@@ -4764,13 +4764,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crab_prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 2495894476952109608, guid: 70b98b32e7a381c4b81cf04a6bebfdfd, type: 3}
+      propertyPath: m_BaseOffset
+      value: -0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 8389162351322978010, guid: 70b98b32e7a381c4b81cf04a6bebfdfd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.1506433
       objectReference: {fileID: 0}
     - target: {fileID: 8389162351322978010, guid: 70b98b32e7a381c4b81cf04a6bebfdfd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.03749132
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8389162351322978010, guid: 70b98b32e7a381c4b81cf04a6bebfdfd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4827,7 +4831,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5962107363806434968, guid: 08fd03bb8be047442934882d38b0276c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.022205353
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5962107363806434968, guid: 08fd03bb8be047442934882d38b0276c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4865,6 +4869,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken_prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 9191957982767101161, guid: 08fd03bb8be047442934882d38b0276c, type: 3}
+      propertyPath: m_BaseOffset
+      value: -0.15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4882,6 +4890,10 @@ PrefabInstance:
       propertyPath: terrain
       value: 
       objectReference: {fileID: 577962249}
+    - target: {fileID: 1190071155820205558, guid: 6ab9a1fb9197d6f4c97f9c078dc2ef11, type: 3}
+      propertyPath: m_BaseOffset
+      value: -0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 5419974438398183840, guid: 6ab9a1fb9197d6f4c97f9c078dc2ef11, type: 3}
       propertyPath: m_Name
       value: scorpion_prefab
@@ -4892,7 +4904,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5858235370977079630, guid: 6ab9a1fb9197d6f4c97f9c078dc2ef11, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.051819682
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5858235370977079630, guid: 6ab9a1fb9197d6f4c97f9c078dc2ef11, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4953,7 +4965,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2143718794454105744, guid: ead4c11d3ea09ad4296eec9ad29a3adc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.035955667
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2143718794454105744, guid: ead4c11d3ea09ad4296eec9ad29a3adc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4987,6 +4999,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5986472861068782293, guid: ead4c11d3ea09ad4296eec9ad29a3adc, type: 3}
+      propertyPath: m_BaseOffset
+      value: -0.15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5010,7 +5026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1752605261527544481, guid: 15f98c8574e5bc54aa64813feedbfab3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.008638859
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1752605261527544481, guid: 15f98c8574e5bc54aa64813feedbfab3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5047,6 +5063,10 @@ PrefabInstance:
     - target: {fileID: 3533414441621445460, guid: 15f98c8574e5bc54aa64813feedbfab3, type: 3}
       propertyPath: m_Name
       value: Cattle_prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 6689391771048699617, guid: 15f98c8574e5bc54aa64813feedbfab3, type: 3}
+      propertyPath: m_BaseOffset
+      value: -0.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5118,6 +5138,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3684790102600840271, guid: 6b8655b0f16411e458b0cc06bef3d167, type: 3}
+      propertyPath: m_BaseOffset
+      value: -0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 3853011632726233652, guid: 6b8655b0f16411e458b0cc06bef3d167, type: 3}
       propertyPath: terrain
       value: 
@@ -5132,7 +5156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8514523556743200639, guid: 6b8655b0f16411e458b0cc06bef3d167, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.016191244
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8514523556743200639, guid: 6b8655b0f16411e458b0cc06bef3d167, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5185,7 +5209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2117239188539799455, guid: dcb72525419369e4eaa3c46f7bb027a7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.01838696
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2117239188539799455, guid: dcb72525419369e4eaa3c46f7bb027a7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5227,6 +5251,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crocodile_prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 5453759148383726697, guid: dcb72525419369e4eaa3c46f7bb027a7, type: 3}
+      propertyPath: m_BaseOffset
+      value: -0.15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5248,13 +5276,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: goat_prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 7131529540673550291, guid: 6faaf3d417de74b4dbf033543907cf1b, type: 3}
+      propertyPath: m_BaseOffset
+      value: -0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 8656637721278326172, guid: 6faaf3d417de74b4dbf033543907cf1b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.8914824
       objectReference: {fileID: 0}
     - target: {fileID: 8656637721278326172, guid: 6faaf3d417de74b4dbf033543907cf1b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.021241426
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8656637721278326172, guid: 6faaf3d417de74b4dbf033543907cf1b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5311,7 +5343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2263652951625682788, guid: f72d5b3a0ec9b7743ae0aa9a61a0d3ea, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.000004053116
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2263652951625682788, guid: f72d5b3a0ec9b7743ae0aa9a61a0d3ea, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5349,6 +5381,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bear_prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 5142229237875005501, guid: f72d5b3a0ec9b7743ae0aa9a61a0d3ea, type: 3}
+      propertyPath: m_BaseOffset
+      value: -0.15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5366,13 +5402,17 @@ PrefabInstance:
       propertyPath: terrain
       value: 
       objectReference: {fileID: 577962249}
+    - target: {fileID: 7562670464739722348, guid: 5f154c847384ae045b9e3e6655fc997c, type: 3}
+      propertyPath: m_BaseOffset
+      value: -0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 8788382210480359333, guid: 5f154c847384ae045b9e3e6655fc997c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.355548
       objectReference: {fileID: 0}
     - target: {fileID: 8788382210480359333, guid: 5f154c847384ae045b9e3e6655fc997c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.035596013
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8788382210480359333, guid: 5f154c847384ae045b9e3e6655fc997c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5429,7 +5469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 195067889456879085, guid: d8fb0a1ee1d9b22469d18bf0e8ea51ed, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0000047683716
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 195067889456879085, guid: d8fb0a1ee1d9b22469d18bf0e8ea51ed, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5471,6 +5511,10 @@ PrefabInstance:
       propertyPath: terrain
       value: 
       objectReference: {fileID: 577962249}
+    - target: {fileID: 6047788539631271631, guid: d8fb0a1ee1d9b22469d18bf0e8ea51ed, type: 3}
+      propertyPath: m_BaseOffset
+      value: -0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 8789251368042972993, guid: d8fb0a1ee1d9b22469d18bf0e8ea51ed, type: 3}
       propertyPath: m_UseGravity
       value: 1
@@ -5494,7 +5538,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1791621421145151236, guid: 134b3883ddf011043af7ea331288afbf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.00000834465
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1791621421145151236, guid: 134b3883ddf011043af7ea331288afbf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5532,6 +5576,10 @@ PrefabInstance:
       propertyPath: terrain
       value: 
       objectReference: {fileID: 577962249}
+    - target: {fileID: 4088974819591809675, guid: 134b3883ddf011043af7ea331288afbf, type: 3}
+      propertyPath: m_BaseOffset
+      value: -0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 6928615150607115957, guid: 134b3883ddf011043af7ea331288afbf, type: 3}
       propertyPath: m_Name
       value: Ibex_prefab
@@ -5555,7 +5603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5197663025146191602, guid: 79f8a50b17d734c4998c092e60175a27, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.052527666
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5197663025146191602, guid: 79f8a50b17d734c4998c092e60175a27, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5597,6 +5645,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wild_boar_prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 9194931244220466928, guid: 79f8a50b17d734c4998c092e60175a27, type: 3}
+      propertyPath: m_BaseOffset
+      value: -0.15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5618,13 +5670,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Deer_prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 1054658912375291921, guid: 330c00e9242504f4d8314e9f678e61bb, type: 3}
+      propertyPath: m_BaseOffset
+      value: -0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 8888856762674193857, guid: 330c00e9242504f4d8314e9f678e61bb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.6261883
       objectReference: {fileID: 0}
     - target: {fileID: 8888856762674193857, guid: 330c00e9242504f4d8314e9f678e61bb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.030540943
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8888856762674193857, guid: 330c00e9242504f4d8314e9f678e61bb, type: 3}
       propertyPath: m_LocalPosition.z
