@@ -1,20 +1,27 @@
 ﻿<Properties StartupConfiguration="{1F604ABA-97D5-7786-F80E-1F5D5FA51AF3}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/3.Scripts/Managers/GameManager.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="79acff6e-a89f-426c-a939-45d49f23cab7" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/3.Scripts/Inventory/BuildHandler.cs">
     <Files>
       <File FileName="Assets/3.Scripts/Managers/UIManager.cs" Line="8" Column="38" IsPinned="True" />
       <File FileName="Assets/3.Scripts/Managers/GameManager.cs" Line="21" Column="17" IsPinned="True" />
-      <File FileName="Assets/3.Scripts/Player/PlayerController.cs" Line="24" Column="23" />
-      <File FileName="Assets/3.Scripts/Inventory/BuildHandler.cs" Line="25" Column="92" />
-      <File FileName="Assets/3.Scripts/Camera/ResourceItemRaycaster.cs" Line="122" Column="29" />
-      <File FileName="Assets/3.Scripts/Camera/FirstPersonCamera.cs" Line="40" Column="2" />
-      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalData.cs" Line="20" Column="1" />
-      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/Animal.cs" Line="1" Column="1" />
-      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalBase.cs" Line="1" Column="1" />
-      <File FileName="Assets/3.Scripts/ScriptableObject/Item/ItemData.cs" Line="10" Column="53" />
-      <File FileName="Assets/3.Scripts/ScriptableObject/Item/ResourceItem.cs" Line="3" Column="19" />
-      <File FileName="Assets/3.Scripts/Interface/ITime.cs" Line="1" Column="1" />
-      <File FileName="Assets/3.Scripts/Interface/IDay.cs" Line="1" Column="1" />
-      <File FileName="Assets/3.Scripts/Inventory/Inventory.cs" Line="16" Column="39" />
+      <File FileName="Assets/3.Scripts/Player/PlayerController.cs" />
+      <File FileName="Assets/3.Scripts/Inventory/BuildHandler.cs" Line="23" Column="18" />
+      <File FileName="Assets/3.Scripts/Camera/ResourceItemRaycaster.cs" />
+      <File FileName="Assets/3.Scripts/Camera/FirstPersonCamera.cs" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalData.cs" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/Animal.cs" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalBase.cs" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Item/ItemData.cs" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Item/ResourceItem.cs" />
+      <File FileName="Assets/3.Scripts/Interface/ITime.cs" />
+      <File FileName="Assets/3.Scripts/Interface/IDay.cs" />
+      <File FileName="Assets/3.Scripts/Inventory/Inventory.cs" />
       <File FileName="Assets/3.Scripts/Craftingtable/Craftingtable.cs" />
       <File FileName="Assets/3.Scripts/Inventory/Slot.cs" />
       <File FileName="Assets/3.Scripts/Interface/IOnOff.cs" />
@@ -34,10 +41,10 @@
                 <Node name="Camera" expanded="True" />
                 <Node name="Craftingtable" expanded="True" />
                 <Node name="Interface" expanded="True" />
-                <Node name="Inventory" expanded="True" />
-                <Node name="Managers" expanded="True">
-                  <Node name="GameManager.cs" selected="True" />
+                <Node name="Inventory" expanded="True">
+                  <Node name="BuildHandler.cs" selected="True" />
                 </Node>
+                <Node name="Managers" expanded="True" />
                 <Node name="Player" expanded="True" />
                 <Node name="ScriptableObject" expanded="True">
                   <Node name="Animal" expanded="True">
@@ -53,11 +60,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="75b96f73-f321-413c-897e-50fd151d6ea3" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
 </Properties>
