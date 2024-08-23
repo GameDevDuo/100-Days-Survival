@@ -4099,7 +4099,6 @@ MonoBehaviour:
   sunLight: {fileID: 705507993}
   timeText: {fileID: 882495407}
   dateText: {fileID: 1842699021}
-  day: 0
 --- !u!1 &273597883
 GameObject:
   m_ObjectHideFlags: 0
@@ -5359,14 +5358,14 @@ PrefabInstance:
     - target: {fileID: 1949109113993292527, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 600af92209646d04da9cec5da350ddf3, type: 3}
     - target: {fileID: 1949109113993292527, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3341923151748841804, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Name
-      value: item
+      value: Bat
       objectReference: {fileID: 0}
     - target: {fileID: 3979343921595372068, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Type
@@ -5375,10 +5374,10 @@ PrefabInstance:
     - target: {fileID: 3979343921595372068, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: a2f0a6ec7eada2d4daa504b62e26bd01, type: 3}
     - target: {fileID: 3979343921595372068, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3998464976756830346, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Pivot.x
@@ -5467,10 +5466,10 @@ PrefabInstance:
     - target: {fileID: 5465534346331477563, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: e07db08207a151b4ea951f720ecdc1f3, type: 3}
     - target: {fileID: 5465534346331477563, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9928,6 +9927,8 @@ MonoBehaviour:
   - craftingSlot: {fileID: 853258679}
   - craftingSlot: {fileID: 1610246473}
   - craftingSlot: {fileID: 677521597}
+  - craftingSlot: {fileID: 1020327534}
+  - craftingSlot: {fileID: 1665310660}
   player: {fileID: 112678249}
   craftingTableUI: {fileID: 731265666}
 --- !u!114 &920875825
@@ -10660,6 +10661,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1019435620}
   m_CullTransparentMesh: 1
+--- !u!114 &1020327534 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 730033678313787268, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
+  m_PrefabInstance: {fileID: 496115145}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1023107698
 GameObject:
   m_ObjectHideFlags: 0
@@ -16758,6 +16770,17 @@ Transform:
   - {fileID: 1592082062}
   m_Father: {fileID: 1308669073}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1665310660 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 730033678313787268, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
+  m_PrefabInstance: {fileID: 1815994883}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1675543247 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 730033678313787268, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
@@ -18112,6 +18135,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: table (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3341923151748841804, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
+      propertyPath: m_Name
+      value: Textile
+      objectReference: {fileID: 0}
+    - target: {fileID: 3979343921595372068, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3979343921595372068, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 600af92209646d04da9cec5da350ddf3, type: 3}
+    - target: {fileID: 3979343921595372068, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3998464976756830346, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -18191,6 +18230,18 @@ PrefabInstance:
     - target: {fileID: 3998464976756830346, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5164145484149511937, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
+      propertyPath: m_Text
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5465534346331477563, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 63533c51611828543b56396d01bdcc5e, type: 3}
+    - target: {fileID: 5465534346331477563, guid: 27f9e8798dde744c8ab3d74ddd363d9a, type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
