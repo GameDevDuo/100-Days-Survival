@@ -445,7 +445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layerMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 1536
   distance: 3
 --- !u!1001 &20378723
 PrefabInstance:

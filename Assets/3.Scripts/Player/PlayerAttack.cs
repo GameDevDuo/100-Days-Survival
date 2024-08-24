@@ -13,8 +13,8 @@ public class PlayerAttack : MonoBehaviour
     void Start()
     {
         playerCamera = Camera.main;
-        playerInput = GetComponent<PlayerInput>();
 
+        playerInput = GetComponent<PlayerInput>();
         playerInput.actions["Attack"].performed += OnAttack;
     }
 
@@ -28,11 +28,11 @@ public class PlayerAttack : MonoBehaviour
         Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, distance, layerMask))
+        if (Physics.Raycast(ray, out hit, distance))
         {
             if (hit.collider != null)
             {
-                Debug.Log("attack");
+                Debug.Log("PlayerAttack");
             }
         }
     }
