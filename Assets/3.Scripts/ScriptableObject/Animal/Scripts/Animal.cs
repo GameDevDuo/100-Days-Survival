@@ -60,6 +60,11 @@ public class Animal : AnimalBase
         ChangeState(State.Idle, RandomTime(IdleStateDuration));
     }
 
+    private void TakeDamage(int damage)
+    {
+        hp -= damage;
+    }
+
     public override void Idle()
     {
         if (hp <= 0)
@@ -68,13 +73,16 @@ public class Animal : AnimalBase
         }
         else
         {
-            animator.Play("idle");
             currentTime -= Time.deltaTime;
 
             if (currentTime <= 0)
             {
                 targetPosition = GetRandomPointInRange();
                 ChangeState(State.Move, RandomTime(MoveStateDuration));
+            }
+            else
+            {
+                animator.Play("idle");
             }
         }
     }
@@ -87,13 +95,16 @@ public class Animal : AnimalBase
         }
         else
         {
-            animator.Play("walk");
             agent.SetDestination(targetPosition);
 
             currentTime -= Time.deltaTime;
             if (currentTime <= 0)
             {
                 ChangeState(State.Idle, RandomTime(IdleStateDuration));
+            }
+            else
+            {
+                animator.Play("walk");
             }
         }
     }
