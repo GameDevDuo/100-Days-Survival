@@ -15,7 +15,7 @@ MonoBehaviour:
   animalName: Wolf
   maxHp: 20
   damage: 5
-  attakDistance: 1
+  attakDistance: 2.5
   attakSpeed: 1
   findRange: 7
   rewardItem: []

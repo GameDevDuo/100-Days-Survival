@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -17,6 +19,9 @@ public class Animal : AnimalBase
 
     private Vector3 targetPosition;
     private float hp;
+    private string animationState;
+
+    private bool isAttack = false;
 
     private void Start() => Init();
 
@@ -51,18 +56,24 @@ public class Animal : AnimalBase
 
     private void Init()
     {
-        centerPoint = this.transform;
+        centerPoint = transform;
         animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         terrainCollider = terrain.GetComponent<Collider>();
         hp = animalData.MaxHP;
 
+        animationState = "idle";
+
         ChangeState(State.Idle, RandomTime(IdleStateDuration));
     }
 
-    private void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         hp -= damage;
+        if (hp <= 0)
+        {
+            ChangeState(State.Dead);
+        }
     }
 
     public override void Idle()
@@ -80,9 +91,11 @@ public class Animal : AnimalBase
                 targetPosition = GetRandomPointInRange();
                 ChangeState(State.Move, RandomTime(MoveStateDuration));
             }
-            else
+
+            if (animationState != "idle")
             {
                 animator.Play("idle");
+                animationState = "idle";
             }
         }
     }
@@ -93,25 +106,51 @@ public class Animal : AnimalBase
         {
             ChangeState(State.Dead);
         }
-        else
+        else if (!isAttack)
         {
             agent.SetDestination(targetPosition);
 
-            currentTime -= Time.deltaTime;
-            if (currentTime <= 0)
+            if (agent.remainingDistance <= agent.stoppingDistance && !agent.pathPending)
             {
                 ChangeState(State.Idle, RandomTime(IdleStateDuration));
             }
-            else
+            else if (animationState != "walk")
             {
                 animator.Play("walk");
+                animationState = "walk";
             }
         }
     }
 
+    public override void Attack()
+    {
+        isAttack = true;
+        agent.isStopped = true;
+
+        if (animationState != "attack")
+        {
+            animator.Play("attack");
+            animationState = "attack";
+        }
+        isAttack = false;
+        ChangeState(State.Idle, RandomTime(IdleStateDuration));
+    }
+
     public override void Dead()
     {
-        animator.Play("die");
+        if (animationState != "die")
+        {
+            animator.Play("die");
+            animationState = "die";
+        }
         agent.isStopped = true;
+    }
+
+    public void StartAttack()
+    {
+        if (hp > 0)
+        {
+            ChangeState(State.Attak);
+        }
     }
 }
