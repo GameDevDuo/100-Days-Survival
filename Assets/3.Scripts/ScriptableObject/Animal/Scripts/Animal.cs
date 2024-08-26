@@ -98,7 +98,7 @@ public class Animal : AnimalBase
             agent.SetDestination(targetPosition);
 
             currentTime -= Time.deltaTime;
-            if (currentTime <= 0)
+            if (currentTime <= 0 && IsNearDistination(agent))
             {
                 ChangeState(State.Idle, RandomTime(IdleStateDuration));
             }

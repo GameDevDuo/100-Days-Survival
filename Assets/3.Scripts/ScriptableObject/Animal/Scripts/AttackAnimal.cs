@@ -128,7 +128,7 @@ public class AttackAnimal : AnimalBase
                 agent.SetDestination(targetPosition);
                 currentTime -= Time.deltaTime;
 
-                if (currentTime <= 0)
+                if (currentTime <= 0 && IsNearDistination(agent))
                 {
                     ChangeState(State.Idle, RandomTime(IdleStateDuration));
                 }
@@ -153,6 +153,7 @@ public class AttackAnimal : AnimalBase
             if (distanceToPlayer <= animalData.AttackDistance)
             {
                 agent.ResetPath();
+                transform.LookAt(player.transform);
                 animator.Play("attack");
             }
             else if (distanceToPlayer <= animalData.FindRange)
