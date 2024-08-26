@@ -1,103 +1,281 @@
 fileFormatVersion: 2
 guid: e991d5e20561d3441ae8024bce024e67
-timeCreated: 1503840157
-licenseType: Store
 ModelImporter:
-  serializedVersion: 22
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: Crocodile_Head_JawEndSHJnt
-    100004: Crocodile_Head_JawSHJnt
-    100006: Crocodile_Head_TopSHJnt
-    100008: Crocodile_l_Clavicle_01_01SHJnt
-    100010: Crocodile_l_FrontLeg_AnkleSHJnt
-    100012: Crocodile_l_FrontLeg_BallSHJnt
-    100014: Crocodile_l_FrontLeg_HipSHJnt
-    100016: Crocodile_l_FrontLeg_KneeSHJnt
-    100018: Crocodile_l_FrontLeg_ToeSHJnt
-    100020: Crocodile_l_HindLeg_AnkleSHJnt
-    100022: Crocodile_l_HindLeg_BallSHJnt
-    100024: Crocodile_l_HindLeg_HipSHJnt
-    100026: Crocodile_l_HindLeg_KneeSHJnt
-    100028: Crocodile_l_HindLeg_ToeSHJnt
-    100030: Crocodile_MAINSHJnt
-    100032: Crocodile_Neck_01SHJnt
-    100034: Crocodile_Neck_02SHJnt
-    100036: Crocodile_Neck_TopSHJnt
-    100038: Crocodile_r_Clavicle_01_01SHJnt
-    100040: Crocodile_r_FrontLeg_AnkleSHJnt
-    100042: Crocodile_r_FrontLeg_BallSHJnt
-    100044: Crocodile_r_FrontLeg_HipSHJnt
-    100046: Crocodile_r_FrontLeg_KneeSHJnt
-    100048: Crocodile_r_FrontLeg_ToeSHJnt
-    100050: Crocodile_r_HindLeg_AnkleSHJnt
-    100052: Crocodile_r_HindLeg_BallSHJnt
-    100054: Crocodile_r_HindLeg_HipSHJnt
-    100056: Crocodile_r_HindLeg_KneeSHJnt
-    100058: Crocodile_r_HindLeg_ToeSHJnt
-    100060: Crocodile_ROOTSHJnt
-    100062: Crocodile_Spine_01SHJnt
-    100064: Crocodile_Spine_02SHJnt
-    100066: Crocodile_Spine_03SHJnt
-    100068: Crocodile_Spine_04SHJnt
-    100070: Crocodile_Spine_TopSHJnt
-    100072: Crocodile_Tail_01_01SHJnt
-    100074: Crocodile_Tail_01_02SHJnt
-    100076: Crocodile_Tail_01_03SHJnt
-    100078: Crocodile_Tail_01_04SHJnt
-    100080: Crocodile_Tail_01_05SHJnt
-    100082: Crocodile_Tail_01_06SHJnt
-    100084: Crocodile_Tail_01_07SHJnt
-    100086: Crocodile_Tail_01_08SHJnt
-    400000: //RootNode
-    400002: Crocodile_Head_JawEndSHJnt
-    400004: Crocodile_Head_JawSHJnt
-    400006: Crocodile_Head_TopSHJnt
-    400008: Crocodile_l_Clavicle_01_01SHJnt
-    400010: Crocodile_l_FrontLeg_AnkleSHJnt
-    400012: Crocodile_l_FrontLeg_BallSHJnt
-    400014: Crocodile_l_FrontLeg_HipSHJnt
-    400016: Crocodile_l_FrontLeg_KneeSHJnt
-    400018: Crocodile_l_FrontLeg_ToeSHJnt
-    400020: Crocodile_l_HindLeg_AnkleSHJnt
-    400022: Crocodile_l_HindLeg_BallSHJnt
-    400024: Crocodile_l_HindLeg_HipSHJnt
-    400026: Crocodile_l_HindLeg_KneeSHJnt
-    400028: Crocodile_l_HindLeg_ToeSHJnt
-    400030: Crocodile_MAINSHJnt
-    400032: Crocodile_Neck_01SHJnt
-    400034: Crocodile_Neck_02SHJnt
-    400036: Crocodile_Neck_TopSHJnt
-    400038: Crocodile_r_Clavicle_01_01SHJnt
-    400040: Crocodile_r_FrontLeg_AnkleSHJnt
-    400042: Crocodile_r_FrontLeg_BallSHJnt
-    400044: Crocodile_r_FrontLeg_HipSHJnt
-    400046: Crocodile_r_FrontLeg_KneeSHJnt
-    400048: Crocodile_r_FrontLeg_ToeSHJnt
-    400050: Crocodile_r_HindLeg_AnkleSHJnt
-    400052: Crocodile_r_HindLeg_BallSHJnt
-    400054: Crocodile_r_HindLeg_HipSHJnt
-    400056: Crocodile_r_HindLeg_KneeSHJnt
-    400058: Crocodile_r_HindLeg_ToeSHJnt
-    400060: Crocodile_ROOTSHJnt
-    400062: Crocodile_Spine_01SHJnt
-    400064: Crocodile_Spine_02SHJnt
-    400066: Crocodile_Spine_03SHJnt
-    400068: Crocodile_Spine_04SHJnt
-    400070: Crocodile_Spine_TopSHJnt
-    400072: Crocodile_Tail_01_01SHJnt
-    400074: Crocodile_Tail_01_02SHJnt
-    400076: Crocodile_Tail_01_03SHJnt
-    400078: Crocodile_Tail_01_04SHJnt
-    400080: Crocodile_Tail_01_05SHJnt
-    400082: Crocodile_Tail_01_06SHJnt
-    400084: Crocodile_Tail_01_07SHJnt
-    400086: Crocodile_Tail_01_08SHJnt
-    7400000: Crocodile_attack
-    9500000: //RootNode
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: Crocodile_Head_JawEndSHJnt
+  - first:
+      1: 100004
+    second: Crocodile_Head_JawSHJnt
+  - first:
+      1: 100006
+    second: Crocodile_Head_TopSHJnt
+  - first:
+      1: 100008
+    second: Crocodile_l_Clavicle_01_01SHJnt
+  - first:
+      1: 100010
+    second: Crocodile_l_FrontLeg_AnkleSHJnt
+  - first:
+      1: 100012
+    second: Crocodile_l_FrontLeg_BallSHJnt
+  - first:
+      1: 100014
+    second: Crocodile_l_FrontLeg_HipSHJnt
+  - first:
+      1: 100016
+    second: Crocodile_l_FrontLeg_KneeSHJnt
+  - first:
+      1: 100018
+    second: Crocodile_l_FrontLeg_ToeSHJnt
+  - first:
+      1: 100020
+    second: Crocodile_l_HindLeg_AnkleSHJnt
+  - first:
+      1: 100022
+    second: Crocodile_l_HindLeg_BallSHJnt
+  - first:
+      1: 100024
+    second: Crocodile_l_HindLeg_HipSHJnt
+  - first:
+      1: 100026
+    second: Crocodile_l_HindLeg_KneeSHJnt
+  - first:
+      1: 100028
+    second: Crocodile_l_HindLeg_ToeSHJnt
+  - first:
+      1: 100030
+    second: Crocodile_MAINSHJnt
+  - first:
+      1: 100032
+    second: Crocodile_Neck_01SHJnt
+  - first:
+      1: 100034
+    second: Crocodile_Neck_02SHJnt
+  - first:
+      1: 100036
+    second: Crocodile_Neck_TopSHJnt
+  - first:
+      1: 100038
+    second: Crocodile_r_Clavicle_01_01SHJnt
+  - first:
+      1: 100040
+    second: Crocodile_r_FrontLeg_AnkleSHJnt
+  - first:
+      1: 100042
+    second: Crocodile_r_FrontLeg_BallSHJnt
+  - first:
+      1: 100044
+    second: Crocodile_r_FrontLeg_HipSHJnt
+  - first:
+      1: 100046
+    second: Crocodile_r_FrontLeg_KneeSHJnt
+  - first:
+      1: 100048
+    second: Crocodile_r_FrontLeg_ToeSHJnt
+  - first:
+      1: 100050
+    second: Crocodile_r_HindLeg_AnkleSHJnt
+  - first:
+      1: 100052
+    second: Crocodile_r_HindLeg_BallSHJnt
+  - first:
+      1: 100054
+    second: Crocodile_r_HindLeg_HipSHJnt
+  - first:
+      1: 100056
+    second: Crocodile_r_HindLeg_KneeSHJnt
+  - first:
+      1: 100058
+    second: Crocodile_r_HindLeg_ToeSHJnt
+  - first:
+      1: 100060
+    second: Crocodile_ROOTSHJnt
+  - first:
+      1: 100062
+    second: Crocodile_Spine_01SHJnt
+  - first:
+      1: 100064
+    second: Crocodile_Spine_02SHJnt
+  - first:
+      1: 100066
+    second: Crocodile_Spine_03SHJnt
+  - first:
+      1: 100068
+    second: Crocodile_Spine_04SHJnt
+  - first:
+      1: 100070
+    second: Crocodile_Spine_TopSHJnt
+  - first:
+      1: 100072
+    second: Crocodile_Tail_01_01SHJnt
+  - first:
+      1: 100074
+    second: Crocodile_Tail_01_02SHJnt
+  - first:
+      1: 100076
+    second: Crocodile_Tail_01_03SHJnt
+  - first:
+      1: 100078
+    second: Crocodile_Tail_01_04SHJnt
+  - first:
+      1: 100080
+    second: Crocodile_Tail_01_05SHJnt
+  - first:
+      1: 100082
+    second: Crocodile_Tail_01_06SHJnt
+  - first:
+      1: 100084
+    second: Crocodile_Tail_01_07SHJnt
+  - first:
+      1: 100086
+    second: Crocodile_Tail_01_08SHJnt
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: Crocodile_Head_JawEndSHJnt
+  - first:
+      4: 400004
+    second: Crocodile_Head_JawSHJnt
+  - first:
+      4: 400006
+    second: Crocodile_Head_TopSHJnt
+  - first:
+      4: 400008
+    second: Crocodile_l_Clavicle_01_01SHJnt
+  - first:
+      4: 400010
+    second: Crocodile_l_FrontLeg_AnkleSHJnt
+  - first:
+      4: 400012
+    second: Crocodile_l_FrontLeg_BallSHJnt
+  - first:
+      4: 400014
+    second: Crocodile_l_FrontLeg_HipSHJnt
+  - first:
+      4: 400016
+    second: Crocodile_l_FrontLeg_KneeSHJnt
+  - first:
+      4: 400018
+    second: Crocodile_l_FrontLeg_ToeSHJnt
+  - first:
+      4: 400020
+    second: Crocodile_l_HindLeg_AnkleSHJnt
+  - first:
+      4: 400022
+    second: Crocodile_l_HindLeg_BallSHJnt
+  - first:
+      4: 400024
+    second: Crocodile_l_HindLeg_HipSHJnt
+  - first:
+      4: 400026
+    second: Crocodile_l_HindLeg_KneeSHJnt
+  - first:
+      4: 400028
+    second: Crocodile_l_HindLeg_ToeSHJnt
+  - first:
+      4: 400030
+    second: Crocodile_MAINSHJnt
+  - first:
+      4: 400032
+    second: Crocodile_Neck_01SHJnt
+  - first:
+      4: 400034
+    second: Crocodile_Neck_02SHJnt
+  - first:
+      4: 400036
+    second: Crocodile_Neck_TopSHJnt
+  - first:
+      4: 400038
+    second: Crocodile_r_Clavicle_01_01SHJnt
+  - first:
+      4: 400040
+    second: Crocodile_r_FrontLeg_AnkleSHJnt
+  - first:
+      4: 400042
+    second: Crocodile_r_FrontLeg_BallSHJnt
+  - first:
+      4: 400044
+    second: Crocodile_r_FrontLeg_HipSHJnt
+  - first:
+      4: 400046
+    second: Crocodile_r_FrontLeg_KneeSHJnt
+  - first:
+      4: 400048
+    second: Crocodile_r_FrontLeg_ToeSHJnt
+  - first:
+      4: 400050
+    second: Crocodile_r_HindLeg_AnkleSHJnt
+  - first:
+      4: 400052
+    second: Crocodile_r_HindLeg_BallSHJnt
+  - first:
+      4: 400054
+    second: Crocodile_r_HindLeg_HipSHJnt
+  - first:
+      4: 400056
+    second: Crocodile_r_HindLeg_KneeSHJnt
+  - first:
+      4: 400058
+    second: Crocodile_r_HindLeg_ToeSHJnt
+  - first:
+      4: 400060
+    second: Crocodile_ROOTSHJnt
+  - first:
+      4: 400062
+    second: Crocodile_Spine_01SHJnt
+  - first:
+      4: 400064
+    second: Crocodile_Spine_02SHJnt
+  - first:
+      4: 400066
+    second: Crocodile_Spine_03SHJnt
+  - first:
+      4: 400068
+    second: Crocodile_Spine_04SHJnt
+  - first:
+      4: 400070
+    second: Crocodile_Spine_TopSHJnt
+  - first:
+      4: 400072
+    second: Crocodile_Tail_01_01SHJnt
+  - first:
+      4: 400074
+    second: Crocodile_Tail_01_02SHJnt
+  - first:
+      4: 400076
+    second: Crocodile_Tail_01_03SHJnt
+  - first:
+      4: 400078
+    second: Crocodile_Tail_01_04SHJnt
+  - first:
+      4: 400080
+    second: Crocodile_Tail_01_05SHJnt
+  - first:
+      4: 400082
+    second: Crocodile_Tail_01_06SHJnt
+  - first:
+      4: 400084
+    second: Crocodile_Tail_01_07SHJnt
+  - first:
+      4: 400086
+    second: Crocodile_Tail_01_08SHJnt
+  - first:
+      74: 7400000
+    second: Crocodile_attack
+  - first:
+      95: 9500000
+    second: //RootNode
   externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 0
@@ -106,6 +284,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -114,6 +293,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -125,6 +305,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Crocodile_attack
       takeName: Take 001
+      internalID: 0
       firstFrame: 1
       lastFrame: 25
       wrapMode: 0
@@ -133,7 +314,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -149,37 +330,56 @@ ModelImporter:
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1
     isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 0
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -189,14 +389,19 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
