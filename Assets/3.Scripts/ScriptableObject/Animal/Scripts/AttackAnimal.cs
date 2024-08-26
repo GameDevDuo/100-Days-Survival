@@ -149,11 +149,11 @@ public class AttackAnimal : AnimalBase
         else
         {
             float distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
+            transform.LookAt(player.transform);
 
             if (distanceToPlayer <= animalData.AttackDistance)
             {
                 agent.ResetPath();
-                transform.LookAt(player.transform);
                 animator.Play("attack");
             }
             else if (distanceToPlayer <= animalData.FindRange)
