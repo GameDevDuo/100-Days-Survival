@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public enum State
 {    
@@ -41,6 +42,21 @@ public abstract class AnimalBase : MonoBehaviour, IMove
         //attack Logjc
     }
     public abstract void Dead();
+
+    public bool IsNearDistination(NavMeshAgent agent)
+    {
+        if (!agent.pathPending)
+        {
+            if(agent.remainingDistance <= 1.5f)
+            {
+                if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 
     public void ChangeState(State newState, float time)
     {

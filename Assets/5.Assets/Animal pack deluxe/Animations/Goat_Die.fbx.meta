@@ -1,113 +1,311 @@
 fileFormatVersion: 2
 guid: 286ff21c7308f9d4fa4734644e554cb5
-timeCreated: 1503918400
-licenseType: Store
 ModelImporter:
-  serializedVersion: 22
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: Goat_Head_JawEndSHJnt
-    100004: Goat_Head_JawSHJnt
-    100006: Goat_Head_TopSHJnt
-    100008: Goat_l_Clavicle_01_01SHJnt
-    100010: Goat_l_Ear_01_01SHJnt
-    100012: Goat_l_Ear_01_02SHJnt
-    100014: Goat_l_Ear_01_03SHJnt
-    100016: Goat_l_FrontLeg_AnkleSHJnt
-    100018: Goat_l_FrontLeg_BallSHJnt
-    100020: Goat_l_FrontLeg_HipSHJnt
-    100022: Goat_l_FrontLeg_Knee1SHJnt
-    100024: Goat_l_FrontLeg_Knee2SHJnt
-    100026: Goat_l_FrontLeg_ToeSHJnt
-    100028: Goat_l_HindLeg_AnkleSHJnt
-    100030: Goat_l_HindLeg_BallSHJnt
-    100032: Goat_l_HindLeg_HipSHJnt
-    100034: Goat_l_HindLeg_Knee1SHJnt
-    100036: Goat_l_HindLeg_Knee2SHJnt
-    100038: Goat_l_HindLeg_ToeSHJnt
-    100040: Goat_MAINSHJnt
-    100042: Goat_Neck_01SHJnt
-    100044: Goat_Neck_02SHJnt
-    100046: Goat_Neck_TopSHJnt
-    100048: Goat_r_Clavicle_01_01SHJnt
-    100050: Goat_r_Ear_01_01SHJnt
-    100052: Goat_r_Ear_01_02SHJnt
-    100054: Goat_r_Ear_01_03SHJnt
-    100056: Goat_r_FrontLeg_AnkleSHJnt
-    100058: Goat_r_FrontLeg_BallSHJnt
-    100060: Goat_r_FrontLeg_HipSHJnt
-    100062: Goat_r_FrontLeg_Knee1SHJnt
-    100064: Goat_r_FrontLeg_Knee2SHJnt
-    100066: Goat_r_FrontLeg_ToeSHJnt
-    100068: Goat_r_HindLeg_AnkleSHJnt
-    100070: Goat_r_HindLeg_BallSHJnt
-    100072: Goat_r_HindLeg_HipSHJnt
-    100074: Goat_r_HindLeg_Knee1SHJnt
-    100076: Goat_r_HindLeg_Knee2SHJnt
-    100078: Goat_r_HindLeg_ToeSHJnt
-    100080: Goat_ROOTSHJnt
-    100082: Goat_Spine_01SHJnt
-    100084: Goat_Spine_02SHJnt
-    100086: Goat_Spine_03SHJnt
-    100088: Goat_Spine_04SHJnt
-    100090: Goat_Spine_TopSHJnt
-    100092: Goat_Tail_01_01SHJnt
-    100094: Goat_Tail_01_02SHJnt
-    100096: Goat_Tail_01_03SHJnt
-    400000: //RootNode
-    400002: Goat_Head_JawEndSHJnt
-    400004: Goat_Head_JawSHJnt
-    400006: Goat_Head_TopSHJnt
-    400008: Goat_l_Clavicle_01_01SHJnt
-    400010: Goat_l_Ear_01_01SHJnt
-    400012: Goat_l_Ear_01_02SHJnt
-    400014: Goat_l_Ear_01_03SHJnt
-    400016: Goat_l_FrontLeg_AnkleSHJnt
-    400018: Goat_l_FrontLeg_BallSHJnt
-    400020: Goat_l_FrontLeg_HipSHJnt
-    400022: Goat_l_FrontLeg_Knee1SHJnt
-    400024: Goat_l_FrontLeg_Knee2SHJnt
-    400026: Goat_l_FrontLeg_ToeSHJnt
-    400028: Goat_l_HindLeg_AnkleSHJnt
-    400030: Goat_l_HindLeg_BallSHJnt
-    400032: Goat_l_HindLeg_HipSHJnt
-    400034: Goat_l_HindLeg_Knee1SHJnt
-    400036: Goat_l_HindLeg_Knee2SHJnt
-    400038: Goat_l_HindLeg_ToeSHJnt
-    400040: Goat_MAINSHJnt
-    400042: Goat_Neck_01SHJnt
-    400044: Goat_Neck_02SHJnt
-    400046: Goat_Neck_TopSHJnt
-    400048: Goat_r_Clavicle_01_01SHJnt
-    400050: Goat_r_Ear_01_01SHJnt
-    400052: Goat_r_Ear_01_02SHJnt
-    400054: Goat_r_Ear_01_03SHJnt
-    400056: Goat_r_FrontLeg_AnkleSHJnt
-    400058: Goat_r_FrontLeg_BallSHJnt
-    400060: Goat_r_FrontLeg_HipSHJnt
-    400062: Goat_r_FrontLeg_Knee1SHJnt
-    400064: Goat_r_FrontLeg_Knee2SHJnt
-    400066: Goat_r_FrontLeg_ToeSHJnt
-    400068: Goat_r_HindLeg_AnkleSHJnt
-    400070: Goat_r_HindLeg_BallSHJnt
-    400072: Goat_r_HindLeg_HipSHJnt
-    400074: Goat_r_HindLeg_Knee1SHJnt
-    400076: Goat_r_HindLeg_Knee2SHJnt
-    400078: Goat_r_HindLeg_ToeSHJnt
-    400080: Goat_ROOTSHJnt
-    400082: Goat_Spine_01SHJnt
-    400084: Goat_Spine_02SHJnt
-    400086: Goat_Spine_03SHJnt
-    400088: Goat_Spine_04SHJnt
-    400090: Goat_Spine_TopSHJnt
-    400092: Goat_Tail_01_01SHJnt
-    400094: Goat_Tail_01_02SHJnt
-    400096: Goat_Tail_01_03SHJnt
-    7400000: Goat_die
-    9500000: //RootNode
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: Goat_Head_JawEndSHJnt
+  - first:
+      1: 100004
+    second: Goat_Head_JawSHJnt
+  - first:
+      1: 100006
+    second: Goat_Head_TopSHJnt
+  - first:
+      1: 100008
+    second: Goat_l_Clavicle_01_01SHJnt
+  - first:
+      1: 100010
+    second: Goat_l_Ear_01_01SHJnt
+  - first:
+      1: 100012
+    second: Goat_l_Ear_01_02SHJnt
+  - first:
+      1: 100014
+    second: Goat_l_Ear_01_03SHJnt
+  - first:
+      1: 100016
+    second: Goat_l_FrontLeg_AnkleSHJnt
+  - first:
+      1: 100018
+    second: Goat_l_FrontLeg_BallSHJnt
+  - first:
+      1: 100020
+    second: Goat_l_FrontLeg_HipSHJnt
+  - first:
+      1: 100022
+    second: Goat_l_FrontLeg_Knee1SHJnt
+  - first:
+      1: 100024
+    second: Goat_l_FrontLeg_Knee2SHJnt
+  - first:
+      1: 100026
+    second: Goat_l_FrontLeg_ToeSHJnt
+  - first:
+      1: 100028
+    second: Goat_l_HindLeg_AnkleSHJnt
+  - first:
+      1: 100030
+    second: Goat_l_HindLeg_BallSHJnt
+  - first:
+      1: 100032
+    second: Goat_l_HindLeg_HipSHJnt
+  - first:
+      1: 100034
+    second: Goat_l_HindLeg_Knee1SHJnt
+  - first:
+      1: 100036
+    second: Goat_l_HindLeg_Knee2SHJnt
+  - first:
+      1: 100038
+    second: Goat_l_HindLeg_ToeSHJnt
+  - first:
+      1: 100040
+    second: Goat_MAINSHJnt
+  - first:
+      1: 100042
+    second: Goat_Neck_01SHJnt
+  - first:
+      1: 100044
+    second: Goat_Neck_02SHJnt
+  - first:
+      1: 100046
+    second: Goat_Neck_TopSHJnt
+  - first:
+      1: 100048
+    second: Goat_r_Clavicle_01_01SHJnt
+  - first:
+      1: 100050
+    second: Goat_r_Ear_01_01SHJnt
+  - first:
+      1: 100052
+    second: Goat_r_Ear_01_02SHJnt
+  - first:
+      1: 100054
+    second: Goat_r_Ear_01_03SHJnt
+  - first:
+      1: 100056
+    second: Goat_r_FrontLeg_AnkleSHJnt
+  - first:
+      1: 100058
+    second: Goat_r_FrontLeg_BallSHJnt
+  - first:
+      1: 100060
+    second: Goat_r_FrontLeg_HipSHJnt
+  - first:
+      1: 100062
+    second: Goat_r_FrontLeg_Knee1SHJnt
+  - first:
+      1: 100064
+    second: Goat_r_FrontLeg_Knee2SHJnt
+  - first:
+      1: 100066
+    second: Goat_r_FrontLeg_ToeSHJnt
+  - first:
+      1: 100068
+    second: Goat_r_HindLeg_AnkleSHJnt
+  - first:
+      1: 100070
+    second: Goat_r_HindLeg_BallSHJnt
+  - first:
+      1: 100072
+    second: Goat_r_HindLeg_HipSHJnt
+  - first:
+      1: 100074
+    second: Goat_r_HindLeg_Knee1SHJnt
+  - first:
+      1: 100076
+    second: Goat_r_HindLeg_Knee2SHJnt
+  - first:
+      1: 100078
+    second: Goat_r_HindLeg_ToeSHJnt
+  - first:
+      1: 100080
+    second: Goat_ROOTSHJnt
+  - first:
+      1: 100082
+    second: Goat_Spine_01SHJnt
+  - first:
+      1: 100084
+    second: Goat_Spine_02SHJnt
+  - first:
+      1: 100086
+    second: Goat_Spine_03SHJnt
+  - first:
+      1: 100088
+    second: Goat_Spine_04SHJnt
+  - first:
+      1: 100090
+    second: Goat_Spine_TopSHJnt
+  - first:
+      1: 100092
+    second: Goat_Tail_01_01SHJnt
+  - first:
+      1: 100094
+    second: Goat_Tail_01_02SHJnt
+  - first:
+      1: 100096
+    second: Goat_Tail_01_03SHJnt
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: Goat_Head_JawEndSHJnt
+  - first:
+      4: 400004
+    second: Goat_Head_JawSHJnt
+  - first:
+      4: 400006
+    second: Goat_Head_TopSHJnt
+  - first:
+      4: 400008
+    second: Goat_l_Clavicle_01_01SHJnt
+  - first:
+      4: 400010
+    second: Goat_l_Ear_01_01SHJnt
+  - first:
+      4: 400012
+    second: Goat_l_Ear_01_02SHJnt
+  - first:
+      4: 400014
+    second: Goat_l_Ear_01_03SHJnt
+  - first:
+      4: 400016
+    second: Goat_l_FrontLeg_AnkleSHJnt
+  - first:
+      4: 400018
+    second: Goat_l_FrontLeg_BallSHJnt
+  - first:
+      4: 400020
+    second: Goat_l_FrontLeg_HipSHJnt
+  - first:
+      4: 400022
+    second: Goat_l_FrontLeg_Knee1SHJnt
+  - first:
+      4: 400024
+    second: Goat_l_FrontLeg_Knee2SHJnt
+  - first:
+      4: 400026
+    second: Goat_l_FrontLeg_ToeSHJnt
+  - first:
+      4: 400028
+    second: Goat_l_HindLeg_AnkleSHJnt
+  - first:
+      4: 400030
+    second: Goat_l_HindLeg_BallSHJnt
+  - first:
+      4: 400032
+    second: Goat_l_HindLeg_HipSHJnt
+  - first:
+      4: 400034
+    second: Goat_l_HindLeg_Knee1SHJnt
+  - first:
+      4: 400036
+    second: Goat_l_HindLeg_Knee2SHJnt
+  - first:
+      4: 400038
+    second: Goat_l_HindLeg_ToeSHJnt
+  - first:
+      4: 400040
+    second: Goat_MAINSHJnt
+  - first:
+      4: 400042
+    second: Goat_Neck_01SHJnt
+  - first:
+      4: 400044
+    second: Goat_Neck_02SHJnt
+  - first:
+      4: 400046
+    second: Goat_Neck_TopSHJnt
+  - first:
+      4: 400048
+    second: Goat_r_Clavicle_01_01SHJnt
+  - first:
+      4: 400050
+    second: Goat_r_Ear_01_01SHJnt
+  - first:
+      4: 400052
+    second: Goat_r_Ear_01_02SHJnt
+  - first:
+      4: 400054
+    second: Goat_r_Ear_01_03SHJnt
+  - first:
+      4: 400056
+    second: Goat_r_FrontLeg_AnkleSHJnt
+  - first:
+      4: 400058
+    second: Goat_r_FrontLeg_BallSHJnt
+  - first:
+      4: 400060
+    second: Goat_r_FrontLeg_HipSHJnt
+  - first:
+      4: 400062
+    second: Goat_r_FrontLeg_Knee1SHJnt
+  - first:
+      4: 400064
+    second: Goat_r_FrontLeg_Knee2SHJnt
+  - first:
+      4: 400066
+    second: Goat_r_FrontLeg_ToeSHJnt
+  - first:
+      4: 400068
+    second: Goat_r_HindLeg_AnkleSHJnt
+  - first:
+      4: 400070
+    second: Goat_r_HindLeg_BallSHJnt
+  - first:
+      4: 400072
+    second: Goat_r_HindLeg_HipSHJnt
+  - first:
+      4: 400074
+    second: Goat_r_HindLeg_Knee1SHJnt
+  - first:
+      4: 400076
+    second: Goat_r_HindLeg_Knee2SHJnt
+  - first:
+      4: 400078
+    second: Goat_r_HindLeg_ToeSHJnt
+  - first:
+      4: 400080
+    second: Goat_ROOTSHJnt
+  - first:
+      4: 400082
+    second: Goat_Spine_01SHJnt
+  - first:
+      4: 400084
+    second: Goat_Spine_02SHJnt
+  - first:
+      4: 400086
+    second: Goat_Spine_03SHJnt
+  - first:
+      4: 400088
+    second: Goat_Spine_04SHJnt
+  - first:
+      4: 400090
+    second: Goat_Spine_TopSHJnt
+  - first:
+      4: 400092
+    second: Goat_Tail_01_01SHJnt
+  - first:
+      4: 400094
+    second: Goat_Tail_01_02SHJnt
+  - first:
+      4: 400096
+    second: Goat_Tail_01_03SHJnt
+  - first:
+      74: 7400000
+    second: Goat_die
+  - first:
+      95: 9500000
+    second: //RootNode
   externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 0
@@ -116,6 +314,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -124,6 +323,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -135,6 +335,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Goat_die
       takeName: Take 001
+      internalID: 0
       firstFrame: 1
       lastFrame: 25
       wrapMode: 0
@@ -143,7 +344,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -159,37 +360,56 @@ ModelImporter:
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1
     isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 0
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -199,14 +419,19 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
