@@ -15,7 +15,7 @@ MonoBehaviour:
   animalName: Boar
   maxHp: 30
   damage: 4
-  attakDistance: 1
+  attakDistance: 2.5
   attakSpeed: 1
   findRange: 5
   rewardItem: []

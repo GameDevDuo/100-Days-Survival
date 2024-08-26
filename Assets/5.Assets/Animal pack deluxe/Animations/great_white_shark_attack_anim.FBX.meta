@@ -1,55 +1,137 @@
 fileFormatVersion: 2
 guid: b0b01c150ebfb2a4eb3b8508945227e1
-timeCreated: 1503922565
-licenseType: Store
 ModelImporter:
-  serializedVersion: 22
-  fileIDToRecycleName:
-    100000: Bone001
-    100002: Bone011
-    100004: Bone012
-    100006: Bone013
-    100008: Bone014
-    100010: Bone015
-    100012: Bone016
-    100014: Bone017
-    100016: Bone018
-    100018: Bone019
-    100020: Bone020
-    100022: Bone021
-    100024: Bone022
-    100026: Bone025
-    100028: Bone026
-    100030: Bone027
-    100032: Bone028
-    100034: //RootNode
-    100036: great_white_shark_exp19
-    400000: Bone001
-    400002: Bone011
-    400004: Bone012
-    400006: Bone013
-    400008: Bone014
-    400010: Bone015
-    400012: Bone016
-    400014: Bone017
-    400016: Bone018
-    400018: Bone019
-    400020: Bone020
-    400022: Bone021
-    400024: Bone022
-    400026: Bone025
-    400028: Bone026
-    400030: Bone027
-    400032: Bone028
-    400034: //RootNode
-    400036: great_white_shark_exp19
-    4300000: great_white_shark_exp19
-    7400000: Great_shark_attack
-    9500000: //RootNode
-    13700000: great_white_shark_exp19
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Bone001
+  - first:
+      1: 100002
+    second: Bone011
+  - first:
+      1: 100004
+    second: Bone012
+  - first:
+      1: 100006
+    second: Bone013
+  - first:
+      1: 100008
+    second: Bone014
+  - first:
+      1: 100010
+    second: Bone015
+  - first:
+      1: 100012
+    second: Bone016
+  - first:
+      1: 100014
+    second: Bone017
+  - first:
+      1: 100016
+    second: Bone018
+  - first:
+      1: 100018
+    second: Bone019
+  - first:
+      1: 100020
+    second: Bone020
+  - first:
+      1: 100022
+    second: Bone021
+  - first:
+      1: 100024
+    second: Bone022
+  - first:
+      1: 100026
+    second: Bone025
+  - first:
+      1: 100028
+    second: Bone026
+  - first:
+      1: 100030
+    second: Bone027
+  - first:
+      1: 100032
+    second: Bone028
+  - first:
+      1: 100034
+    second: //RootNode
+  - first:
+      1: 100036
+    second: great_white_shark_exp19
+  - first:
+      4: 400000
+    second: Bone001
+  - first:
+      4: 400002
+    second: Bone011
+  - first:
+      4: 400004
+    second: Bone012
+  - first:
+      4: 400006
+    second: Bone013
+  - first:
+      4: 400008
+    second: Bone014
+  - first:
+      4: 400010
+    second: Bone015
+  - first:
+      4: 400012
+    second: Bone016
+  - first:
+      4: 400014
+    second: Bone017
+  - first:
+      4: 400016
+    second: Bone018
+  - first:
+      4: 400018
+    second: Bone019
+  - first:
+      4: 400020
+    second: Bone020
+  - first:
+      4: 400022
+    second: Bone021
+  - first:
+      4: 400024
+    second: Bone022
+  - first:
+      4: 400026
+    second: Bone025
+  - first:
+      4: 400028
+    second: Bone026
+  - first:
+      4: 400030
+    second: Bone027
+  - first:
+      4: 400032
+    second: Bone028
+  - first:
+      4: 400034
+    second: //RootNode
+  - first:
+      4: 400036
+    second: great_white_shark_exp19
+  - first:
+      43: 4300000
+    second: great_white_shark_exp19
+  - first:
+      74: 7400000
+    second: Great_shark_attack
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: great_white_shark_exp19
   externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 0
@@ -58,6 +140,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -66,6 +149,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -77,6 +161,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Great_shark_attack
       takeName: Take 001
+      internalID: 0
       firstFrame: 350
       lastFrame: 370
       wrapMode: 0
@@ -85,7 +170,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -108,30 +193,49 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 0
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -141,14 +245,19 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
