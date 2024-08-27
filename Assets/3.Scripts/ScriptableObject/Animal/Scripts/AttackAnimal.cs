@@ -8,12 +8,12 @@ public class AttackAnimal : AnimalBase
     private const float MoveStateDuration = 7f;
 
     [SerializeField] private AnimalData animalData;
-    [SerializeField] private Terrain terrain;
 
     private Transform centerPoint;
     private GameObject player;
     private Animator animator;
     private NavMeshAgent agent;
+    private Rigidbody rb;
     private Collider animalCollider;
     private Collider terrainCollider;
 
@@ -55,6 +55,8 @@ public class AttackAnimal : AnimalBase
     private void Init()
     {
         centerPoint = this.transform;
+        FindTerrain();
+        rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         animalCollider = GetComponent<Collider>();
@@ -105,6 +107,7 @@ public class AttackAnimal : AnimalBase
                 }
                 else
                 {
+                    rb.constraints = RigidbodyConstraints.FreezeAll;
                     animator.Play("idle");
                 }
             }
@@ -134,6 +137,7 @@ public class AttackAnimal : AnimalBase
                 }
                 else
                 {
+                    transform.LookAt(targetPosition);
                     animator.Play("walk");
                 }
             }
