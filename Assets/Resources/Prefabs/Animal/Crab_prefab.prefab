@@ -196,7 +196,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 679045549139714140}
   serializedVersion: 4
-  m_Mass: 120
+  m_Mass: 50
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -250,7 +250,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animalData: {fileID: 11400000, guid: f9557ed4f58119d4b948ef09e994af79, type: 2}
-  terrain: {fileID: 0}
 --- !u!1 &825895068122847736
 GameObject:
   m_ObjectHideFlags: 0

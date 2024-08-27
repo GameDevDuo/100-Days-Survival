@@ -13,6 +13,8 @@ public abstract class AnimalBase : MonoBehaviour, IMove
 {
     private State currentState;
 
+    protected Terrain terrain;
+
     protected float currentTime;
     protected float minTime = 1.5f;
 
@@ -49,13 +51,15 @@ public abstract class AnimalBase : MonoBehaviour, IMove
         {
             if(agent.remainingDistance <= 1.5f)
             {
-                if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
-                {
-                    return true;
-                }
+                return true;
             }
         }
         return false;
+    }
+
+    protected void FindTerrain()
+    {
+        terrain = FindObjectOfType<Terrain>();
     }
 
     public void ChangeState(State newState, float time)
