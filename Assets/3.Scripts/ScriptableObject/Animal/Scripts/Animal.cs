@@ -86,7 +86,7 @@ public class Animal : AnimalBase
             }
             else
             {
-                rb.constraints = RigidbodyConstraints.FreezeAll;
+                RigidFreezeHandler(ref rb, RigidbodyConstraints.FreezeAll);
                 animator.Play("idle");
             }
         }
@@ -109,7 +109,7 @@ public class Animal : AnimalBase
             }
             else
             {
-                transform.LookAt(targetPosition);
+                RigidFreezeHandler(ref rb, RigidbodyConstraints.None);
                 animator.Play("walk");
             }
         }
