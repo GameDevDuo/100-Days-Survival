@@ -57,6 +57,11 @@ public abstract class AnimalBase : MonoBehaviour, IMove
         return false;
     }
 
+    public void RigidFreezeHandler(ref Rigidbody rb, RigidbodyConstraints constraints)
+    {
+        rb.constraints = constraints;
+    }
+
     protected void FindTerrain()
     {
         terrain = FindObjectOfType<Terrain>();

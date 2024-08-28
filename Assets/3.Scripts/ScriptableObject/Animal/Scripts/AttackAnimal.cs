@@ -107,7 +107,7 @@ public class AttackAnimal : AnimalBase
                 }
                 else
                 {
-                    rb.constraints = RigidbodyConstraints.FreezeAll;
+                    RigidFreezeHandler(ref rb, RigidbodyConstraints.FreezeAll);
                     animator.Play("idle");
                 }
             }
@@ -137,7 +137,7 @@ public class AttackAnimal : AnimalBase
                 }
                 else
                 {
-                    transform.LookAt(targetPosition);
+                    RigidFreezeHandler(ref rb, RigidbodyConstraints.None);
                     animator.Play("walk");
                 }
             }
@@ -153,6 +153,7 @@ public class AttackAnimal : AnimalBase
         else
         {
             float distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
+            RigidFreezeHandler(ref rb, RigidbodyConstraints.None);
             transform.LookAt(player.transform);
 
             if (distanceToPlayer <= animalData.AttackDistance)
