@@ -30,7 +30,7 @@ public class WeatherManager : WeatherBase
         {
             if(hour != value)
             {
-                WeatherTime(ref weatherHour, hour);
+                WeatherTime(ref weatherHour);
             }
             hour = value;
         }
@@ -59,9 +59,9 @@ public class WeatherManager : WeatherBase
         }
     }
 
-    private void WeatherTime(ref int weatherHour, int hour)
+    private void WeatherTime(ref int weatherHour)
     {
-        weatherHour -= hour;
+        weatherHour -= 1;
     }
 
     public override void AbleWeatherList()
@@ -89,7 +89,7 @@ public class WeatherManager : WeatherBase
                 {
                     weatherHour = Random.Range(3, final.Value.GenerateTime);
                     Instantiate(final.Value.WeatherObject, Camera.main.transform);
-                    while(weatherHour >= 0)
+                    for( ; weatherHour > 0; )
                     {
                         float gameTime = Time.deltaTime * 60;
                         second = Mathf.FloorToInt(gameTime);
