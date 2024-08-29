@@ -17,6 +17,25 @@ public class WeatherManager : WeatherBase
     private Dictionary<int, WeatherData> ableWeather = new Dictionary<int, WeatherData>();
 
     private int[] weatherIndex = new int[6];
+    private int weatherHour;
+
+    private int hour = 0;
+    private int Hour
+    {
+        get
+        {
+            return hour;
+        }
+        set
+        {
+            if(hour != value)
+            {
+                WeatherTime(ref weatherHour, hour);
+            }
+            hour = value;
+        }
+    }
+    private int second;
 
     private void Awake()
     {
@@ -38,6 +57,11 @@ public class WeatherManager : WeatherBase
         {
             weatherIndex[i] = 0;
         }
+    }
+
+    private void WeatherTime(ref int weatherHour, int hour)
+    {
+        weatherHour -= hour;
     }
 
     public override void AbleWeatherList()
@@ -63,7 +87,14 @@ public class WeatherManager : WeatherBase
                 weatherIndex[final.Key - 1] = 0;
                 if(Random.Range(0.00f, 1.00f) >= final.Value.WeatherPercent)
                 {
-                    Instantiate(final.Value.WeatherObject, transform);
+                    weatherHour = Random.Range(3, final.Value.GenerateTime);
+                    Instantiate(final.Value.WeatherObject, Camera.main.transform);
+                    while(weatherHour >= 0)
+                    {
+                        float gameTime = Time.deltaTime * 60;
+                        second = Mathf.FloorToInt(gameTime);
+                        Hour = (second / 3600) % 24;
+                    }
                 }
             }
             else
