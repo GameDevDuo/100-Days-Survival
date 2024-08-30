@@ -16,4 +16,6 @@ MonoBehaviour:
   weatherPercent: 0.15
   generateDate: 0
   generateTerm: 1
+  generateTime: 12
   weatherNum: 1
+  isAdded: 0

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86d2dd7f047567a46884cc67f4a0a665, type: 3}
   m_Name: Sun
   m_EditorClassIdentifier: 
-  weatherObject: {fileID: 0}
-  weatherPercent: 0
-  generateDate: 0
-  generateTerm: 0
-  generateTime: 0
-  weatherNum: 0
+  weatherObject: {fileID: 8760372170568352027, guid: eb3aa9f8061948f4c8e20ba9e8f5c94f, type: 3}
+  weatherPercent: 10
+  generateDate: 5
+  generateTerm: 1
+  generateTime: 10
+  weatherNum: 2
   isAdded: 0
