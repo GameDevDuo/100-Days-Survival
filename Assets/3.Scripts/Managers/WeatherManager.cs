@@ -28,11 +28,11 @@ public class WeatherManager : WeatherBase
         }
         set
         {
-            if(hour != value)
+            if(hour != value && ableWeather.Count > 0)
             {
                 WeatherTime(ref weatherHour);
+                hour = value;
             }
-            hour = value;
         }
     }
     private int second;
@@ -59,11 +59,18 @@ public class WeatherManager : WeatherBase
         }
     }
 
+    private void Update()
+    {
+        float gameTime = Time.deltaTime * 60;
+        second = Mathf.FloorToInt(gameTime);
+        Hour = (second / 3600) % 24;
+    }
+
     private void WeatherTime(ref int weatherHour)
     {
         weatherHour -= 1;
     }
-
+    
     public override void AbleWeatherList()
     {
         foreach (var weather in weatherData)
@@ -80,26 +87,25 @@ public class WeatherManager : WeatherBase
 
     public void GenerateWeather(Dictionary<int, WeatherData> weather)
     {
-        foreach(var final in weather)
+        foreach(var finalWeather in weather)
         {
-            if(final.Value.GenerateTerm == weatherIndex[final.Key - 1])
+            if(finalWeather.Value.GenerateTerm == weatherIndex[finalWeather.Key - 1])
             {
-                weatherIndex[final.Key - 1] = 0;
-                if(Random.Range(0.00f, 1.00f) >= final.Value.WeatherPercent)
+                weatherIndex[finalWeather.Key - 1] = 0;
+                if(Random.Range(0.00f, 1.00f) >= finalWeather.Value.WeatherPercent)
                 {
-                    weatherHour = Random.Range(3, final.Value.GenerateTime);
-                    Instantiate(final.Value.WeatherObject, Camera.main.transform);
-                    for( ; weatherHour > 0; )
+                    weatherHour = Random.Range(3, finalWeather.Value.GenerateTime);
+                    GameObject gameObject = finalWeather.Value.WeatherObject;
+                    Instantiate(gameObject, Camera.main.transform);
+                    if(weatherHour <= 0)
                     {
-                        float gameTime = Time.deltaTime * 60;
-                        second = Mathf.FloorToInt(gameTime);
-                        Hour = (second / 3600) % 24;
+                        Destroy(gameObject);
                     }
                 }
             }
             else
             {
-                weatherIndex[final.Key - 1]++;
+                weatherIndex[finalWeather.Key - 1]++;
             }
         }
     }
