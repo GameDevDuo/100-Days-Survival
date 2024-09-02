@@ -15,8 +15,37 @@ public abstract class AnimalBase : MonoBehaviour, IMove
 
     protected Terrain terrain;
 
+    [SerializeField] protected AnimalData animalData;
+
+    protected Rigidbody rb;
+    protected Transform centerPoint;
+    protected Animator animator;
+    protected NavMeshAgent agent;
+    protected Collider terrainCollider;
+
+    protected Vector3 targetPosition;
+
+    protected const float rangeRadius = 10f;
+    protected const float IdleStateDuration = 2.5f;
+    protected const float MoveStateDuration = 5f;
+
     protected float currentTime;
     protected float minTime = 1.5f;
+    protected float hp;
+
+    public virtual void Start()
+    {
+        centerPoint = this.transform;
+        FindTerrain();
+        rb = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
+        agent = GetComponent<NavMeshAgent>();
+        terrainCollider = terrain.GetComponent<Collider>();
+
+        hp = animalData.MaxHP;
+
+        ChangeState(State.Idle, RandomTime(IdleStateDuration));
+    }
 
     protected virtual void Update()
     {

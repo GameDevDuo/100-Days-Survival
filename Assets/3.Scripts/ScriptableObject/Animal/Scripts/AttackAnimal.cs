@@ -3,26 +3,14 @@ using UnityEngine.AI;
 
 public class AttackAnimal : AnimalBase
 {
-    private const float rangeRadius = 10f;
-    private const float IdleStateDuration = 2.5f;
-    private const float MoveStateDuration = 7f;
-
-    [SerializeField] private AnimalData animalData;
-
-    private Transform centerPoint;
     private GameObject player;
-    private Animator animator;
-    private NavMeshAgent agent;
-    private Rigidbody rb;
     private Collider animalCollider;
-    private Collider terrainCollider;
 
-    private Vector3 targetPosition;
-
-    private float hp;
-
-    private void Start() => Init();
-
+    public override void Start()
+    {
+        base.Start();
+        animalCollider = GetComponent<Collider>();
+    }
     protected override void Update()
     {
         base.Update();
@@ -50,21 +38,6 @@ public class AttackAnimal : AnimalBase
     private bool IsPointOnTerrain(Vector3 point)
     {
         return terrainCollider.bounds.Contains(point);
-    }
-
-    private void Init()
-    {
-        centerPoint = this.transform;
-        FindTerrain();
-        rb = GetComponent<Rigidbody>();
-        animator = GetComponent<Animator>();
-        agent = GetComponent<NavMeshAgent>();
-        animalCollider = GetComponent<Collider>();
-        terrainCollider = terrain.GetComponent<Collider>();
-
-        hp = animalData.MaxHP;
-
-        ChangeState(State.Idle, RandomTime(IdleStateDuration));
     }
 
     private bool CheckForPlayer()
