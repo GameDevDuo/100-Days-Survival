@@ -3,25 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Animal : AnimalBase
+public class PassiveAnimal : AnimalBase
 {
-    private const float rangeRadius = 10f;
-    private const float IdleStateDuration = 2.5f;
-    private const float MoveStateDuration = 5f;
-
-    [SerializeField] private AnimalData animalData;
-
-    private Rigidbody rb;
-    private Transform centerPoint;
-    private Animator animator;
-    private NavMeshAgent agent;
-    private Collider terrainCollider;
-
-    private Vector3 targetPosition;
-    private float hp;
-
-    private void Start() => Init();
-
     protected override void Update()
     {
         base.Update();

@@ -33,6 +33,10 @@ public class WeatherManager : WeatherBase
                 WeatherTime(ref weatherHour);
                 hour = value;
             }
+            else
+            {
+                hour = 0;
+            }
         }
     }
     private int second;
