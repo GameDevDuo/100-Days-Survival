@@ -3422,7 +3422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layerMask:
     serializedVersion: 2
-    m_Bits: 1536
+    m_Bits: 512
   distance: 3
 --- !u!114 &6996388706019685702
 MonoBehaviour:
