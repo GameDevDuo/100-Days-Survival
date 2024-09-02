@@ -78,6 +78,7 @@ public class Animal : AnimalBase
         else
         {
             currentTime -= Time.deltaTime;
+            animator.enabled = false;
 
             if (currentTime <= 0)
             {
@@ -87,6 +88,7 @@ public class Animal : AnimalBase
             else
             {
                 RigidFreezeHandler(ref rb, RigidbodyConstraints.FreezeAll);
+                animator.enabled = true;
                 animator.Play("idle");
             }
         }
@@ -103,6 +105,8 @@ public class Animal : AnimalBase
             agent.SetDestination(targetPosition);
 
             currentTime -= Time.deltaTime;
+
+            animator.enabled = false;
             if (currentTime <= 0 && IsNearDistination(agent))
             {
                 ChangeState(State.Idle, RandomTime(IdleStateDuration));
@@ -110,6 +114,7 @@ public class Animal : AnimalBase
             else
             {
                 RigidFreezeHandler(ref rb, RigidbodyConstraints.None);
+                animator.enabled = true;
                 animator.Play("walk");
             }
         }
