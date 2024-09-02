@@ -100,6 +100,7 @@ public class AttackAnimal : AnimalBase
             {
                 currentTime -= Time.deltaTime;
 
+                animator.enabled = false;
                 if (currentTime <= 0)
                 {
                     targetPosition = GetRandomPointInRange();
@@ -108,6 +109,7 @@ public class AttackAnimal : AnimalBase
                 else
                 {
                     RigidFreezeHandler(ref rb, RigidbodyConstraints.FreezeAll);
+                    animator.enabled = true;
                     animator.Play("idle");
                 }
             }
@@ -131,6 +133,7 @@ public class AttackAnimal : AnimalBase
                 agent.SetDestination(targetPosition);
                 currentTime -= Time.deltaTime;
 
+                animator.enabled = false;
                 if (currentTime <= 0 && IsNearDistination(agent))
                 {
                     ChangeState(State.Idle, RandomTime(IdleStateDuration));
@@ -138,6 +141,7 @@ public class AttackAnimal : AnimalBase
                 else
                 {
                     RigidFreezeHandler(ref rb, RigidbodyConstraints.None);
+                    animator.enabled = true;
                     animator.Play("walk");
                 }
             }
@@ -154,16 +158,19 @@ public class AttackAnimal : AnimalBase
         {
             float distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
             RigidFreezeHandler(ref rb, RigidbodyConstraints.None);
+            animator.enabled = false;
             transform.LookAt(player.transform);
 
             if (distanceToPlayer <= animalData.AttackDistance)
             {
                 agent.ResetPath();
+                animator.enabled = true;
                 animator.Play("attack");
             }
             else if (distanceToPlayer <= animalData.FindRange)
             {
                 agent.SetDestination(player.transform.position);
+                animator.enabled = true;
                 animator.Play("run");
             }
             else
