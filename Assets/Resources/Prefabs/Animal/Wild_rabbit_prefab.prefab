@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 2784260724643241093}
   - component: {fileID: 7837003188502768751}
   - component: {fileID: 694896744907205613}
+  - component: {fileID: -825063769357473696}
   m_Layer: 9
   m_Name: Wild_rabbit_prefab
   m_TagString: Untagged
@@ -175,6 +176,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animalData: {fileID: 11400000, guid: 75172b751e03b664b92625de6b3f836f, type: 2}
+--- !u!114 &-825063769357473696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271716770376253007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3cdcced73fa4858812737acceb101f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemData: {fileID: 0}
+  collectionTime: 0
+  isCollectible: 0
 --- !u!1 &280853101942116021
 GameObject:
   m_ObjectHideFlags: 0
