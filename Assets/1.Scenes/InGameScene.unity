@@ -17958,6 +17958,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3e44e0f7220b4224b63a812b756fff7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animalPrefab: []
+  terrain: {fileID: 606024921}
+  animalCount: 
+  texture: 
+  seaHeight: 10
 --- !u!1 &2016285710
 GameObject:
   m_ObjectHideFlags: 0
