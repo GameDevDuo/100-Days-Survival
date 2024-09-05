@@ -6,10 +6,13 @@ public class AttackAnimal : AnimalBase
     private GameObject player;
     private Collider animalCollider;
 
+    private float atkSpeed;
+
     public override void Start()
     {
         base.Start();
         animalCollider = GetComponent<Collider>();
+        atkSpeed = animalData.AttackSpeed;
     }
     protected override void Update()
     {
@@ -32,6 +35,10 @@ public class AttackAnimal : AnimalBase
         float randomX = Random.Range(centerPoint.position.x - rangeRadius, centerPoint.position.x + rangeRadius);
         float randomZ = Random.Range(centerPoint.position.z - rangeRadius, centerPoint.position.z + rangeRadius);
         float y = terrain.SampleHeight(new Vector3(randomX, 0, randomZ)) + terrain.transform.position.y;
+        if(y < waterObj.transform.position.y)
+        {
+            GenerateRandomPoint();
+        }
         return new Vector3(randomX, y, randomZ);
     }
 
@@ -131,14 +138,18 @@ public class AttackAnimal : AnimalBase
         {
             float distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
             RigidFreezeHandler(ref rb, RigidbodyConstraints.None);
+
+            atkSpeed -= Time.deltaTime;
+
             animator.enabled = false;
             transform.LookAt(player.transform);
 
-            if (distanceToPlayer <= animalData.AttackDistance)
+            if (distanceToPlayer <= animalData.AttackDistance && atkSpeed <= 0)
             {
                 agent.ResetPath();
                 animator.enabled = true;
                 animator.Play("attack");
+                atkSpeed = animalData.AttackSpeed;
             }
             else if (distanceToPlayer <= animalData.FindRange)
             {

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2960335538712623307}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_Spine_03SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 10233266895217211}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_l_Ear_01_02SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3118716599275378088}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_Head_TopSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1114240548570924074}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_l_HindLeg_Knee2SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3906797690917569479}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_l_FrontLeg_ToeSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6248597854653087359}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_Head_JawEndSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4946977516366602187}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_Neck_TopSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,7 +233,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6158550279532123913}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_l_HindLeg_AnkleSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4313615200764685902}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_l_HindLeg_ToeSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,7 +301,7 @@ GameObject:
   - component: {fileID: 5384951389123232397}
   - component: {fileID: 6482235765100019799}
   - component: {fileID: 1310711924753454828}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: goat_prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -365,7 +365,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 0.9
-  m_BaseOffset: 0
+  m_BaseOffset: -1.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!54 &5384951389123232397
@@ -440,7 +440,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1147759315281869877}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_r_HindLeg_ToeSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -471,7 +471,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2260458917624328122}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_r_Ear_01_02SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -503,7 +503,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3952537718851735550}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_l_HindLeg_HipSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -535,7 +535,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5789291063761662745}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_l_FrontLeg_Knee1SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -567,7 +567,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 206972316865385385}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_r_FrontLeg_Knee1SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -599,7 +599,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5075354429932939161}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_l_FrontLeg_Knee2SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -631,7 +631,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3562681127245999368}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_l_Ear_01_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -663,7 +663,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 859029134524830431}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_r_HindLeg_HipSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -695,7 +695,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2651204514670777701}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_r_Clavicle_01_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -727,7 +727,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3420097352155004637}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_r_FrontLeg_HipSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -759,7 +759,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4213895243527377323}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_l_Ear_01_03SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -790,7 +790,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4592215754252687702}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_r_FrontLeg_ToeSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -821,7 +821,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8379166241825872297}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_ROOTSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -856,7 +856,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7937195951101015611}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_Spine_02SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -888,7 +888,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7556267237461873897}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_l_FrontLeg_AnkleSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -920,7 +920,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 261404273662483512}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_l_HindLeg_Knee1SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -952,7 +952,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5279960301831820540}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_Spine_TopSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -986,7 +986,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5258707952804659239}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_l_FrontLeg_HipSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1018,7 +1018,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7873084884636594396}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_r_HindLeg_BallSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1050,7 +1050,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1593154079873772423}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_r_HindLeg_Knee1SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1082,7 +1082,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6278677197109193714}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_r_HindLeg_AnkleSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1115,7 +1115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3820818136256782639}
   - component: {fileID: 3999922279702229942}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: goat_mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1247,7 +1247,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8419550998193901912}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_r_Ear_01_03SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1278,7 +1278,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1105933377305229959}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_r_FrontLeg_AnkleSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1310,7 +1310,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8832636623016084464}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_r_HindLeg_Knee2SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1342,7 +1342,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1386122820748697473}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_Tail_01_03SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1373,7 +1373,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1577902126085090006}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_l_FrontLeg_BallSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1405,7 +1405,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 587383458890700200}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_l_Clavicle_01_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1437,7 +1437,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6500827786121606519}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_Tail_01_02SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1469,7 +1469,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9117887364453638482}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_Neck_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1501,7 +1501,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5065917094572997611}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_Neck_02SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1533,7 +1533,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5260362597491923510}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_Tail_01_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1565,7 +1565,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 258954631183052917}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_MAINSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1597,7 +1597,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3393891717327180655}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_r_FrontLeg_BallSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1629,7 +1629,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7606186845032068978}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_Spine_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1661,7 +1661,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5666672370536877053}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_l_HindLeg_BallSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1693,7 +1693,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4012933978414675045}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_r_Ear_01_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1725,7 +1725,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6389647276552537281}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_Head_JawSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1757,7 +1757,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 722887575622334488}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_r_FrontLeg_Knee2SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1789,7 +1789,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3017178452822226497}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Goat_Spine_04SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}

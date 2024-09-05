@@ -17,6 +17,7 @@ public abstract class AnimalBase : MonoBehaviour, IMove
 
     [SerializeField] protected AnimalData animalData;
 
+    protected GameObject waterObj;
     protected Rigidbody rb;
     protected Transform centerPoint;
     protected Animator animator;
