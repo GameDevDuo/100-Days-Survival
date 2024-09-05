@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8221304224440029749}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_r_FrontLeg_AnkleSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 728900293473957435}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_Spine_04SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5888906183328235242}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_r_FrontLeg_HipSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5524971199288265029}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_r_Clavicle_01_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,7 +137,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 411995255504226913}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_r_HindLeg_Knee2SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1013878298361543495}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_l_HindLeg_ToeSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2864207709784383456}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_r_FrontLeg_ToeSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,7 +231,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 812406375412573914}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_Head_JawSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -263,7 +263,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 303372366875194780}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_Spine_TopSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297,7 +297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7987354547366997276}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_Spine_02SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,7 +329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8716926149288574930}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_Neck_02SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -361,7 +361,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2058779155376928171}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_r_Ear_01_02SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -393,7 +393,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2713240685786780482}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_MAINSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -425,7 +425,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8906335026581655914}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_l_FrontLeg_Knee1SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -457,7 +457,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5449000962711293044}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_r_Ear_01_03SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -488,7 +488,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3127725675523265606}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_r_FrontLeg_Knee1SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -520,7 +520,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8988882510600104929}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_r_Ear_01_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -552,7 +552,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8348252346920117664}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_l_HindLeg_HipSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -584,7 +584,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4693214585264448259}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_l_FrontLeg_Knee2SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -616,7 +616,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2895456463603956013}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_Tail_01_02SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -648,7 +648,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1566233167599124130}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_Spine_03SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -680,7 +680,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 253407941453325298}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_Head_JawEndSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -711,7 +711,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7124749606558004328}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_r_HindLeg_ToeSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -742,7 +742,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7325883126025557407}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_Nose_01_02SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -773,7 +773,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5672050882889817902}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_Head_TopSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -807,7 +807,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8792200376360161485}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_l_HindLeg_BallSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -839,7 +839,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9135512543455256283}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_l_FrontLeg_HipSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -871,7 +871,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3574870856246266033}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_l_Ear_01_02SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -903,7 +903,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 657192066536915281}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_l_Ear_01_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -935,7 +935,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 70201619678527676}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_r_HindLeg_AnkleSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -967,7 +967,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 431243059897911047}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_Tail_01_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -999,7 +999,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3202839423474675790}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_Tail_01_03SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1030,7 +1030,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8000497003378085150}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_Spine_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1062,7 +1062,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6254567469023415517}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_Neck_TopSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1095,7 +1095,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1442437233640548336}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_r_HindLeg_Knee1SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1127,7 +1127,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 420015230578209385}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_l_FrontLeg_BallSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1159,7 +1159,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1369109805809632313}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_r_HindLeg_HipSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1191,7 +1191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6481469734377223320}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_l_HindLeg_Knee2SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1223,7 +1223,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8756439718888138418}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_l_HindLeg_Knee1SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1255,7 +1255,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5546019445206474450}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_ROOTSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1290,7 +1290,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4995975961607068687}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_r_FrontLeg_BallSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1323,7 +1323,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3720423303145692722}
   - component: {fileID: 4580730321375317394}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1456,7 +1456,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7358010804581618614}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_r_FrontLeg_Knee2SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1488,7 +1488,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4355077317124776321}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_l_Ear_01_03SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1519,7 +1519,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7313587819937395577}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_l_Clavicle_01_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1551,7 +1551,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5559012423135886612}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_Nose_01_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1583,7 +1583,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8810982402269699476}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_l_FrontLeg_ToeSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1619,7 +1619,7 @@ GameObject:
   - component: {fileID: 2259172852838892959}
   - component: {fileID: 6570811058635061512}
   - component: {fileID: 5962683342218577117}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wild_boar_prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1683,7 +1683,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 1
-  m_BaseOffset: 0
+  m_BaseOffset: -1.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!54 &2259172852838892959
@@ -1758,7 +1758,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7224154542713481580}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_l_HindLeg_AnkleSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1790,7 +1790,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1263155848897977861}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_l_FrontLeg_AnkleSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1822,7 +1822,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6502235004698784466}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_r_HindLeg_BallSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1854,7 +1854,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3579363915315245912}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WildBoar_Neck_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}

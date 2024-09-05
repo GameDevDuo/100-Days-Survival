@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 478516508028383652}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_Tail_01_04SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3313071330032310699}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_l_Ear_01_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1198120205657842104}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_ROOTSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3356145744528685533}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_Neck_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6628779047792665918}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_l_Clavicle_01_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,7 +174,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6801916262726233990}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_l_HindLeg_Knee1SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,7 +206,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 421717412315575586}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_l_HindLeg_HipSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +238,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6024948246744470074}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_Spine_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,7 +270,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7807755656853764720}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_Tail_01_03SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302,7 +302,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5921613995494873318}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_r_HindLeg_Knee1SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -334,7 +334,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7075350605611328689}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_r_FrontLeg_ToeSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -365,7 +365,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4346433950780538203}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_Tail_01_07SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -396,7 +396,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5637110721181944384}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_l_FrontLeg_ToeSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -427,7 +427,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4006712391727306684}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_Spine_04SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -459,7 +459,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8646235014649940283}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_r_FrontLeg_Knee1SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -491,7 +491,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2067921259597035845}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_r_FrontLeg_BallSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -523,7 +523,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4911641568064156274}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_Neck_02SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -555,7 +555,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4250951831977125990}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_r_FrontLeg_AnkleSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -587,7 +587,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5706808424415514610}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_r_HindLeg_HipSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -624,7 +624,7 @@ GameObject:
   - component: {fileID: 7663455634433135743}
   - component: {fileID: 6689391771048699617}
   - component: {fileID: 1055496502924063869}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cattle_prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -738,7 +738,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 1.5
-  m_BaseOffset: 0
+  m_BaseOffset: -1.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &1055496502924063869
@@ -763,7 +763,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8002163587687491675}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_r_FrontLeg_HipSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -795,7 +795,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2813847470443867432}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_r_HindLeg_AnkleSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -827,7 +827,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7068374210539774252}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_Spine_TopSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -861,7 +861,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5554955140002494946}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_r_HindLeg_ToeSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -892,7 +892,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2262657535194876518}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_Tail_01_02SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -924,7 +924,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2763267982904825490}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_r_HindLeg_Knee2SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -956,7 +956,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3528619916325338332}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_Tail_01_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -988,7 +988,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7513077886202986969}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_l_HindLeg_Knee2SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1020,7 +1020,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8246732603618665986}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_l_HindLeg_AnkleSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1052,7 +1052,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 93199345716750841}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_r_Clavicle_01_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1084,7 +1084,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1072582997668594065}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_l_FrontLeg_Knee2SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1116,7 +1116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 457902242978031482}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_l_FrontLeg_AnkleSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1148,7 +1148,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3000654009317638536}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_r_Ear_01_03SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1179,7 +1179,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 86125497362900792}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_NeckSkin_01_02SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1210,7 +1210,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9072178317008005141}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_Tail_01_05SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1242,7 +1242,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6578234615883549940}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_Udder_01_02SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1274,7 +1274,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2808437783454709263}
   - component: {fileID: 7880749258193481988}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1410,7 +1410,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2097931800208341540}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_Spine_03SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1442,7 +1442,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3838815985276498857}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_l_FrontLeg_BallSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1474,7 +1474,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3647097440320881511}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_Spine_02SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1506,7 +1506,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4439713338358192082}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_Head_JawSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1538,7 +1538,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 262329859722451610}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_r_Ear_01_02SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1570,7 +1570,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7058734258811737350}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_Neck_TopSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1603,7 +1603,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9177219215873576074}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_MAINSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1635,7 +1635,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7102515196650249191}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_r_HindLeg_BallSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1667,7 +1667,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7404781162146549297}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_Tail_01_06SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1699,7 +1699,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 324303353541961387}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_Head_JawEndSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1730,7 +1730,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4394299676235573772}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_Head_TopSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1763,7 +1763,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8847496192053630490}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_l_Ear_01_02SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1795,7 +1795,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7920228573453366171}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_r_Ear_01_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1827,7 +1827,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 541344915428170139}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_Udder_01_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1859,7 +1859,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2415111403461927810}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_l_HindLeg_BallSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1891,7 +1891,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8389601719474560311}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_r_FrontLeg_Knee2SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1923,7 +1923,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8481220392065171397}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_l_HindLeg_ToeSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1954,7 +1954,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3781223939790909881}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_l_FrontLeg_Knee1SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1986,7 +1986,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 578548726033921692}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_l_Ear_01_03SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2017,7 +2017,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6251004273029225143}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_l_FrontLeg_HipSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2049,7 +2049,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8019996599666305674}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cow_NeckSkin_01_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}

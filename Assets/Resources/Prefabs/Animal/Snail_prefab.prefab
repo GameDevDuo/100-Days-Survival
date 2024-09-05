@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3910242634482787635}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bone008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1093052860153951178}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bone003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 521253941178960153}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: IK Chain004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5382815635493260516}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bone005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1979342438551295219}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bone004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6520895924448930994}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bone007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6045900061954832757}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: IK Chain002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,7 +231,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3783840690490486587}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: IK Chain003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4630517594967538229}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bone002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2778189355610381622}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: IK Chain001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -325,7 +325,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8546134475097031581}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bone006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -356,7 +356,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8883259192316886456}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bone001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -389,7 +389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6436879406350078739}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bone009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -425,7 +425,7 @@ GameObject:
   - component: {fileID: 238880448570428716}
   - component: {fileID: 5794636624106198027}
   - component: {fileID: 7557904311080799024}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Snail_prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -493,7 +493,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 0.1
-  m_BaseOffset: 0
+  m_BaseOffset: -1.25
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!54 &238880448570428716
@@ -569,7 +569,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1449831557647659973}
   - component: {fileID: 1553712662754072769}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: snail_exp4
   m_TagString: Untagged
   m_Icon: {fileID: 0}

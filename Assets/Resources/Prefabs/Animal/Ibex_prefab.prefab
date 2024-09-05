@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8673127436745680276}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_l_Ear_01_02SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3257941937061814541}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_r_Clavicle_01_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8372664264404128739}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_Tail_01_02SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 603310979679462666}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_r_FrontLeg_BallSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,7 +137,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3711613784587579274}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_Head_TopSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8884059115768608903}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_Neck_TopSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -203,7 +203,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1834601533147974659}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_l_FrontLeg_BallSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,7 +235,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3859254959850274501}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_r_FrontLeg_HipSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -267,7 +267,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6559212472303041646}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_r_FrontLeg_AnkleSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,7 +299,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1762513384540117709}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_l_FrontLeg_Knee2SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,7 +331,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6423803361871657599}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_Spine_04SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -363,7 +363,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1904458977886292926}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_l_HindLeg_Knee2SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -395,7 +395,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 403705372251645761}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_l_FrontLeg_ToeSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,7 +426,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7590717078932096930}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_r_FrontLeg_ToeSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -457,7 +457,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 109408814981530511}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_l_HindLeg_HipSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -489,7 +489,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2577549240220860127}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_Head_JawSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -521,7 +521,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7647130798613781680}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_l_HindLeg_AnkleSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -553,7 +553,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5236368542040814899}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_r_HindLeg_ToeSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -584,7 +584,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8862843063039512898}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_r_FrontLeg_Knee1SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -616,7 +616,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3398678928207207655}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_r_HindLeg_AnkleSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -648,7 +648,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6973680786249624347}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_r_HindLeg_HipSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -680,7 +680,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3448245237719638496}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_Spine_02SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -712,7 +712,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9037291241134599470}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_r_FrontLeg_Knee2SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -744,7 +744,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6236262848444499935}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_l_FrontLeg_HipSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -776,7 +776,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4934520546002886660}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_Spine_03SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -808,7 +808,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3220902533991726253}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_l_HindLeg_ToeSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -839,7 +839,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1927455980180369165}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_l_Clavicle_01_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -871,7 +871,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7304694164239950293}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_Neck_02SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -903,7 +903,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7548530667653527317}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_Tail_01_03SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -934,7 +934,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 828517777528243847}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_r_Ear_01_02SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -966,7 +966,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6957097584051010581}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_MAINSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -998,7 +998,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5785421712397249277}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_l_Ear_01_03SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1029,7 +1029,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8172775620352069682}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_l_FrontLeg_AnkleSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1061,7 +1061,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6812156508276107300}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_Tail_01_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1093,7 +1093,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7472118904827038630}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_Spine_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1125,7 +1125,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2966606785365438446}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_l_HindLeg_BallSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1157,7 +1157,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5966760435786899633}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_r_HindLeg_Knee1SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1189,7 +1189,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1346392296191548032}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_Spine_TopSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1223,7 +1223,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7662288460252957478}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_Neck_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1256,7 +1256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4588935184959665061}
   - component: {fileID: 4087803486894152796}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: buk26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1388,7 +1388,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1092912627246021999}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_l_HindLeg_Knee1SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1425,7 +1425,7 @@ GameObject:
   - component: {fileID: 3506945604769649949}
   - component: {fileID: 2683878350388737597}
   - component: {fileID: 2767843613224100791}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1489,7 +1489,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 1
-  m_BaseOffset: 0
+  m_BaseOffset: -1.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!54 &3506945604769649949
@@ -1564,7 +1564,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2059879274610150488}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_r_HindLeg_BallSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1596,7 +1596,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5669199216402751858}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_ROOTSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1631,7 +1631,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4801644909771757297}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_r_Ear_01_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1663,7 +1663,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4804540761347813649}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_Head_JawEndSHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1694,7 +1694,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4088820316273966244}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_r_HindLeg_Knee2SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1726,7 +1726,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8871242699694746029}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_l_Ear_01_01SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1758,7 +1758,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1870750518770888625}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_l_FrontLeg_Knee1SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1790,7 +1790,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4233387257624749161}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ibex_r_Ear_01_03SHJnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
