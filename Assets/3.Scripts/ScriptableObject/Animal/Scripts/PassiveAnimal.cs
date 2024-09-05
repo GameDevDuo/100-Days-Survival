@@ -10,43 +10,6 @@ public class PassiveAnimal : AnimalBase
         base.Update();
     }
 
-    private Vector3 GetRandomPointInRange()
-    {
-        Vector3 randomPoint;
-        do
-        {
-            randomPoint = GenerateRandomPoint();
-        } while (!IsPointOnTerrain(randomPoint));
-
-        return randomPoint;
-    }
-
-    private Vector3 GenerateRandomPoint()
-    {
-        float randomX = Random.Range(centerPoint.position.x - rangeRadius, centerPoint.position.x + rangeRadius);
-        float randomZ = Random.Range(centerPoint.position.z - rangeRadius, centerPoint.position.z + rangeRadius);
-        float y = terrain.SampleHeight(new Vector3(randomX, 0, randomZ)) + terrain.transform.position.y;
-        return new Vector3(randomX, y, randomZ);
-    }
-
-    private bool IsPointOnTerrain(Vector3 point)
-    {
-        return terrainCollider.bounds.Contains(point);
-    }
-
-    private void Init()
-    {
-        centerPoint = this.transform;
-        FindTerrain();
-        rb = GetComponent<Rigidbody>();
-        animator = GetComponent<Animator>();
-        agent = GetComponent<NavMeshAgent>();
-        terrainCollider = terrain.GetComponent<Collider>();
-        hp = animalData.MaxHP;
-
-        ChangeState(State.Idle, RandomTime(IdleStateDuration));
-    }
-
     private void TakeDamage(int damage)
     {
         hp -= damage;
