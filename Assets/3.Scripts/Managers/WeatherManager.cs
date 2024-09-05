@@ -41,6 +41,8 @@ public class WeatherManager : WeatherBase
     }
     private int second;
 
+    private bool isGenerated = false;
+
     private void Awake()
     {
         if(Instance == null)
@@ -96,14 +98,16 @@ public class WeatherManager : WeatherBase
             if(finalWeather.Value.GenerateTerm == weatherIndex[finalWeather.Key - 1])
             {
                 weatherIndex[finalWeather.Key - 1] = 0;
-                if(Random.Range(0.00f, 1.00f) >= finalWeather.Value.WeatherPercent)
+                if(Random.Range(0.00f, 1.00f) >= finalWeather.Value.WeatherPercent && !isGenerated)
                 {
                     weatherHour = Random.Range(3, finalWeather.Value.GenerateTime);
                     GameObject gameObject = finalWeather.Value.WeatherObject;
                     Instantiate(gameObject, Camera.main.transform);
+                    isGenerated = true;
                     if(weatherHour <= 0)
                     {
                         Destroy(gameObject);
+                        isGenerated = false;
                     }
                 }
             }
