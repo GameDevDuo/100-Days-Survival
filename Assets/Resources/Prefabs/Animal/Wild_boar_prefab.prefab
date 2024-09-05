@@ -1619,6 +1619,7 @@ GameObject:
   - component: {fileID: 2259172852838892959}
   - component: {fileID: 6570811058635061512}
   - component: {fileID: 5962683342218577117}
+  - component: {fileID: -2523470604676254636}
   m_Layer: 9
   m_Name: Wild_boar_prefab
   m_TagString: Untagged
@@ -1749,6 +1750,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animalData: {fileID: 11400000, guid: ebb6340009062b645b3aad4c1b7ea076, type: 2}
+--- !u!114 &-2523470604676254636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8029017762653293266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3cdcced73fa4858812737acceb101f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemData: {fileID: 0}
+  collectionTime: 0
+  isCollectible: 0
 --- !u!1 &8612874687360204949
 GameObject:
   m_ObjectHideFlags: 0

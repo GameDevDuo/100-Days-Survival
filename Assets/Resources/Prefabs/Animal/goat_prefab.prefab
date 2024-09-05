@@ -301,6 +301,7 @@ GameObject:
   - component: {fileID: 5384951389123232397}
   - component: {fileID: 6482235765100019799}
   - component: {fileID: 1310711924753454828}
+  - component: {fileID: -5781696459681794703}
   m_Layer: 9
   m_Name: goat_prefab
   m_TagString: Untagged
@@ -431,6 +432,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animalData: {fileID: 11400000, guid: 919fb85d39077d4449b67c84ae8f95ba, type: 2}
+--- !u!114 &-5781696459681794703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036354701752881293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3cdcced73fa4858812737acceb101f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemData: {fileID: 0}
+  collectionTime: 0
+  isCollectible: 0
 --- !u!1 &2092887172441135691
 GameObject:
   m_ObjectHideFlags: 0

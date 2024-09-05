@@ -2059,6 +2059,7 @@ GameObject:
   - component: {fileID: 8474742729319307489}
   - component: {fileID: 6658119701549233368}
   - component: {fileID: 3853011632726233652}
+  - component: {fileID: 749931709945721980}
   m_Layer: 9
   m_Name: Pig_prefab
   m_TagString: Untagged
@@ -2198,6 +2199,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animalData: {fileID: 11400000, guid: 3f5cdaeb13e0dc94689b508f038c3691, type: 2}
+--- !u!114 &749931709945721980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8138108548598164948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3cdcced73fa4858812737acceb101f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemData: {fileID: 0}
+  collectionTime: 0
+  isCollectible: 0
 --- !u!1 &8140615556671125500
 GameObject:
   m_ObjectHideFlags: 0

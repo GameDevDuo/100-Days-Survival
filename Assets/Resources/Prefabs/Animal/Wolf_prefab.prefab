@@ -434,6 +434,7 @@ GameObject:
   - component: {fileID: 8789251368042972993}
   - component: {fileID: 7089162543840581955}
   - component: {fileID: 4061952763645282177}
+  - component: {fileID: -4412623737719092394}
   m_Layer: 9
   m_Name: Wolf_prefab
   m_TagString: Untagged
@@ -564,6 +565,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animalData: {fileID: 11400000, guid: 836e0342dec561a41989fac17062f4ac, type: 2}
+--- !u!114 &-4412623737719092394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2926844032858269723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3cdcced73fa4858812737acceb101f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemData: {fileID: 0}
+  collectionTime: 0
+  isCollectible: 0
 --- !u!1 &3235219073567237120
 GameObject:
   m_ObjectHideFlags: 0

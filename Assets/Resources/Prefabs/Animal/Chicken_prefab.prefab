@@ -1613,6 +1613,7 @@ GameObject:
   - component: {fileID: 398988177132433418}
   - component: {fileID: 7731351404373784543}
   - component: {fileID: 414515322836601007}
+  - component: {fileID: 1580404646433778471}
   m_Layer: 9
   m_Name: Chicken_prefab
   m_TagString: Untagged
@@ -1743,6 +1744,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animalData: {fileID: 11400000, guid: 7ab339ee9f80bd54a8127db38753711c, type: 2}
+--- !u!114 &1580404646433778471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8480885727264065937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3cdcced73fa4858812737acceb101f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemData: {fileID: 0}
+  collectionTime: 0
+  isCollectible: 0
 --- !u!1 &8726013198708551087
 GameObject:
   m_ObjectHideFlags: 0
