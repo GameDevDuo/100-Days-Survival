@@ -16,34 +16,6 @@ public class AttackAnimal : AnimalBase
         base.Update();
     }
 
-    private Vector3 GetRandomPointInRange()
-    {
-        Vector3 randomPoint;
-        do
-        {
-            randomPoint = GenerateRandomPoint();
-        } while (!IsPointOnTerrain(randomPoint));
-
-        return randomPoint;
-    }
-
-    private Vector3 GenerateRandomPoint()
-    {
-        float randomX = Random.Range(centerPoint.position.x - rangeRadius, centerPoint.position.x + rangeRadius);
-        float randomZ = Random.Range(centerPoint.position.z - rangeRadius, centerPoint.position.z + rangeRadius);
-        float y = terrain.SampleHeight(new Vector3(randomX, 0, randomZ)) + terrain.transform.position.y;
-        if(y < waterObj.transform.position.y)
-        {
-            GenerateRandomPoint();
-        }
-        return new Vector3(randomX, y, randomZ);
-    }
-
-    private bool IsPointOnTerrain(Vector3 point)
-    {
-        return terrainCollider.bounds.Contains(point);
-    }
-
     private bool CheckForPlayer()
     {
         Collider[] colliders = Physics.OverlapSphere(centerPoint.position, animalData.FindRange, LayerMask.GetMask("Player"));
