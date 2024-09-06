@@ -134,11 +134,6 @@ public abstract class AnimalBase : RandomPosBase, IMove, IFindTerrain, IFindWate
         return currentTime = Random.Range(minTime, maxTime);
     }
 
-    public void FindTerrain()
-    {
-        terrain = FindObjectOfType<Terrain>();
-    }
-
     public void FindWaterPlane()
     {
         waterObj = GameObject.Find("WaterPlane");

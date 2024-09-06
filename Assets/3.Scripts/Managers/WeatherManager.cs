@@ -58,6 +58,7 @@ public class WeatherManager : WeatherBase
     {
         AbleWeatherList();
         GenerateWeather(ableWeather);
+        FindTerrain();
 
         for(int i = 0; i < weatherIndex.Length; i++)
         {

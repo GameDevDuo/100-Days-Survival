@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class RandomPosBase : MonoBehaviour, IRandomPos
+public abstract class RandomPosBase : MonoBehaviour, IRandomPos, IFindTerrain
 {
     protected Terrain terrain;
 
@@ -19,4 +19,8 @@ public abstract class RandomPosBase : MonoBehaviour, IRandomPos
         return new Vector3(randomX, y, randomZ);
     }
 
+    public void FindTerrain()
+    {
+        terrain = FindObjectOfType<Terrain>();
+    }
 }
