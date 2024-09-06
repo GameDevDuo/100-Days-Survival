@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Tornado : MonoBehaviour
 {
-    private int numberOfPoints = 10;
+    private ParticleSystem particle;
+
+    private int numberOfPoints = 4;
     private float areaRadius = 40f;
-    private float moveSpeed = 5f;
+    private float moveSpeed = 1f;
 
     private List<Vector3> controlPoints = new List<Vector3>();
     private float t = 0;
@@ -14,13 +16,15 @@ public class Tornado : MonoBehaviour
 
     private void Start()
     {
+        particle = GetComponent<ParticleSystem>();
+        particle.Play();
         GenerateRandomPoints();
     }
 
     private void Update()
     {
-        if (controlPoints.Count < 10) return;
-        
+        if (controlPoints.Count < 4) return;
+
         Vector3 p0 = controlPoints[currentSegment];
         Vector3 p1 = controlPoints[currentSegment + 1];
         Vector3 p2 = controlPoints[currentSegment + 2];
@@ -31,12 +35,12 @@ public class Tornado : MonoBehaviour
 
         t += Time.deltaTime * moveSpeed;
 
-        if(t > 1f)
+        if (t > 1f)
         {
             t = 0f;
             currentSegment++;
 
-            if(currentSegment >= controlPoints.Count - 3)
+            if (currentSegment >= controlPoints.Count - 3)
             {
                 currentSegment = 0;
                 GenerateRandomPoints();
@@ -49,11 +53,12 @@ public class Tornado : MonoBehaviour
         controlPoints.Clear();
         for (int i = 0; i < numberOfPoints; i++)
         {
-            Vector3 randomPoint = new Vector3(
-                Random.Range(-areaRadius, areaRadius),
-                0,
-                Random.Range(-areaRadius, areaRadius)
-            );
+            float randomX = Random.Range(-areaRadius, areaRadius);
+            float randomZ = Random.Range(-areaRadius, areaRadius);
+
+            float y = Terrain.activeTerrain.SampleHeight(new Vector3(randomX, 0, randomZ)) + Terrain.activeTerrain.transform.position.y;
+
+            Vector3 randomPoint = new Vector3(randomX, y, randomZ);
             controlPoints.Add(randomPoint);
         }
     }

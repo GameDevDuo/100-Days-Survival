@@ -38,6 +38,7 @@ public abstract class AnimalBase : MonoBehaviour, IMove
     {
         centerPoint = this.transform;
         FindTerrain();
+        FindWaterPlane();
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
@@ -120,9 +121,13 @@ public abstract class AnimalBase : MonoBehaviour, IMove
         rb.constraints = constraints;
     }
 
-    protected void FindTerrain()
+    private void FindTerrain()
     {
         terrain = FindObjectOfType<Terrain>();
+    }
+    private void FindWaterPlane()
+    {
+        waterObj = GameObject.Find("WaterPlane");
     }
 
     public void ChangeState(State newState, float time)
