@@ -9,7 +9,7 @@ public enum State
     Dead,
 }
 
-public abstract class AnimalBase : MonoBehaviour, IMove
+public abstract class AnimalBase : MonoBehaviour, IMove, IFindTerrain, IFindWater
 {
     private State currentState;
 
@@ -121,15 +121,6 @@ public abstract class AnimalBase : MonoBehaviour, IMove
         rb.constraints = constraints;
     }
 
-    private void FindTerrain()
-    {
-        terrain = FindObjectOfType<Terrain>();
-    }
-    private void FindWaterPlane()
-    {
-        waterObj = GameObject.Find("WaterPlane");
-    }
-
     public void ChangeState(State newState, float time)
     {
         currentState = newState;
@@ -143,5 +134,15 @@ public abstract class AnimalBase : MonoBehaviour, IMove
     public float RandomTime(float maxTime)
     {
         return currentTime = Random.Range(minTime, maxTime);
+    }
+
+    public void FindTerrain()
+    {
+        terrain = FindObjectOfType<Terrain>();
+    }
+
+    public void FindWaterPlane()
+    {
+        waterObj = GameObject.Find("WaterPlane");
     }
 }
