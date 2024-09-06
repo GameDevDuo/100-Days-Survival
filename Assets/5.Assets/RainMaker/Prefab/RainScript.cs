@@ -60,6 +60,7 @@ namespace DigitalRuby.RainMaker
         protected override void Start()
         {
             base.Start();
+            RainIntensity = Random.Range(0.0f, 1.0f);
         }
 
         protected override void Update()

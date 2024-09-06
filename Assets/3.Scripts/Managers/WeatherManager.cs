@@ -102,7 +102,8 @@ public class WeatherManager : WeatherBase
                 {
                     weatherHour = Random.Range(3, finalWeather.Value.GenerateTime);
                     GameObject gameObject = finalWeather.Value.WeatherObject;
-                    Instantiate(gameObject, Camera.main.transform);
+                    Vector3 vector3 = GetRandomPointInRange();
+                    Instantiate(gameObject, vector3, Quaternion.identity);
                     isGenerated = true;
                     if(weatherHour <= 0)
                     {
