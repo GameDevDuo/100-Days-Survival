@@ -9,11 +9,9 @@ public enum State
     Dead,
 }
 
-public abstract class AnimalBase : MonoBehaviour, IMove, IFindTerrain, IFindWater
+public abstract class AnimalBase : RandomPosBase, IMove, IFindTerrain, IFindWater
 {
     private State currentState;
-
-    protected Terrain terrain;
 
     [SerializeField] protected AnimalData animalData;
 
@@ -76,25 +74,25 @@ public abstract class AnimalBase : MonoBehaviour, IMove, IFindTerrain, IFindWate
     }
     public abstract void Dead();
 
-    protected Vector3 GetRandomPointInRange()
+    public override Vector3 GetRandomPointInRange()
     {
         Vector3 randomPoint;
         do
         {
-            randomPoint = GenerateRandomPoint();
+            randomPoint = GenerateRandomPoint(centerPoint.position.x, centerPoint.position.z);
         } while (!IsPointOnTerrain(randomPoint));
 
         return randomPoint;
     }
 
-    private Vector3 GenerateRandomPoint()
+    public override Vector3 GenerateRandomPoint(float x, float z)
     {
-        float randomX = Random.Range(centerPoint.position.x - rangeRadius, centerPoint.position.x + rangeRadius);
-        float randomZ = Random.Range(centerPoint.position.z - rangeRadius, centerPoint.position.z + rangeRadius);
+        float randomX = Random.Range(x - rangeRadius, x + rangeRadius);
+        float randomZ = Random.Range(z - rangeRadius, z + rangeRadius);
         float y = terrain.SampleHeight(new Vector3(randomX, 0, randomZ)) + terrain.transform.position.y;
         if (y < waterObj.transform.position.y)
         {
-            GenerateRandomPoint();
+            GenerateRandomPoint(centerPoint.position.x, centerPoint.position.z);
         }
         return new Vector3(randomX, y, randomZ);
     }
