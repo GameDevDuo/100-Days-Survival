@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -17958,10 +17958,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3e44e0f7220b4224b63a812b756fff7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animalPrefab: []
+  animalPrefab:
+  - {fileID: 8480885727264065937, guid: 08fd03bb8be047442934882d38b0276c, type: 3}
   terrain: {fileID: 606024921}
-  animalCount: 
-  texture: 
+  animalCount: f4010000
+  texture: 00000000
   seaHeight: 10
 --- !u!1 &2016285710
 GameObject:
