@@ -106,7 +106,10 @@ public class WeatherManager : WeatherBase
                     Vector3 vector3 = GetRandomPointInRange();
                     Instantiate(gameObject, vector3, Quaternion.identity);
                     isGenerated = true;
-                    if(weatherHour <= 0)
+                }
+                else
+                {
+                    if (weatherHour <= 0 && isGenerated)
                     {
                         Destroy(gameObject);
                         isGenerated = false;

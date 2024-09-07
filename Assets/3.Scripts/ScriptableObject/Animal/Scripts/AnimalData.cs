@@ -15,9 +15,6 @@ public class AnimalData : ScriptableObject
     [SerializeField] private float attakDistance;
     public float AttackDistance { get { return attakDistance; } }
 
-    [SerializeField] private float attakSpeed;
-    public float AttackSpeed { get { return attakSpeed; } }
-
     [SerializeField] private float findRange;
     public float FindRange { get {  return findRange; } }
 
