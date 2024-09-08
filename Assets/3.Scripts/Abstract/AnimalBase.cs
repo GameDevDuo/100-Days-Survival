@@ -74,6 +74,11 @@ public abstract class AnimalBase : RandomPosBase, IMove, IFindTerrain, IFindWate
     }
     public abstract void Dead();
 
+    public void TakeDamage(int damage)
+    {
+        hp -= damage;
+    }
+
     public override Vector3 GetRandomPointInRange()
     {
         Vector3 randomPoint;

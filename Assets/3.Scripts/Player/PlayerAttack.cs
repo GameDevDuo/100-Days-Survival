@@ -9,13 +9,21 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private float distance;
     private Camera playerCamera;
     private PlayerInput playerInput;
+    private ResourceItemRaycaster resourceItemRaycaster;
+    public int damage;
 
     void Start()
     {
         playerCamera = Camera.main;
 
         playerInput = GetComponent<PlayerInput>();
+        resourceItemRaycaster = GetComponent<ResourceItemRaycaster>();
         playerInput.actions["Attack"].performed += OnAttack;
+    }
+
+    void Update()
+    {
+        AttackDamageUpdate();
     }
 
     private void OnAttack(InputAction.CallbackContext context)
@@ -32,8 +40,29 @@ public class PlayerAttack : MonoBehaviour
         {
             if (hit.collider != null)
             {
-                Debug.Log("PlayerAttack");
+                if (hit.collider.GetComponent<AttackAnimal>())
+                {
+                    AttackAnimal animal = hit.collider.GetComponent<AttackAnimal>();
+                    animal.TakeDamage(damage);
+                }
+                else
+                {
+                    PassiveAnimal animal = hit.collider.GetComponent<PassiveAnimal>();
+                    animal.TakeDamage(damage);
+                }
             }
+        }
+    }
+
+    void AttackDamageUpdate()
+    {
+        if (resourceItemRaycaster.toolSprite != null)
+        {
+            damage = Resources.Load<ItemData>($"Prefabs/ItemData/{resourceItemRaycaster.name}").Damage;
+        }
+        else
+        {
+            damage = 2;
         }
     }
 

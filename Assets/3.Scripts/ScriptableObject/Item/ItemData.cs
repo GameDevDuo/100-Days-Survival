@@ -13,4 +13,6 @@ public class ItemData : ScriptableObject
     public bool IsBuildable { get { return isBuildable; } }
     [SerializeField] private Sprite[] toolSprite;
     public Sprite[] ToolSprite { get { return toolSprite; } }
+    [SerializeField] private int damage;
+    public int Damage { get { return damage; } }
 }

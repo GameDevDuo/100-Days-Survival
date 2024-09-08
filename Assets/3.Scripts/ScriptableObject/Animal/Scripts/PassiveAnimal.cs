@@ -10,11 +10,6 @@ public class PassiveAnimal : AnimalBase
         base.Update();
     }
 
-    private void TakeDamage(int damage)
-    {
-        hp -= damage;
-    }
-
     public override void Idle()
     {
         if (hp <= 0)

@@ -30,6 +30,7 @@ public class BuildHandler : MonoBehaviour
             if (hit.collider != null)
             {
                 Sprite sprite = resourceItemRaycaster.toolSprite;
+
                 if (sprite != null)
                 {
                     ItemData itemData = Resources.Load<ItemData>($"Prefabs/ItemData/{sprite.name}");

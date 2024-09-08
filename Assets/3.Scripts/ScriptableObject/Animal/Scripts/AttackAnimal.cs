@@ -28,11 +28,6 @@ public class AttackAnimal : AnimalBase
         return false;
     }
 
-    private void TakeDamage(int damage)
-    {
-        hp -= damage;
-    }
-
     public override void Idle()
     {
         if (hp <= 0)
