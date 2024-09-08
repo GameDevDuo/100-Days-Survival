@@ -12,9 +12,10 @@ public class WeatherManager : WeatherBase
 
     public static WeatherManager Instance;
 
-    [SerializeField]
-    private List<WeatherData> weatherData;
+    [SerializeField] private List<WeatherData> weatherData;
     private Dictionary<int, WeatherData> ableWeather = new Dictionary<int, WeatherData>();
+
+    [SerializeField] private Transform terrainCenter;
 
     private int[] weatherIndex = new int[6];
     private int weatherHour;
@@ -105,6 +106,7 @@ public class WeatherManager : WeatherBase
                     GameObject gameObject = finalWeather.Value.WeatherObject;
                     Vector3 vector3 = GetRandomPointInRange();
                     Instantiate(gameObject, vector3, Quaternion.identity);
+                    gameObject.transform.LookAt(terrainCenter);
                     isGenerated = true;
                 }
                 else
