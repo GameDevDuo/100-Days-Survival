@@ -23,7 +23,7 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {
-        AttackDamageUpdate();
+        UpdateDamage();
     }
 
     private void OnAttack(InputAction.CallbackContext context)
@@ -38,27 +38,32 @@ public class PlayerAttack : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, distance, layerMask))
         {
-            if (hit.collider != null)
+            if (hit.collider.TryGetComponent<AttackAnimal>(out var attackAnimal))
             {
-                if (hit.collider.GetComponent<AttackAnimal>())
-                {
-                    AttackAnimal animal = hit.collider.GetComponent<AttackAnimal>();
-                    animal.TakeDamage(damage);
-                }
-                else
-                {
-                    PassiveAnimal animal = hit.collider.GetComponent<PassiveAnimal>();
-                    animal.TakeDamage(damage);
-                }
+                attackAnimal.TakeDamage(damage);
+            }
+            else if (hit.collider.TryGetComponent<PassiveAnimal>(out var passiveAnimal))
+            {
+                passiveAnimal.TakeDamage(damage);
             }
         }
     }
 
-    void AttackDamageUpdate()
-    { 
-        if (resourceItemRaycaster.toolSprite.name != null)
+    void UpdateDamage()
+    {
+        if (resourceItemRaycaster.toolSprite != null)
         {
-            damage = Resources.Load<ItemData>($"Prefabs/ItemData/{resourceItemRaycaster.toolSprite.name}").Damage;
+            string itemName = resourceItemRaycaster.toolSprite.name;
+            ItemData itemData = Resources.Load<ItemData>($"Prefabs/ItemData/{itemName}");
+
+            if (itemData != null)
+            {
+                damage = itemData.Damage;
+            }
+            else
+            {
+                damage = 2;
+            }
         }
         else
         {
