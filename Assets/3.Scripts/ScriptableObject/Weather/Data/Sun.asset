@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sun
   m_EditorClassIdentifier: 
   weatherObject: {fileID: 8760372170568352027, guid: eb3aa9f8061948f4c8e20ba9e8f5c94f, type: 3}
-  weatherPercent: 10
+  weatherPercent: 0.1
   generateDate: 5
   generateTerm: 1
   generateTime: 10
