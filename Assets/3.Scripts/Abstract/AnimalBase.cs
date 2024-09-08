@@ -72,7 +72,12 @@ public abstract class AnimalBase : RandomPosBase, IMove, IFindTerrain, IFindWate
     {
         //attack Logjc
     }
-    public abstract void Dead();
+    public virtual void Dead()
+    {
+        animator.Play("die");
+        agent.isStopped = true;
+        RigidFreezeHandler(ref rb, RigidbodyConstraints.FreezeAll);
+    }
 
     public void TakeDamage(int damage)
     {
