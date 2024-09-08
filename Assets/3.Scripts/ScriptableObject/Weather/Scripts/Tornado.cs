@@ -8,7 +8,7 @@ public class Tornado : MonoBehaviour, IFindTerrain
 
     private int numberOfPoints = 10;
     private float areaRadius = 40f;
-    private float moveSpeed = 0.05f;
+    private float moveSpeed = 5f;
 
     private List<Vector3> controlPoints = new List<Vector3>();
     private float t = 0;
@@ -32,7 +32,7 @@ public class Tornado : MonoBehaviour, IFindTerrain
         Vector3 pos = BezierCurve.GetPoint(p0, p1, p2, p3, t);
         transform.position += pos;
 
-        t += Time.deltaTime * moveSpeed;
+        t += Time.deltaTime * (moveSpeed / 1000);
 
         if (t > 1f)
         {
