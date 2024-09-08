@@ -126,8 +126,6 @@ public class AttackAnimal : AnimalBase
 
     public override void Dead()
     {
-        animator.Play("die");
-        agent.isStopped = true;
-        RigidFreezeHandler(ref rb, RigidbodyConstraints.FreezeAll);
+        base.Dead();
     }
 }

@@ -63,8 +63,7 @@ public class PassiveAnimal : AnimalBase
 
     public override void Dead()
     {
-        animator.Play("die");
-        agent.isStopped = true;
+        base.Dead();
     }
 }
 
