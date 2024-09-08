@@ -128,5 +128,6 @@ public class AttackAnimal : AnimalBase
     {
         animator.Play("die");
         agent.isStopped = true;
+        RigidFreezeHandler(ref rb, RigidbodyConstraints.FreezeAll);
     }
 }
