@@ -55,10 +55,10 @@ public class PlayerAttack : MonoBehaviour
     }
 
     void AttackDamageUpdate()
-    {
-        if (resourceItemRaycaster.toolSprite != null)
+    { 
+        if (resourceItemRaycaster.toolSprite.name != null)
         {
-            damage = Resources.Load<ItemData>($"Prefabs/ItemData/{resourceItemRaycaster.name}").Damage;
+            damage = Resources.Load<ItemData>($"Prefabs/ItemData/{resourceItemRaycaster.toolSprite.name}").Damage;
         }
         else
         {
