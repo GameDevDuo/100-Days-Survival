@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tornado : MonoBehaviour, IFindTerrain
+public class Tornado : RandomPosBase
 {
-    private Terrain terrain;
-
     private int numberOfPoints = 10;
     private float areaRadius = 40f;
     private float moveSpeed = 5f;
@@ -60,10 +58,5 @@ public class Tornado : MonoBehaviour, IFindTerrain
             Vector3 randomPoint = new Vector3(randomX, y, randomZ);
             controlPoints.Add(randomPoint);
         }
-    }
-
-    public void FindTerrain()
-    {
-        terrain = FindObjectOfType<Terrain>();
     }
 }
