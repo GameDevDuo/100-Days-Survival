@@ -164,6 +164,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite rock05_lod1
       objectReference: {fileID: 0}
+    - target: {fileID: 3451118302482216456, guid: c8daa5531def31f4bb6e88c1a0548699, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -234,6 +238,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1d32ceab623d8da47b3f298ea319580c, type: 3}
       propertyPath: m_Name
       value: granite rock05_lod2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451118302482216456, guid: 1d32ceab623d8da47b3f298ea319580c, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -306,6 +314,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite rock05_lod0
       objectReference: {fileID: 0}
+    - target: {fileID: 3451118302482216456, guid: 96dfdccdb305eeb47a4c1ee69feb2713, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -376,6 +388,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 32695f33a844be84b8ec6175e54df80f, type: 3}
       propertyPath: m_Name
       value: granite rock05_lod3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451118302482216456, guid: 32695f33a844be84b8ec6175e54df80f, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

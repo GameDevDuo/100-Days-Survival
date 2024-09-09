@@ -41,10 +41,10 @@ public class Volcano : RandomPosBase
     {
         target = GetRandomPointInRange();
         GameObject selectedMeteor = meteor[Random.Range(0, meteor.Count)];
+        Rigidbody rb = selectedMeteor.GetComponent<Rigidbody>();
 
-        GameObject meteorInstance = Instantiate(selectedMeteor, spawnPos.position, Quaternion.identity);
-        Rigidbody rb = meteorInstance.GetComponent<Rigidbody>();
-
+        Instantiate(selectedMeteor, spawnPos.position, Quaternion.identity);
+        
         float randomAngle = Random.Range(smallAngle, largeAngle);
         Vector3 velocity = GetVelocity(spawnPos.position, target, randomAngle);
 
