@@ -26,7 +26,7 @@ public class Volcano : RandomPosBase
         for (int i = 0; i < maxCount; i++)
         {
             SpawnMeteor();
-            yield return new WaitForSeconds(Random.Range(5f, 20f));
+            yield return new WaitForSeconds(Random.Range(5f, 15f));
         }
     }
 
@@ -34,12 +34,16 @@ public class Volcano : RandomPosBase
     {
         GameObject selectedMeteor = meteor[Random.Range(0, meteor.Count)];
 
-        float randomX = Random.Range(-80f, -30f);
+        float randomX = Random.Range(89f, 90);
         float randomY = Random.Range(-180f, 180f);
         Quaternion quaternion = new Quaternion(randomX, randomY, 0f, 0f);
         GameObject meteorInstance =  Instantiate(selectedMeteor, spawnPos.position, quaternion);
 
+        Debug.Log("X = " + randomX + "Y = " + randomY);
+
         Rigidbody rb = meteorInstance.GetComponent<Rigidbody>();
-        rb.AddForce(Vector3.forward * Random.Range(70f, 100f), ForceMode.Impulse);
+        float power = Random.Range(20f, 25f);
+        Debug.Log(power);
+        rb.AddRelativeForce(Vector3.up * power * 10, ForceMode.Impulse);
     }
 }
