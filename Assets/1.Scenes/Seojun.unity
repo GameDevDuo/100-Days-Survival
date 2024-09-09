@@ -1116,6 +1116,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e32f77325f54ef2489248b58dbac6844, type: 2}
   - {fileID: 11400000, guid: 94aaf4d93806032428d04c5c120c1551, type: 2}
   - {fileID: 11400000, guid: 2d937670b41295442afb0c86dcdea7d7, type: 2}
+  terrainCenter: {fileID: 0}
 --- !u!4 &1238421672
 Transform:
   m_ObjectHideFlags: 0
@@ -1274,7 +1275,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1791621421145151236, guid: 134b3883ddf011043af7ea331288afbf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1330.1675
+      value: 1331.35
       objectReference: {fileID: 0}
     - target: {fileID: 1791621421145151236, guid: 134b3883ddf011043af7ea331288afbf, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1813,6 +1814,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5035579573510154338, guid: 6ab9a1fb9197d6f4c97f9c078dc2ef11, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5419974438398183840, guid: 6ab9a1fb9197d6f4c97f9c078dc2ef11, type: 3}
       propertyPath: m_Name
       value: scorpion_prefab

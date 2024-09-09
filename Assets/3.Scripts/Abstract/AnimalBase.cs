@@ -77,6 +77,7 @@ public abstract class AnimalBase : RandomPosBase, IMove, IFindTerrain, IFindWate
         animator.Play("die");
         agent.isStopped = true;
         RigidFreezeHandler(ref rb, RigidbodyConstraints.FreezeAll);
+        gameObject.layer = LayerMask.NameToLayer("ResourceItem");
     }
 
     public void TakeDamage(int damage)
