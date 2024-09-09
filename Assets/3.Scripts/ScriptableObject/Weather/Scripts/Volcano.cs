@@ -1,14 +1,40 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Volcano : RandomPosBase
 {
-    [SerializeField] private Transform target;
-    private Rigidbody rb;
-    private float initialAngle;
+    [SerializeField] 
+    private List<GameObject> meteor = new List<GameObject>();
+
+    [SerializeField] Transform spawnPos;
+
+    private Vector3 target;
+
+    private float smallAngle;
+    private float largeAngle;
+
+    private int maxCount;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        FindTerrain();
+
+        maxCount = Random.Range(20, 40);
+        for(int i = 0; i < maxCount; i++)
+        {
+            target = GetRandomPointInRange();
+        }
+    }
+
+    private void SpawnMeteor()
+    {
+        target = GetRandomPointInRange();
+        GameObject selectedMeteor = meteor[Random.Range(0, meteor.Count)];
+
+        GameObject meteorInstance = Instantiate(selectedMeteor, spawnPos.position, Quaternion.identity);
+        Rigidbody rb = meteorInstance.GetComponent<Rigidbody>();
+
+
     }
 
     private Vector3 GetVelocity(Vector3 start, Vector3 target, float initialAngle)
