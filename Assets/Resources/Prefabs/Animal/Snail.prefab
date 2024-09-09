@@ -427,7 +427,7 @@ GameObject:
   - component: {fileID: 7557904311080799024}
   - component: {fileID: -5281715925303043230}
   m_Layer: 9
-  m_Name: Snail_prefab
+  m_Name: Snail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

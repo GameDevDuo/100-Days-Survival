@@ -659,7 +659,7 @@ GameObject:
   - component: {fileID: 1266920107165997087}
   - component: {fileID: -1954256424296786651}
   m_Layer: 9
-  m_Name: Bear_prefab
+  m_Name: Bear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

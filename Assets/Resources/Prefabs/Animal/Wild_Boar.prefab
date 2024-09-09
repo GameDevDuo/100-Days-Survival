@@ -1621,7 +1621,7 @@ GameObject:
   - component: {fileID: 5962683342218577117}
   - component: {fileID: -2523470604676254636}
   m_Layer: 9
-  m_Name: Wild_boar_prefab
+  m_Name: Wild_Boar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

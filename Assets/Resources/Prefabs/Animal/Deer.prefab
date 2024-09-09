@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 126381120290088283}
   - component: {fileID: 8059878413871231046}
   m_Layer: 9
-  m_Name: Deer_prefab
+  m_Name: Deer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

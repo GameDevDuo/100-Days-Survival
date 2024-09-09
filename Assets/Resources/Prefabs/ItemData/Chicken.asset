@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc7cf8640d9b54dc2a7b150394e4545b, type: 3}
   m_Name: Chicken
   m_EditorClassIdentifier: 
-  itemName: 
-  sprite: {fileID: 0}
-  collectionTime: []
+  itemName: Chicken
+  sprite: {fileID: 21300000, guid: abf0bd98db6e42d4b86995a38d811ee2, type: 3}
+  collectionTime:
+  - 5
   isBuildable: 0
-  toolSprite: []
+  toolSprite:
+  - {fileID: 0}
   damage: 0

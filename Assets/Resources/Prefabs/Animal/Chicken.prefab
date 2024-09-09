@@ -1615,7 +1615,7 @@ GameObject:
   - component: {fileID: 414515322836601007}
   - component: {fileID: 1580404646433778471}
   m_Layer: 9
-  m_Name: Chicken_prefab
+  m_Name: Chicken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

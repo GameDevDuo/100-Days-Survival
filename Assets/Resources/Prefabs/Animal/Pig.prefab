@@ -2061,7 +2061,7 @@ GameObject:
   - component: {fileID: 3853011632726233652}
   - component: {fileID: 749931709945721980}
   m_Layer: 9
-  m_Name: Pig_prefab
+  m_Name: Pig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 1525202247963613147}
   - component: {fileID: 7728353629495457376}
   m_Layer: 9
-  m_Name: Crab_prefab
+  m_Name: Crab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

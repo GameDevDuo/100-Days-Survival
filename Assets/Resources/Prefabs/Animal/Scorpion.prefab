@@ -1759,7 +1759,7 @@ GameObject:
   - component: {fileID: 1006188608626307259}
   - component: {fileID: 5035579573510154338}
   m_Layer: 9
-  m_Name: scorpion_prefab
+  m_Name: Scorpion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
