@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,19 +11,29 @@ public class Volcano : RandomPosBase
 
     private Vector3 target;
 
-    private float smallAngle;
-    private float largeAngle;
+    private float smallAngle = 60f;
+    private float largeAngle = 120f;
+    private float time;
 
     private int maxCount;
 
-    private void Start()
+    private void Awake()
     {
         FindTerrain();
+    }
 
+    private void Start()
+    {
         maxCount = Random.Range(20, 40);
-        for(int i = 0; i < maxCount; i++)
+        StartCoroutine(SpawnMeteorsWithCooldown());
+    }
+
+    private IEnumerator SpawnMeteorsWithCooldown()
+    {
+        for (int i = 0; i < maxCount; i++)
         {
-            target = GetRandomPointInRange();
+            SpawnMeteor();
+            yield return new WaitForSeconds(Random.Range(5f, 20f));
         }
     }
 
@@ -34,7 +45,10 @@ public class Volcano : RandomPosBase
         GameObject meteorInstance = Instantiate(selectedMeteor, spawnPos.position, Quaternion.identity);
         Rigidbody rb = meteorInstance.GetComponent<Rigidbody>();
 
+        float randomAngle = Random.Range(smallAngle, largeAngle);
+        Vector3 velocity = GetVelocity(spawnPos.position, target, randomAngle);
 
+        rb.velocity = velocity;
     }
 
     private Vector3 GetVelocity(Vector3 start, Vector3 target, float initialAngle)
@@ -48,8 +62,8 @@ public class Volcano : RandomPosBase
         float distance = Vector3.Distance(planarTarget, planarPos);
         float yOffset = start.y - target.y;
 
-        float initialVelocity = (1 / Mathf.Cos(angle)) * 
-            Mathf.Sqrt((0.5f * gravity * Mathf.Pow(distance, 2)) / 
+        float initialVelocity = (1 / Mathf.Cos(angle)) *
+            Mathf.Sqrt((0.5f * gravity * Mathf.Pow(distance, 2)) /
             (distance * Mathf.Tan(angle) + yOffset));
 
         Vector3 velocity = new Vector3(0f,
