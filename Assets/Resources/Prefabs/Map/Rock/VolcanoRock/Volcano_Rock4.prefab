@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5812781733686664338}
   - component: {fileID: 2250950413182389680}
   - component: {fileID: -595735844576043642}
+  - component: {fileID: -583822276874342123}
   m_Layer: 0
   m_Name: Volcano_Rock4
   m_TagString: Untagged
@@ -95,6 +96,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-583822276874342123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7106847287255848945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 666c98dfa60e95143b298664af0abc60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1642606652249082310
 PrefabInstance:
   m_ObjectHideFlags: 0
