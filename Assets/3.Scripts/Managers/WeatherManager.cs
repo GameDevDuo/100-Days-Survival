@@ -44,7 +44,7 @@ public class WeatherManager : WeatherBase
 
     private bool isGenerated = false;
 
-    private void Awake()
+    public void Awake()
     {
         if(Instance == null)
         {

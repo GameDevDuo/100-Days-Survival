@@ -4,11 +4,6 @@ public abstract class RandomPosBase : MonoBehaviour, IRandomPos, IFindTerrain
 {
     protected Terrain terrain;
 
-    public void Awake()
-    {
-        FindTerrain();
-    }
-
     public virtual Vector3 GetRandomPointInRange()
     {
         Vector3 randomPoint = GenerateRandomPoint(terrain.terrainData.size.x, terrain.terrainData.size.z);
