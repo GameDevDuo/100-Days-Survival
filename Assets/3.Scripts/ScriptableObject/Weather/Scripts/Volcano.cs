@@ -21,7 +21,7 @@ public class Volcano : RandomPosBase
         for (int i = 0; i < maxCount; i++)
         {
             SpawnMeteor();
-            yield return new WaitForSeconds(Random.Range(5f, 15f));
+            yield return new WaitForSeconds(Random.Range(2.5f, 7.5f));
         }
     }
 
