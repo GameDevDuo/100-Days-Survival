@@ -10,11 +10,6 @@ public class Volcano : RandomPosBase
     [SerializeField] Transform spawnPos;
     private int maxCount;
 
-    private void Awake()
-    {
-        FindTerrain();
-    }
-
     private void Start()
     {
         maxCount = Random.Range(20, 40);
@@ -34,16 +29,13 @@ public class Volcano : RandomPosBase
     {
         GameObject selectedMeteor = meteor[Random.Range(0, meteor.Count)];
 
-        float randomX = Random.Range(89f, 90);
+        float randomX = Random.Range(5f, 15f);
         float randomY = Random.Range(-180f, 180f);
         Quaternion quaternion = new Quaternion(randomX, randomY, 0f, 0f);
         GameObject meteorInstance =  Instantiate(selectedMeteor, spawnPos.position, quaternion);
 
-        Debug.Log("X = " + randomX + "Y = " + randomY);
-
         Rigidbody rb = meteorInstance.GetComponent<Rigidbody>();
-        float power = Random.Range(20f, 25f);
-        Debug.Log(power);
+        float power = Random.Range(10f, 15f);
         rb.AddRelativeForce(Vector3.up * power * 10, ForceMode.Impulse);
     }
 }
