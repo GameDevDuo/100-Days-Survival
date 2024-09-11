@@ -8,14 +8,13 @@ public class WeatherManager : WeatherBase
     //태풍 - 10일부터 3일마다 5% 확률
     //쓰나미 - 20일부터 3일마다 5% 확률
     //화산폭발 - 50일 확정 이후에 10일마다 3% 100일 확정
-    //지진 - 50일부터 10일마다 3% 확률
 
     public static WeatherManager Instance;
 
+    [SerializeField] private GameObject volcanoPre;
+
     [SerializeField] private List<WeatherData> weatherData;
     private Dictionary<int, WeatherData> ableWeather = new Dictionary<int, WeatherData>();
-
-    [SerializeField] private Transform terrainCenter;
 
     private int[] weatherIndex = new int[6];
     private int weatherHour;
@@ -106,7 +105,6 @@ public class WeatherManager : WeatherBase
                     GameObject gameObject = finalWeather.Value.WeatherObject;
                     Vector3 vector3 = GetRandomPointInRange();
                     Instantiate(gameObject, vector3, Quaternion.identity);
-                    gameObject.transform.LookAt(terrainCenter);
                     isGenerated = true;
                 }
                 else
@@ -123,5 +121,12 @@ public class WeatherManager : WeatherBase
                 weatherIndex[finalWeather.Key - 1]++;
             }
         }
+    }
+
+    public void GenerateVolcano()
+    {
+        Instantiate(volcanoPre, volcanoPre.transform);
+        int rand = Random.Range(3, 8);
+        Destroy(volcanoPre, rand * 60);
     }
 }
