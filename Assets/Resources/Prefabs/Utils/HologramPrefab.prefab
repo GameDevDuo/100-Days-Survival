@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 633894546874823170}
   - component: {fileID: 6383647497363377459}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: HologramPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
