@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private float jumpForce;
+    [SerializeField] private LayerMask layerMask;
     private Rigidbody rb;
     private Animator anim;
     private Vector3 moveInput;
@@ -60,7 +61,7 @@ public class PlayerController : MonoBehaviour
 
     private void CheckGround()
     {
-        isGround = Physics.Raycast(transform.position, Vector3.down, 0.25f, LayerMask.GetMask("Ground"));
+        isGround = Physics.Raycast(transform.position, Vector3.down, 0.25f, layerMask);
     }
 
     private void OnToggleInventory()

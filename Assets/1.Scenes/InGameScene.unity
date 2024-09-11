@@ -11394,6 +11394,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   jumpForce: 4.25
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1001 &1193361456
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23284,6 +23287,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 468493061095884553, guid: f4228d3c4cec84e5aa03c3842d74932e, type: 3}
+      propertyPath: layerMask.m_Bits
+      value: 2056
+      objectReference: {fileID: 0}
     - target: {fileID: 1369943543237267590, guid: f4228d3c4cec84e5aa03c3842d74932e, type: 3}
       propertyPath: m_Name
       value: Player
