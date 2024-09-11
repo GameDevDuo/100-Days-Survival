@@ -61,6 +61,7 @@ public class AttackAnimal : AnimalBase
             }
             else
             {
+                agent.speed = walkSpeed;
                 agent.SetDestination(targetPosition);
                 currentTime -= Time.deltaTime;
 
@@ -100,6 +101,7 @@ public class AttackAnimal : AnimalBase
             }
             else if (distanceToPlayer <= animalData.FindRange)
             {
+                agent.speed = runSpeed;
                 agent.SetDestination(player.transform.position);
                 animator.enabled = true;
                 animator.Play("run");
