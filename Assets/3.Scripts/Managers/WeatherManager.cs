@@ -83,7 +83,7 @@ public class WeatherManager : WeatherBase
     {
         foreach (var weather in weatherData)
         {
-            if (UIManager.Instance.Day <= weather.GenerateDate && !weather.IsAdded)
+            if (UIManager.Instance.Day >= weather.GenerateDate && !weather.IsAdded)
             {
                 ableWeather.Add(weather.WeatherNum, weather);
                 weather.IsAdded = true;
