@@ -34,6 +34,9 @@ public abstract class AnimalBase : RandomPosBase, IMove, IFindWater
     protected float minTime = 1.5f;
     protected float hp;
 
+    protected float walkSpeed;
+    protected float runSpeed;
+
     public virtual void Start()
     {
         centerPoint = this.transform;
@@ -45,6 +48,9 @@ public abstract class AnimalBase : RandomPosBase, IMove, IFindWater
         terrainCollider = terrain.GetComponent<Collider>();
 
         hp = animalData.MaxHP;
+
+        walkSpeed = agent.speed;
+        runSpeed = agent.speed * 2;
 
         ChangeState(State.Idle, RandomTime(IdleStateDuration));
     }
