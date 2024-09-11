@@ -59,11 +59,11 @@ LODGroup:
   - screenRelativeHeight: 0.441422
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: 144951553910129149}
+    - renderer: {fileID: 4660506795600464280}
   - screenRelativeHeight: 0.21706134
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: 3987387106684823047}
+    - renderer: {fileID: 4660506795600464280}
   - screenRelativeHeight: 0.06882113
     fadeTransitionWidth: 0
     renderers:
@@ -173,11 +173,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8daa5531def31f4bb6e88c1a0548699, type: 3}
---- !u!23 &144951553910129149 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: c8daa5531def31f4bb6e88c1a0548699, type: 3}
-  m_PrefabInstance: {fileID: 1568216986227760505}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1317817974428252818 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c8daa5531def31f4bb6e88c1a0548699, type: 3}
@@ -251,11 +246,6 @@ PrefabInstance:
 --- !u!4 &2818452570751901032 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1d32ceab623d8da47b3f298ea319580c, type: 3}
-  m_PrefabInstance: {fileID: 2348520361270278787}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &3987387106684823047 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 1d32ceab623d8da47b3f298ea319580c, type: 3}
   m_PrefabInstance: {fileID: 2348520361270278787}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6154144227000282885

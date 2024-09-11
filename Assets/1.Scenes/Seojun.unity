@@ -2209,7 +2209,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2059507229}
   m_CullTransparentMesh: 1
---- !u!1001 &696351516986271831
+--- !u!1001 &5711939417335828383
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2217,55 +2217,55 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7974710890889971487, guid: 07a354e2307cb314dbd76426af7ff918, type: 3}
+    - target: {fileID: 3745511965493914400, guid: 49d2749a773a24047a79303f9cd89449, type: 3}
+      propertyPath: m_Name
+      value: Volcano
+      objectReference: {fileID: 0}
+    - target: {fileID: 6126258741839535254, guid: 49d2749a773a24047a79303f9cd89449, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1343.1
       objectReference: {fileID: 0}
-    - target: {fileID: 7974710890889971487, guid: 07a354e2307cb314dbd76426af7ff918, type: 3}
+    - target: {fileID: 6126258741839535254, guid: 49d2749a773a24047a79303f9cd89449, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 438.3
+      value: 417.2
       objectReference: {fileID: 0}
-    - target: {fileID: 7974710890889971487, guid: 07a354e2307cb314dbd76426af7ff918, type: 3}
+    - target: {fileID: 6126258741839535254, guid: 49d2749a773a24047a79303f9cd89449, type: 3}
       propertyPath: m_LocalPosition.z
       value: 1249.5
       objectReference: {fileID: 0}
-    - target: {fileID: 7974710890889971487, guid: 07a354e2307cb314dbd76426af7ff918, type: 3}
+    - target: {fileID: 6126258741839535254, guid: 49d2749a773a24047a79303f9cd89449, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7974710890889971487, guid: 07a354e2307cb314dbd76426af7ff918, type: 3}
+    - target: {fileID: 6126258741839535254, guid: 49d2749a773a24047a79303f9cd89449, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 7974710890889971487, guid: 07a354e2307cb314dbd76426af7ff918, type: 3}
+    - target: {fileID: 6126258741839535254, guid: 49d2749a773a24047a79303f9cd89449, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 7974710890889971487, guid: 07a354e2307cb314dbd76426af7ff918, type: 3}
+    - target: {fileID: 6126258741839535254, guid: 49d2749a773a24047a79303f9cd89449, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 7974710890889971487, guid: 07a354e2307cb314dbd76426af7ff918, type: 3}
+    - target: {fileID: 6126258741839535254, guid: 49d2749a773a24047a79303f9cd89449, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7974710890889971487, guid: 07a354e2307cb314dbd76426af7ff918, type: 3}
+    - target: {fileID: 6126258741839535254, guid: 49d2749a773a24047a79303f9cd89449, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7974710890889971487, guid: 07a354e2307cb314dbd76426af7ff918, type: 3}
+    - target: {fileID: 6126258741839535254, guid: 49d2749a773a24047a79303f9cd89449, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8539471842946320814, guid: 07a354e2307cb314dbd76426af7ff918, type: 3}
-      propertyPath: m_Name
-      value: Volcano
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 07a354e2307cb314dbd76426af7ff918, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 49d2749a773a24047a79303f9cd89449, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2292,5 +2292,5 @@ SceneRoots:
   - {fileID: 1240580492}
   - {fileID: 1314378225}
   - {fileID: 108313961}
-  - {fileID: 696351516986271831}
+  - {fileID: 5711939417335828383}
   - {fileID: 1452214061}
