@@ -43,20 +43,28 @@ public class PassiveAnimal : AnimalBase
         }
         else
         {
-            agent.SetDestination(targetPosition);
-
-            currentTime -= Time.deltaTime;
-
-            animator.enabled = false;
-            if (currentTime <= 0 && IsNearDistination(agent))
+            if (CheckForPlayer())
             {
-                ChangeState(State.Idle, RandomTime(IdleStateDuration));
+                currentTime = 10f;
+                FleeFromPlayer();
             }
             else
             {
-                RigidFreezeHandler(ref rb, RigidbodyConstraints.None);
-                animator.enabled = true;
-                animator.Play("walk");
+                agent.SetDestination(targetPosition);
+
+                currentTime -= Time.deltaTime;
+
+                animator.enabled = false;
+                if (currentTime <= 0 && IsNearDistination(agent))
+                {
+                    ChangeState(State.Idle, RandomTime(IdleStateDuration));
+                }
+                else
+                {
+                    RigidFreezeHandler(ref rb, RigidbodyConstraints.None);
+                    animator.enabled = true;
+                    animator.Play("walk");
+                }
             }
         }
     }
@@ -64,6 +72,26 @@ public class PassiveAnimal : AnimalBase
     public override void Dead()
     {
         base.Dead();
+    }
+
+    private void FleeFromPlayer()
+    {
+        Vector3 fleeDirection = (transform.position - player.transform.position).normalized;
+        Vector3 fleePosition = transform.position + fleeDirection * 10f;
+
+        currentTime = Time.deltaTime;
+
+        animator.enabled = false;
+        agent.SetDestination(fleePosition);
+
+        RigidFreezeHandler(ref rb, RigidbodyConstraints.None);
+        animator.enabled = true;
+        animator.Play("run");
+
+        if (currentTime <= 0 && IsNearDistination(agent))
+        {
+            ChangeState(State.Idle, RandomTime(IdleStateDuration));
+        }
     }
 }
 

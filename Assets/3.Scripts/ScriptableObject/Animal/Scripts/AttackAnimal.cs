@@ -3,7 +3,6 @@ using UnityEngine.AI;
 
 public class AttackAnimal : AnimalBase
 {
-    private GameObject player;
     private Collider animalCollider;
 
     public override void Start()
@@ -14,18 +13,6 @@ public class AttackAnimal : AnimalBase
     protected override void Update()
     {
         base.Update();
-    }
-
-    private bool CheckForPlayer()
-    {
-        Collider[] colliders = Physics.OverlapSphere(centerPoint.position, animalData.FindRange, LayerMask.GetMask("Player"));
-        if (colliders.Length > 0)
-        {
-            player = colliders[0].gameObject;
-            return true;
-        }
-        player = null;
-        return false;
     }
 
     public override void Idle()
