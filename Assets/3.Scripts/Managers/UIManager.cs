@@ -21,7 +21,7 @@ public class UIManager : MonoBehaviour, ITime, IDay
         {
             if(day == 50 || day == 100)
             {
-
+                WeatherManager.Instance.GenerateVolcano();
             }
             else
             {

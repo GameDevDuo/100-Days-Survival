@@ -16,6 +16,4 @@ MonoBehaviour:
   maxHp: 15
   damage: 0
   attakDistance: 0
-  attakSpeed: 0
-  findRange: 5
-  rewardItem: []
+  findRange: 10
