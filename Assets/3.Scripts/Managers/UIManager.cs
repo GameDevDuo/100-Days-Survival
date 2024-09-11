@@ -19,12 +19,19 @@ public class UIManager : MonoBehaviour, ITime, IDay
 
         set
         {
-            if(day != value)
+            if(day == 50 || day == 100)
             {
-                WeatherManager.Instance.AbleWeatherList();
-                Debug.Log("weather");
+
             }
-            day = value;
+            else
+            {
+                if(day != value)
+                {
+                    WeatherManager.Instance.AbleWeatherList();
+                    Debug.Log("weather");
+                }
+                day = value;
+            }
         }
     }
     private int second;
