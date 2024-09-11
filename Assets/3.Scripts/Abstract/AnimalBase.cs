@@ -9,11 +9,13 @@ public enum State
     Dead,
 }
 
-public abstract class AnimalBase : RandomPosBase, IMove, IFindTerrain, IFindWater
+public abstract class AnimalBase : RandomPosBase, IMove, IFindWater
 {
     private State currentState;
 
     [SerializeField] protected AnimalData animalData;
+
+    protected GameObject player;
 
     protected GameObject waterObj;
     protected Rigidbody rb;
@@ -81,6 +83,17 @@ public abstract class AnimalBase : RandomPosBase, IMove, IFindTerrain, IFindWate
         gameObject.layer = LayerMask.NameToLayer("ResourceItem");
     }
 
+    protected bool CheckForPlayer()
+    {
+        Collider[] colliders = Physics.OverlapSphere(centerPoint.position, animalData.FindRange, LayerMask.GetMask("Player"));
+        if (colliders.Length > 0)
+        {
+            player = colliders[0].gameObject;
+            return true;
+        }
+        player = null;
+        return false;
+    }
     public void TakeDamage(int damage)
     {
         hp -= damage;
