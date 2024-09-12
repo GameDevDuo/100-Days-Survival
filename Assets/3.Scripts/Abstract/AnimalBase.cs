@@ -22,7 +22,7 @@ public abstract class AnimalBase : RandomPosBase, IMove, IFindWater
     protected Transform centerPoint;
     protected Animator animator;
     protected NavMeshAgent agent;
-    protected Collider terrainCollider;
+
 
     protected Vector3 targetPosition;
 
@@ -126,11 +126,6 @@ public abstract class AnimalBase : RandomPosBase, IMove, IFindWater
             GenerateRandomPoint(centerPoint.position.x, centerPoint.position.z);
         }
         return new Vector3(randomX, y, randomZ);
-    }
-
-    private bool IsPointOnTerrain(Vector3 point)
-    {
-        return terrainCollider.bounds.Contains(point);
     }
 
     public bool IsNearDistination(NavMeshAgent agent)
