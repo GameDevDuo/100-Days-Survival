@@ -1,27 +1,21 @@
 ﻿<Properties StartupConfiguration="{1F604ABA-97D5-7786-F80E-1F5D5FA51AF3}|">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/3.Scripts/Inventory/BuildHandler.cs">
     <Files>
-      <File FileName="Assets/3.Scripts/Managers/UIManager.cs" Line="15" Column="25" IsPinned="True" />
-      <File FileName="Assets/3.Scripts/Managers/GameManager.cs" Line="9" Column="25" IsPinned="True" />
-      <File FileName="Assets/3.Scripts/Player/PlayerController.cs" Line="6" Column="41" />
-      <File FileName="Assets/3.Scripts/Player/PlayerAttack.cs" Line="9" Column="45" />
-      <File FileName="Assets/3.Scripts/Inventory/BuildHandler.cs" Line="20" Column="76" />
-      <File FileName="Assets/3.Scripts/Camera/ResourceItemRaycaster.cs" Line="7" Column="2" />
-      <File FileName="Assets/3.Scripts/Camera/FirstPersonCamera.cs" Line="3" Column="19" />
-      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalData.cs" Line="4" Column="43" />
+      <File FileName="Assets/3.Scripts/Managers/UIManager.cs" Line="24" Column="59" IsPinned="True" />
+      <File FileName="Assets/3.Scripts/Managers/GameManager.cs" Line="7" Column="40" IsPinned="True" />
+      <File FileName="Assets/3.Scripts/Player/PlayerController.cs" Line="4" Column="31" />
+      <File FileName="Assets/3.Scripts/Player/PlayerAttack.cs" Line="4" Column="31" />
+      <File FileName="Assets/3.Scripts/Inventory/BuildHandler.cs" Line="17" Column="36" />
+      <File FileName="Assets/3.Scripts/Camera/ResourceItemRaycaster.cs" Line="5" Column="1" />
+      <File FileName="Assets/3.Scripts/Camera/FirstPersonCamera.cs" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalData.cs" />
       <File FileName="Assets/3.Scripts/ScriptableObject/Item/ItemData.cs" />
       <File FileName="Assets/3.Scripts/ScriptableObject/Item/ResourceItem.cs" />
       <File FileName="Assets/3.Scripts/Interface/ITime.cs" />
       <File FileName="Assets/3.Scripts/Interface/IDay.cs" />
       <File FileName="Assets/3.Scripts/Inventory/Inventory.cs" />
-      <File FileName="Assets/3.Scripts/Craftingtable/Craftingtable.cs" Line="15" Column="48" />
-      <File FileName="Assets/3.Scripts/Inventory/Slot.cs" Line="6" Column="22" />
+      <File FileName="Assets/3.Scripts/Craftingtable/Craftingtable.cs" />
+      <File FileName="Assets/3.Scripts/Inventory/Slot.cs" />
       <File FileName="Assets/3.Scripts/Interface/IOnOff.cs" />
       <File FileName="Assets/3.Scripts/Interface/IMove.cs" />
       <File FileName="Assets/3.Scripts/Camera/ResourceItemFadeOut.cs" />
@@ -30,11 +24,11 @@
       <File FileName="Assets/3.Scripts/Craftingtable/CraftingMenuManager.cs" />
       <File FileName="Assets/3.Scripts/Utils/AnimalSpawner.cs" />
       <File FileName="Assets/3.Scripts/Utils/TreeSpawner.cs" />
-      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/PassiveAnimal.cs" />
-      <File FileName="Assets/3.Scripts/Abstract/AnimalBase.cs" Line="4" Column="18" />
-      <File FileName="Assets/3.Scripts/Managers/WeatherManager.cs" Line="4" Column="36" />
-      <File FileName="Assets/3.Scripts/Abstract/WeatherBase.cs" Line="3" Column="41" />
-      <File FileName="Assets/3.Scripts/Abstract/RandomPosBase.cs" Line="8" Column="6" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/PassiveAnimal.cs" Line="83" Column="39" />
+      <File FileName="Assets/3.Scripts/Abstract/AnimalBase.cs" Line="89" Column="66" />
+      <File FileName="Assets/3.Scripts/Managers/WeatherManager.cs" Line="126" Column="34" />
+      <File FileName="Assets/3.Scripts/Abstract/WeatherBase.cs" />
+      <File FileName="Assets/3.Scripts/Abstract/RandomPosBase.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -46,9 +40,7 @@
                 <Node name="Camera" expanded="True" />
                 <Node name="Craftingtable" expanded="True" />
                 <Node name="Interface" expanded="True" />
-                <Node name="Inventory" expanded="True">
-                  <Node name="BuildHandler.cs" selected="True" />
-                </Node>
+                <Node name="Inventory" expanded="True" />
                 <Node name="Managers" expanded="True" />
                 <Node name="Player" expanded="True" />
                 <Node name="ScriptableObject" expanded="True">
@@ -66,5 +58,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2c5ee761-959a-4c5e-bc3a-8d38ec6b1617" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="95ada173-5133-42a4-969c-a2a55451f144" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
