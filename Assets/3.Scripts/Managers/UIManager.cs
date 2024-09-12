@@ -8,7 +8,8 @@ public class UIManager : MonoBehaviour, ITime, IDay
     public static UIManager Instance;
 
     [SerializeField] private Image circularGauge;
-    [SerializeField] private GameObject sunLight;
+
+    public GameObject sunLight;
     public Text timeText;
     public Text dateText;
 
