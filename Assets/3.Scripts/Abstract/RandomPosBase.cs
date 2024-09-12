@@ -3,6 +3,7 @@ using UnityEngine;
 public abstract class RandomPosBase : MonoBehaviour, IRandomPos, IFindTerrain
 {
     protected Terrain terrain;
+    protected Collider terrainCollider;
 
     public virtual Vector3 GetRandomPointInRange()
     {
@@ -17,6 +18,11 @@ public abstract class RandomPosBase : MonoBehaviour, IRandomPos, IFindTerrain
         float y = terrain.SampleHeight(new Vector3(randomX, 0, randomZ));
 
         return new Vector3(randomX, y, randomZ);
+    }
+
+    public bool IsPointOnTerrain(Vector3 point)
+    {
+        return terrainCollider.bounds.Contains(point);
     }
 
     public void FindTerrain()
