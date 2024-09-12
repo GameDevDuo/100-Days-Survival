@@ -45,7 +45,6 @@ public class PassiveAnimal : AnimalBase
         {
             if (CheckForPlayer())
             {
-                currentTime = 10f;
                 FleeFromPlayer();
             }
             else
@@ -78,22 +77,19 @@ public class PassiveAnimal : AnimalBase
     private void FleeFromPlayer()
     {
         Vector3 fleeDirection = (transform.position - player.transform.position).normalized;
-        Vector3 fleePosition = transform.position + fleeDirection * 10f;
-
-        currentTime -= Time.deltaTime;
+        targetPosition = transform.position + fleeDirection * 10f;
 
         animator.enabled = false;
         agent.speed = runSpeed;
-        agent.SetDestination(fleePosition);
+        agent.SetDestination(targetPosition);
 
         RigidFreezeHandler(ref rb, RigidbodyConstraints.None);
         animator.enabled = true;
         animator.Play("run");
 
-        if (currentTime <= 0 || IsNearDistination(agent) || !CheckForPlayer())
+        if (IsNearDistination(agent) || !CheckForPlayer())
         {
-            targetPosition = GetRandomPointInRange();
-            ChangeState(State.Move, RandomTime(MoveStateDuration));
+            ChangeState(State.Idle, IdleStateDuration);
         }
     }
 }
