@@ -7,10 +7,12 @@ public class BuildHandler : MonoBehaviour
 {
     [SerializeField] private float distance = 5f;
     [SerializeField] private LayerMask layerMask;
+    [SerializeField] private float rotationSpeed = 30f;
     private Camera playerCamera;
     private ResourceItemRaycaster resourceItemRaycaster;
     private Inventory inventory;
     private GameObject hologram;
+    private float hologramRotation = 0f;
 
     void Start()
     {
@@ -50,13 +52,19 @@ public class BuildHandler : MonoBehaviour
                                 hologram = Instantiate(prefab, hit.point, Quaternion.identity);
                                 hologram.name = sprite.name;
                                 SetHologramMaterial(hologram);
+                                hologramRotation = 0f;
                             }
                         }
                         if (hologram != null)
                         {
                             hologram.transform.position = hit.point;
-                            hologram.transform.rotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
+                            hologram.transform.rotation = Quaternion.FromToRotation(Vector3.up, hit.normal) * Quaternion.Euler(0f, hologramRotation, 0f);
                             hologram.SetActive(true);
+
+                            if (Keyboard.current.rKey.isPressed)
+                            {
+                                hologramRotation += rotationSpeed * Time.deltaTime;
+                            }
 
                             if (Mouse.current.rightButton.wasPressedThisFrame)
                             {
@@ -71,6 +79,7 @@ public class BuildHandler : MonoBehaviour
                 }
             }
         }
+
         if (hologram != null)
         {
             hologram.SetActive(false);
