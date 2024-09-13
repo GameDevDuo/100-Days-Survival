@@ -6,7 +6,7 @@ public class Tornado : RandomPosBase
 {
     private int numberOfPoints = 10;
     private float areaRadius = 40f;
-    private float moveSpeed = 2f;
+    private float moveSpeed = 1f;
 
     private List<Vector3> controlPoints = new List<Vector3>();
     private Vector3 lastPos;
