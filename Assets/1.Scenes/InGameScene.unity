@@ -17979,10 +17979,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animalPrefab:
   - {fileID: 8480885727264065937, guid: 08fd03bb8be047442934882d38b0276c, type: 3}
+  - {fileID: 679045549139714140, guid: 70b98b32e7a381c4b81cf04a6bebfdfd, type: 3}
+  - {fileID: 2926844032858269723, guid: d8fb0a1ee1d9b22469d18bf0e8ea51ed, type: 3}
   terrain: {fileID: 606024921}
-  animalCount: f4010000
-  texture: 00000000
+  animalCount: f4010000ee02000032000000
+  texture: 000000000100000000000000
   seaHeight: 10
+  navMeshSampleDistance: 100
+  maxSlope: 45
 --- !u!1 &2016285710
 GameObject:
   m_ObjectHideFlags: 0

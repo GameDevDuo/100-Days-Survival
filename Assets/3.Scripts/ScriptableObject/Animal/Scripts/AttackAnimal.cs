@@ -17,31 +17,34 @@ public class AttackAnimal : AnimalBase
 
     public override void Idle()
     {
-        if (hp <= 0)
+        if (agent.isOnNavMesh)
         {
-            ChangeState(State.Dead);
-        }
-        else
-        {
-            if (CheckForPlayer())
+            if (hp <= 0)
             {
-                ChangeState(State.Attak);
+                ChangeState(State.Dead);
             }
             else
             {
-                currentTime -= Time.deltaTime;
-
-                animator.enabled = false;
-                if (currentTime <= 0)
+                if (CheckForPlayer())
                 {
-                    targetPosition = GetRandomPointInRange();
-                    ChangeState(State.Move, RandomTime(MoveStateDuration));
+                    ChangeState(State.Attak);
                 }
                 else
                 {
-                    RigidFreezeHandler(ref rb, RigidbodyConstraints.FreezeAll);
-                    animator.enabled = true;
-                    animator.Play("idle");
+                    currentTime -= Time.deltaTime;
+
+                    animator.enabled = false;
+                    if (currentTime <= 0)
+                    {
+                        targetPosition = GetRandomPointInRange();
+                        ChangeState(State.Move, RandomTime(MoveStateDuration));
+                    }
+                    else
+                    {
+                        RigidFreezeHandler(ref rb, RigidbodyConstraints.FreezeAll);
+                        animator.enabled = true;
+                        animator.Play("idle");
+                    }
                 }
             }
         }
