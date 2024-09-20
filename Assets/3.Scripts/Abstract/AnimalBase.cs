@@ -47,6 +47,10 @@ public abstract class AnimalBase : RandomPosBase, IMove, IFindWater
         agent = GetComponent<NavMeshAgent>();
         terrainCollider = terrain.GetComponent<Collider>();
 
+        if (agent && NavMesh.SamplePosition(agent.transform.position, out NavMeshHit hit, 10.0f, NavMesh.AllAreas))
+        {
+            agent.Warp(hit.position);
+        }
         hp = animalData.MaxHP;
 
         walkSpeed = agent.speed;
