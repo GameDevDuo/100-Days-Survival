@@ -122,14 +122,28 @@ public abstract class AnimalBase : RandomPosBase, IMove, IFindWater
 
     public override Vector3 GenerateRandomPoint(float x, float z)
     {
-        float randomX = Random.Range(x - rangeRadius, x + rangeRadius);
-        float randomZ = Random.Range(z - rangeRadius, z + rangeRadius);
-        float y = terrain.SampleHeight(new Vector3(randomX, 0, randomZ)) + terrain.transform.position.y;
-        if (y < waterObj.transform.position.y)
+        Vector3 randomPoint = Vector3.zero;
+        int maxAttempts = 100;
+        int attempts = 0;
+
+        while (attempts < maxAttempts)
         {
-            GenerateRandomPoint(centerPoint.position.x, centerPoint.position.z);
+            float randomX = Random.Range(x - rangeRadius, x + rangeRadius);
+            float randomZ = Random.Range(z - rangeRadius, z + rangeRadius);
+            float y = terrain.SampleHeight(new Vector3(randomX, 0, randomZ)) + terrain.transform.position.y;
+
+            if (y >= waterObj.transform.position.y)
+            {
+                randomPoint = new Vector3(randomX, y, randomZ);
+                break;
+            }
+            attempts++;
         }
-        return new Vector3(randomX, y, randomZ);
+        if (attempts >= maxAttempts)
+        {
+            randomPoint = new Vector3(x, terrain.SampleHeight(new Vector3(x, 0, z)) + terrain.transform.position.y, z);
+        }
+        return randomPoint;
     }
 
     public bool IsNearDistination(NavMeshAgent agent)
