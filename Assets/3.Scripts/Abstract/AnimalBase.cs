@@ -23,7 +23,6 @@ public abstract class AnimalBase : RandomPosBase, IMove, IFindWater
     protected Animator animator;
     protected NavMeshAgent agent;
 
-
     protected Vector3 targetPosition;
 
     protected const float rangeRadius = 10f;
