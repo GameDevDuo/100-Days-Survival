@@ -100,6 +100,7 @@ public class AttackAnimal : AnimalBase
             {
                 agent.ResetPath();
                 animator.enabled = true;
+                RigidFreezeHandler(ref rb, RigidbodyConstraints.FreezeAll);
                 animator.Play("attack");
             }
             else if (distanceToPlayer <= animalData.FindRange)
@@ -107,6 +108,7 @@ public class AttackAnimal : AnimalBase
                 agent.speed = runSpeed;
                 agent.SetDestination(player.transform.position);
                 animator.enabled = true;
+                RigidFreezeHandler(ref rb, RigidbodyConstraints.FreezeAll);
                 animator.Play("run");
             }
             else
