@@ -15,7 +15,5 @@ MonoBehaviour:
   animalName: Scorpion
   maxHp: 10
   damage: 7
-  attakDistance: 0.5
-  attakSpeed: 0.5
+  attakDistance: 1.5
   findRange: 7
-  rewardItem: []

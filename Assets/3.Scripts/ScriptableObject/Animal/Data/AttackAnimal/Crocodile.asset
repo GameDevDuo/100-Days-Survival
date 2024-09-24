@@ -15,7 +15,5 @@ MonoBehaviour:
   animalName: Crocodile
   maxHp: 80
   damage: 25
-  attakDistance: 3
-  attakSpeed: 4
-  findRange: 15
-  rewardItem: []
+  attakDistance: 4.5
+  findRange: 20

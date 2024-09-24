@@ -15,7 +15,5 @@ MonoBehaviour:
   animalName: Bear
   maxHp: 70
   damage: 30
-  attakDistance: 2.5
-  attakSpeed: 3
-  findRange: 10
-  rewardItem: []
+  attakDistance: 4
+  findRange: 20
