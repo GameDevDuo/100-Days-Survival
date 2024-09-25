@@ -108,12 +108,13 @@ public class AttackAnimal : AnimalBase
                 agent.speed = runSpeed;
                 agent.SetDestination(player.transform.position);
                 animator.enabled = true;
-                RigidFreezeHandler(ref rb, RigidbodyConstraints.FreezeAll);
                 animator.Play("run");
             }
             else
             {
-                ChangeState(State.Idle, RandomTime(IdleStateDuration));
+                agent.ResetPath();
+                targetPosition = GetRandomPointInRange();
+                ChangeState(State.Move, RandomTime(MoveStateDuration));
             }
         }
     }
