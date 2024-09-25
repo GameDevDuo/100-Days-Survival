@@ -570,7 +570,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4309680443985866214, guid: 813b014930868c44baa04a49dd1d5a7d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 220.2
+      value: 189.1
       objectReference: {fileID: 0}
     - target: {fileID: 4309680443985866214, guid: 813b014930868c44baa04a49dd1d5a7d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -964,6 +964,50 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70b98b32e7a381c4b81cf04a6bebfdfd, type: 3}
+--- !u!1 &1068919676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1068919678}
+  - component: {fileID: 1068919677}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1068919677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068919676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106320d37845d441ea21b1f4c478077f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1068919678
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068919676}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 133.0443, y: 41.25118, z: 1330.7189}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1072821422
 GameObject:
   m_ObjectHideFlags: 0
@@ -1661,6 +1705,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1685150627}
   - component: {fileID: 1685150628}
+  - component: {fileID: 1685150629}
   m_Layer: 0
   m_Name: TornadoCenter
   m_TagString: Untagged
@@ -1706,6 +1751,18 @@ CapsuleCollider:
   m_Height: 180
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1685150629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685150626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb786193ac3663343a33668a7c36b5bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1693400757
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2402,6 +2459,7 @@ SceneRoots:
   - {fileID: 146932245}
   - {fileID: 1817255081}
   - {fileID: 1813165756}
+  - {fileID: 1068919678}
   - {fileID: 1141523594}
   - {fileID: 1238421672}
   - {fileID: 1596063991}

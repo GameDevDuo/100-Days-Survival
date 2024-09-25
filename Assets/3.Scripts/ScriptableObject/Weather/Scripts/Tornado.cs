@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Tornado : RandomPosBase
 {
+    private List<Vector3> controlPoints = new List<Vector3>();
+    
     private int numberOfPoints = 10;
     private float moveSpeed = 0.5f;
 
-    private List<Vector3> controlPoints = new List<Vector3>();
     private float t = 0;
     private int currentSegment = 0;
 

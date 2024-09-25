@@ -22,4 +22,14 @@ public class GameManager : MonoBehaviour
     {
         
     }
+
+    public bool CheckForObject(out Collider[] colliders, Vector3 pos, float radius, LayerMask layer)
+    {
+        colliders = Physics.OverlapSphere(pos, radius, layer);
+        if(colliders.Length > 0)
+        {
+            return true;
+        }
+        return false;
+    }
 }
