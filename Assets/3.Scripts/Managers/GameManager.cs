@@ -18,11 +18,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void Start()
-    {
-        
-    }
-
     public bool CheckForObject(out Collider[] colliders, Vector3 pos, float radius, LayerMask layer)
     {
         colliders = Physics.OverlapSphere(pos, radius, layer);
