@@ -31,7 +31,7 @@ public class Tornado : RandomPosBase
         Vector3 pos = BezierCurve.GetPoint(p0, p1, p2, p3, t);
         transform.position = Vector3.Lerp(transform.position, pos, Time.deltaTime * moveSpeed);
 
-        t += Time.deltaTime * moveSpeed * 0.1f;
+        t += Time.deltaTime * moveSpeed * 0.005f;
 
         if (t > 1f)
         {

@@ -9,7 +9,7 @@ public enum State
     Dead,
 }
 
-public abstract class AnimalBase : RandomPosBase, IMove, IFindWater
+public abstract class AnimalBase : RandomPosBase, IMove, IFindWater, IRigidbodyFreezeHandler
 {
     private State currentState;
 
@@ -181,4 +181,6 @@ public abstract class AnimalBase : RandomPosBase, IMove, IFindWater
     {
         waterObj = GameObject.Find("WaterPlane");
     }
+
+    
 }
