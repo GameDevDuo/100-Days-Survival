@@ -599,6 +599,7 @@ GameObject:
   - component: {fileID: 6528085186568612438}
   - component: {fileID: 1930320114919671802}
   - component: {fileID: 5278958156165339357}
+  - component: {fileID: 7608069518413906601}
   - component: {fileID: 468493061095884553}
   - component: {fileID: 3082204679625941350}
   m_Layer: 7
@@ -713,6 +714,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7608069518413906601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369943543237267590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b11da8da94a34d4c9e07f042888cf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curHealth: 100
+  curHunger: 100
+  curStamina: 100
+  curTemperature: 36.5
+  curMentalState: 100
+  curThirst: 100
+  hungerDecayRate: 1
+  thirstDecayRate: 1
+  staminaDecayRate: 0.5
 --- !u!114 &468493061095884553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -727,6 +749,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   jumpForce: 5
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &3082204679625941350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3408,6 +3433,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 8
+  rotationSpeed: 30
 --- !u!114 &3500305632562819573
 MonoBehaviour:
   m_ObjectHideFlags: 0
