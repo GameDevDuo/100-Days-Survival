@@ -46,7 +46,7 @@ public class BuildHandler : MonoBehaviour
                                 Destroy(hologram);
                             }
 
-                            GameObject prefab = Resources.Load<GameObject>($"Prefabs/Map/Build/{sprite.name}");
+                            GameObject prefab = Resources.Load<GameObject>($"Prefabs/Map/Building/{sprite.name}");
                             if (prefab != null)
                             {
                                 hologram = Instantiate(prefab, hit.point, Quaternion.identity);
@@ -68,7 +68,7 @@ public class BuildHandler : MonoBehaviour
 
                             if (Mouse.current.rightButton.wasPressedThisFrame)
                             {
-                                GameObject instantiatedObject = Instantiate(Resources.Load<GameObject>($"Prefabs/Map/Build/{sprite.name}"), hit.point, hologram.transform.rotation);
+                                GameObject instantiatedObject = Instantiate(Resources.Load<GameObject>($"Prefabs/Map/Building/{sprite.name}"), hit.point, hologram.transform.rotation);
                                 EnableParticles(instantiatedObject);
                                 inventory.hotbarSlots[inventory.selectedSlot].transform.GetChild(0).GetComponent<Slot>().RemoveItem();
                                 Destroy(hologram);
