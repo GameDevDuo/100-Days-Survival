@@ -19,11 +19,11 @@ public class Player : MonoBehaviour
     [SerializeField] private Image thirstGauge;
 
     [SerializeField] private int curHealth = maxHealth;
-    [SerializeField] private int curHunger = maxHunger;
-    [SerializeField] private int curStamina = maxStamina;
+    [SerializeField] private float curHunger = maxHunger;
+    [SerializeField] private float curStamina = maxStamina;
     [SerializeField] private float curTemperature = maxTemperature;
     [SerializeField] private int curMentalState = maxMentalState;
-    [SerializeField] private int curThirst = maxThirst;
+    [SerializeField] private float curThirst = maxThirst;
 
     [SerializeField] private float hungerDecayRate = 1f;
     [SerializeField] private float thirstDecayRate = 1f;
@@ -48,7 +48,8 @@ public class Player : MonoBehaviour
     {
         if (curHunger > 0)
         {
-            curHunger -= Mathf.RoundToInt(hungerDecayRate * Time.deltaTime);
+            curHunger -= hungerDecayRate * Time.deltaTime;
+            if (curHunger < 0) curHunger = 0;
         }
         else
         {
@@ -60,7 +61,8 @@ public class Player : MonoBehaviour
     {
         if (curThirst > 0)
         {
-            curThirst -= Mathf.RoundToInt(thirstDecayRate * Time.deltaTime);
+            curThirst -= thirstDecayRate * Time.deltaTime;
+            if (curThirst < 0) curThirst = 0;
         }
         else
         {
@@ -72,7 +74,8 @@ public class Player : MonoBehaviour
     {
         if (curStamina > 0)
         {
-            curStamina -= Mathf.RoundToInt(staminaDecayRate * Time.deltaTime);
+            curStamina -= staminaDecayRate * Time.deltaTime;
+            if (curStamina < 0) curStamina = 0;
         }
     }
 
@@ -87,9 +90,9 @@ public class Player : MonoBehaviour
     private void UpdateGauges()
     {
         healthGauge.fillAmount = (float)curHealth / maxHealth;
-        hungerGauge.fillAmount = (float)curHunger / maxHunger;
-        staminaGauge.fillAmount = (float)curStamina / maxStamina;
+        hungerGauge.fillAmount = curHunger / maxHunger;
+        staminaGauge.fillAmount = curStamina / maxStamina;
         mentalGauge.fillAmount = (float)curMentalState / maxMentalState;
-        thirstGauge.fillAmount = (float)curThirst / maxThirst;
+        thirstGauge.fillAmount = curThirst / maxThirst;
     }
 }
