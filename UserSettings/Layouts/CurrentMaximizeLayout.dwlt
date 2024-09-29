@@ -23,7 +23,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 1416
+  controlID: 1793
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -91,7 +91,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 1417
+  controlID: 1794
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 1418
+  controlID: 1795
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -674,9 +674,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1531.4274, y: -454.26917, z: 1618.1167}
+    m_Target: {x: 148.00557, y: 17.167347, z: 1321.2092}
     speed: 2
-    m_Value: {x: 1531.4274, y: -454.26917, z: 1618.1167}
+    m_Value: {x: 148.00557, y: 17.167347, z: 1321.2092}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -722,13 +722,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.20476449, y: 0.21619785, z: -0.046380248, w: 0.9536564}
+    m_Target: {x: 0.095154546, y: 0.31626433, z: -0.031839527, w: 0.943499}
     speed: 2
-    m_Value: {x: 0.20473567, y: 0.21616742, z: -0.046373717, w: 0.95352215}
+    m_Value: {x: 0.09514115, y: 0.3162198, z: -0.031835046, w: 0.9433662}
   m_Size:
-    m_Target: 1101.4536
+    m_Target: 0.94338673
     speed: 2
-    m_Value: 1101.4536
+    m_Value: 0.94338673
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1369,7 +1369,7 @@ MonoBehaviour:
   - {fileID: 10}
   - {fileID: 11}
   m_Selected: 0
-  m_LastSelected: 2
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1474,7 +1474,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 1443
+  controlID: 1733
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1541,7 +1541,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 22fbffff
+      m_ExpandedIDs: 22fbffff46820000b4820000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1683,7 +1683,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 1564
+  controlID: 1666
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1755,7 +1755,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/3.Scripts/Camera
+    - Assets
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1763,16 +1763,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/3.Scripts/Camera
+  - Assets
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /Users/junghyun/Project/100-Days-Survival
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: e28e0000
-    m_LastClickedID: 36578
-    m_ExpandedIDs: 000000006e8c0000768e000000ca9a3bffffff7f
+    m_SelectedIDs: 6e8c0000
+    m_LastClickedID: 35950
+    m_ExpandedIDs: 000000006e8c0000768e0000868e0000da8e000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1827,7 +1827,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 58d40000b01a0100ae6b0000766d00003c6d0000d2620000cc64000076610000de64000094a400006ab100007cb1000030700000f06f0100d4b601000000000082d20100a8a70000767e0000d8720000668c0000688c00007a4c020036550700
     m_RenameOverlay:
       m_UserAcceptedRename: 0
