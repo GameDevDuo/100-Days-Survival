@@ -20,7 +20,6 @@ public class Player : MonoBehaviour
 
     [SerializeField] private int curHealth = maxHealth;
     [SerializeField] private float curHunger = maxHunger;
-    [SerializeField] private float curStamina = maxStamina;
     [SerializeField] private float curTemperature = maxTemperature;
     [SerializeField] private int curMentalState = maxMentalState;
     [SerializeField] private float curThirst = maxThirst;
@@ -29,8 +28,15 @@ public class Player : MonoBehaviour
     [SerializeField] private float thirstDecayRate = 1f;
     [SerializeField] private float staminaDecayRate = 0.5f;
 
+    private PlayerController playerController;
+
+    public float curStamina = maxStamina;
+    public bool isRun;
+
     void Start()
     {
+        playerController = GetComponent<PlayerController>();
+
         UpdateGauges();
     }
 
@@ -49,7 +55,11 @@ public class Player : MonoBehaviour
         if (curHunger > 0)
         {
             curHunger -= hungerDecayRate * Time.deltaTime;
-            if (curHunger < 0) curHunger = 0;
+
+            if (curHunger < 0)
+            {
+                curHunger = 0;
+            }
         }
         else
         {
@@ -62,7 +72,11 @@ public class Player : MonoBehaviour
         if (curThirst > 0)
         {
             curThirst -= thirstDecayRate * Time.deltaTime;
-            if (curThirst < 0) curThirst = 0;
+
+            if (curThirst < 0)
+            {
+                curThirst = 0;
+            }
         }
         else
         {
@@ -72,10 +86,26 @@ public class Player : MonoBehaviour
 
     private void DecreaseStamina()
     {
-        if (curStamina > 0)
+        if (isRun)
         {
-            curStamina -= staminaDecayRate * Time.deltaTime;
-            if (curStamina < 0) curStamina = 0;
+            if (curStamina > 0)
+            {
+                curStamina -= staminaDecayRate * Time.deltaTime;
+
+                if (curStamina <= 0)
+                {
+                    curStamina = 0;
+                    isRun = false;
+                    playerController.isRunning = false;
+                }
+            }
+        }
+        else
+        {
+            if (curStamina < maxStamina)
+            {
+                curStamina += staminaDecayRate * Time.deltaTime;
+            }
         }
     }
 

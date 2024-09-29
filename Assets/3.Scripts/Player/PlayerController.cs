@@ -6,17 +6,21 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed;
+    [SerializeField] private float runMultiplier = 2f;
     [SerializeField] private float jumpForce;
     [SerializeField] private LayerMask layerMask;
     private Rigidbody rb;
     private Animator anim;
+    private Player player;
     private Vector3 moveInput;
     private bool isGround;
+    public bool isRunning;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
+        player = GetComponent<Player>();
     }
 
     private void Update()
@@ -39,9 +43,29 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void OnRun(InputValue value)
+    {
+        if (player.curStamina > 25 && value.isPressed)
+        {
+            isRunning = true;
+            player.isRun = true;
+        }
+        else
+        {
+            isRunning = false;
+            player.isRun = false;
+        }
+    }
+
     private void Run()
     {
-        Vector3 velocity = new Vector3(moveInput.x * speed, rb.velocity.y, moveInput.z * speed);
+        float currentSpeed = speed;
+
+        if (isRunning)
+        {
+            currentSpeed *= runMultiplier;
+        }
+        Vector3 velocity = new Vector3(moveInput.x * currentSpeed, rb.velocity.y, moveInput.z * currentSpeed);
         rb.velocity = transform.TransformDirection(velocity);
 
         if (moveInput.x != 0 || moveInput.z != 0)
@@ -62,16 +86,6 @@ public class PlayerController : MonoBehaviour
     private void CheckGround()
     {
         isGround = Physics.Raycast(transform.position, Vector3.down, 0.25f, layerMask);
-    }
-
-    private void OnToggleInventory()
-    {
-        Inventory.Instance.ToggleInventory();
-    }
-
-    private void OnToggleCraftingTable()
-    {
-        Craftingtable.Instance.ToggleCraftingTable();
     }
 
     private void OnDrawGizmos()
