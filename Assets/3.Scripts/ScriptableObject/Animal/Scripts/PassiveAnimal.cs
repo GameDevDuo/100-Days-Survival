@@ -79,7 +79,7 @@ public class PassiveAnimal : AnimalBase
 
     private void FleeFromPlayer()
     {
-        Vector3 fleeDirection = (transform.position - player.transform.position).normalized;
+        Vector3 fleeDirection = (transform.position - playerObj.transform.position).normalized;
         targetPosition = transform.position + fleeDirection * 10f;
 
         animator.enabled = false;
@@ -96,5 +96,3 @@ public class PassiveAnimal : AnimalBase
         }
     }
 }
-
-

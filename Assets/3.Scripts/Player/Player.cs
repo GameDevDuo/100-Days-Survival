@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     private const int maxHealth = 100;
     private const int maxHunger = 100;
     private const int maxStamina = 100;
-    private const float maxTemperature = 36.5f;
+    // private const float maxTemperature = 36.5f;
     private const int maxMentalState = 100;
     private const int maxThirst = 100;
 
@@ -17,10 +17,11 @@ public class Player : MonoBehaviour
     [SerializeField] private Image staminaGauge;
     [SerializeField] private Image mentalGauge;
     [SerializeField] private Image thirstGauge;
+    [SerializeField] private Image damageFeedback;
 
     [SerializeField] private int curHealth = maxHealth;
     [SerializeField] private float curHunger = maxHunger;
-    [SerializeField] private float curTemperature = maxTemperature;
+    // [SerializeField] private float curTemperature = maxTemperature;
     [SerializeField] private int curMentalState = maxMentalState;
     [SerializeField] private float curThirst = maxThirst;
 
@@ -37,6 +38,7 @@ public class Player : MonoBehaviour
     {
         playerController = GetComponent<PlayerController>();
 
+        damageFeedback.enabled = false;
         UpdateGauges();
     }
 
@@ -63,7 +65,7 @@ public class Player : MonoBehaviour
         }
         else
         {
-            curHealth -= 1;
+            TakeDamage(1);
         }
     }
 
@@ -80,7 +82,7 @@ public class Player : MonoBehaviour
         }
         else
         {
-            curHealth -= 1;
+            TakeDamage(1);
         }
     }
 
@@ -124,5 +126,45 @@ public class Player : MonoBehaviour
         staminaGauge.fillAmount = curStamina / maxStamina;
         mentalGauge.fillAmount = (float)curMentalState / maxMentalState;
         thirstGauge.fillAmount = curThirst / maxThirst;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        curHealth -= damage;
+
+        if (curHealth < 0)
+        {
+            curHealth = 0;
+        }
+        StartCoroutine(ShowDamageFeedback());
+
+        CheckPlayerDeath();
+        UpdateGauges();
+    }
+
+    private IEnumerator ShowDamageFeedback()
+    {
+        damageFeedback.enabled = true;
+
+        Color color = damageFeedback.color;
+
+        float alpha = 0f;
+        while (alpha < 1f)
+        {
+            alpha += Time.deltaTime * 2f;
+            color.a = Mathf.Clamp01(alpha);
+            damageFeedback.color = color;
+            yield return null;
+        }
+        yield return new WaitForSeconds(0.2f);
+
+        while (alpha > 0f)
+        {
+            alpha -= Time.deltaTime * 2f;
+            color.a = Mathf.Clamp01(alpha);
+            damageFeedback.color = color;
+            yield return null;
+        }
+        damageFeedback.enabled = false;
     }
 }

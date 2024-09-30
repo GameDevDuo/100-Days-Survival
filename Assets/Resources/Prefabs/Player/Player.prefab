@@ -617,7 +617,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1369943543237267590}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 147.55505, y: 15.999, z: 1321.368}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -650,7 +650,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1369943543237267590}
-  m_Material: {fileID: 13400000, guid: 36b8a2438f5ea4f58bf2b9e180aefc71, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -726,15 +726,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b11da8da94a34d4c9e07f042888cf3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthGauge: {fileID: 0}
+  hungerGauge: {fileID: 0}
+  staminaGauge: {fileID: 0}
+  mentalGauge: {fileID: 0}
+  thirstGauge: {fileID: 0}
   curHealth: 100
   curHunger: 100
-  curStamina: 100
   curTemperature: 36.5
   curMentalState: 100
   curThirst: 100
-  hungerDecayRate: 1
-  thirstDecayRate: 1
-  staminaDecayRate: 0.5
+  hungerDecayRate: 0.25
+  thirstDecayRate: 0.2
+  staminaDecayRate: 7.5
+  curStamina: 100
+  isRun: 0
 --- !u!114 &468493061095884553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -747,11 +753,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7726a31d9cd9c4137a7337eb5ae391bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 5
+  runMultiplier: 2
   jumpForce: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 2056
+  isRunning: 0
 --- !u!114 &3082204679625941350
 MonoBehaviour:
   m_ObjectHideFlags: 0

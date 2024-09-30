@@ -15,7 +15,7 @@ public abstract class AnimalBase : RandomPosBase, IMove, IFindWater
 
     [SerializeField] protected AnimalData animalData;
 
-    protected GameObject player;
+    protected GameObject playerObj;
 
     protected GameObject waterObj;
     protected Rigidbody rb;
@@ -41,6 +41,7 @@ public abstract class AnimalBase : RandomPosBase, IMove, IFindWater
         centerPoint = this.transform;
         FindTerrain();
         FindWaterPlane();
+        playerObj = GameObject.Find("Player").gameObject;
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
@@ -97,10 +98,10 @@ public abstract class AnimalBase : RandomPosBase, IMove, IFindWater
         Collider[] colliders = Physics.OverlapSphere(centerPoint.position, animalData.FindRange, LayerMask.GetMask("Player"));
         if (colliders.Length > 0)
         {
-            player = colliders[0].gameObject;
+            playerObj = colliders[0].gameObject;
             return true;
         }
-        player = null;
+        playerObj = null;
         return false;
     }
     public void TakeDamage(int damage)
