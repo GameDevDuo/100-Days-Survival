@@ -41,6 +41,8 @@ public class PlayerController : MonoBehaviour
         if (isGround)
         {
             Jump();
+
+            player.TakeDamage(5);
         }
     }
 
