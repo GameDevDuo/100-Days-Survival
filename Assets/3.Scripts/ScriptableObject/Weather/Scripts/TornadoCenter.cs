@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class TornadoCenter : MonoBehaviour, IRigidbodyFreezeHandler
 {
@@ -8,8 +9,11 @@ public class TornadoCenter : MonoBehaviour, IRigidbodyFreezeHandler
     private Collider[] colliders;
     private LayerMask layer;
 
-    private float radius = 350f;
+    private float radius = 250f;
     private float speed = 4f;
+
+    private float minV = 1f;
+    private float maxV = 5f;
 
     private void Start()
     {
@@ -20,25 +24,31 @@ public class TornadoCenter : MonoBehaviour, IRigidbodyFreezeHandler
     {
         if (GameManager.Instance.CheckForObject(out colliders, transform.position, radius, layer))
         {
+            speed += 0.1f * Time.deltaTime;
             Debug.Log("Check!");
             foreach (Collider col in colliders)
             {
                 Debug.Log("Pulling!");
-                Rigidbody rb = col.GetComponent<Rigidbody>();
-                rb.useGravity = false;
+                
                 col.transform.position = Vector3.MoveTowards(
                     col.transform.position,
                     pullingObject.transform.position,
                     speed * Time.deltaTime
                     );
+
+                if (col.gameObject.layer == 9)
+                {
+                    GameObject gameObject = col.gameObject;
+                    gameObject.GetComponent<NavMeshAgent>().enabled = false;
+                    GameManager.Instance.RotateObject(ref gameObject, minV, maxV, maxV, maxV);
+                }
             }
         }
         else
         {
             foreach (Collider col in colliders)
             {
-                Rigidbody rb = col.GetComponent<Rigidbody>();
-                rb.useGravity = true;
+                col.gameObject.GetComponent<NavMeshAgent>().enabled = true;
             }
         }
     }
