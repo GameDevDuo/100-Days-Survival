@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Image mentalGauge;
     [SerializeField] private Image thirstGauge;
     [SerializeField] private Image damageFeedback;
+    [SerializeField] private Text temperatureText;
 
     [SerializeField] private int curHealth = maxHealth;
     [SerializeField] private float curHunger = maxHunger;
@@ -108,7 +109,6 @@ public class Player : MonoBehaviour
         }
     }
 
-
     private void CheckPlayerDeath()
     {
         if (curHealth <= 0)
@@ -124,6 +124,7 @@ public class Player : MonoBehaviour
         staminaGauge.fillAmount = curStamina / maxStamina;
         mentalGauge.fillAmount = (float)curMentalState / maxMentalState;
         thirstGauge.fillAmount = curThirst / maxThirst;
+        // temperatureText.text = (curTemperature / maxTemperature).ToString();
     }
 
     public void TakeDamage(int damage)
