@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     private const int maxHealth = 100;
     private const int maxHunger = 100;
     private const int maxStamina = 100;
-    private const float maxTemperature = 36.5f;
+    // private const float maxTemperature = 36.5f;
     private const int maxMentalState = 100;
     private const int maxThirst = 100;
 
@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
 
     [SerializeField] private int curHealth = maxHealth;
     [SerializeField] private float curHunger = maxHunger;
-    [SerializeField] private float curTemperature = maxTemperature;
+    // [SerializeField] private float curTemperature = maxTemperature;
     [SerializeField] private int curMentalState = maxMentalState;
     [SerializeField] private float curThirst = maxThirst;
 

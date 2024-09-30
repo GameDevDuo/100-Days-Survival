@@ -4,11 +4,14 @@ using UnityEngine.AI;
 public class AttackAnimal : AnimalBase
 {
     private Collider animalCollider;
+    private Player player;
 
     public override void Start()
     {
         base.Start();
         animalCollider = GetComponent<Collider>();
+        player = playerObj.GetComponent<Player>();
+
     }
     protected override void Update()
     {
@@ -102,6 +105,8 @@ public class AttackAnimal : AnimalBase
                 animator.enabled = true;
                 RigidFreezeHandler(ref rb, RigidbodyConstraints.FreezeAll);
                 animator.Play("attack");
+                player.TakeDamage(animalData.Damage);
+                Debug.Log("공격!");
             }
             else if (distanceToPlayer <= animalData.FindRange)
             {
