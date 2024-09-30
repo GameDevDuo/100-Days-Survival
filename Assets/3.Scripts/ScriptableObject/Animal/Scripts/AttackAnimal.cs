@@ -3,13 +3,11 @@ using UnityEngine.AI;
 
 public class AttackAnimal : AnimalBase
 {
-    private Collider animalCollider;
     private Player player;
 
     public override void Start()
     {
         base.Start();
-        animalCollider = GetComponent<Collider>();
         player = playerObj.GetComponent<Player>();
 
     }

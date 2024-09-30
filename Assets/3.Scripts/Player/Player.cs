@@ -17,7 +17,6 @@ public class Player : MonoBehaviour
     [SerializeField] private Image mentalGauge;
     [SerializeField] private Image thirstGauge;
     [SerializeField] private Image damageFeedback;
-    [SerializeField] private Text temperatureText;
 
     [SerializeField] private int curHealth = maxHealth;
     [SerializeField] private float curHunger = maxHunger;
