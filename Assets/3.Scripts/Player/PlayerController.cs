@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     private Player player;
     private Vector3 moveInput;
     private bool isGround;
+    private bool isShiftPressed;
     public bool isRunning;
 
     void Start()
@@ -45,7 +46,12 @@ public class PlayerController : MonoBehaviour
 
     void OnRun(InputValue value)
     {
-        if (player.curStamina > 25 && value.isPressed)
+        isShiftPressed = value.isPressed;
+    }
+
+    private void Run()
+    {
+        if (player.curStamina > 25 && isShiftPressed && moveInput.z > 0)
         {
             isRunning = true;
             player.isRun = true;
@@ -55,22 +61,15 @@ public class PlayerController : MonoBehaviour
             isRunning = false;
             player.isRun = false;
         }
-    }
 
-    private void Run()
-    {
-        float currentSpeed = speed;
+        float currentSpeed = isRunning ? speed * runMultiplier : speed;
 
-        if (isRunning)
-        {
-            currentSpeed *= runMultiplier;
-        }
         Vector3 velocity = new Vector3(moveInput.x * currentSpeed, rb.velocity.y, moveInput.z * currentSpeed);
         rb.velocity = transform.TransformDirection(velocity);
 
         if (moveInput.x != 0 || moveInput.z != 0)
         {
-            anim.Play("Run");
+            anim.Play(isRunning ? "Run" : "Walk");
         }
         else
         {

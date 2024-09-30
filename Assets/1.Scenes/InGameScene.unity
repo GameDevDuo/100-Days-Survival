@@ -11665,11 +11665,11 @@ RectTransform:
   - {fileID: 1842699020}
   - {fileID: 1634753854}
   - {fileID: 106444510}
+  - {fileID: 1401648854}
   - {fileID: 857585443}
   - {fileID: 102997959}
   - {fileID: 731265667}
   - {fileID: 1257622131}
-  - {fileID: 1401648854}
   m_Father: {fileID: 1427162670}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -11900,6 +11900,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 0
+  isRunning: 0
 --- !u!1001 &1193361456
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13456,7 +13457,7 @@ RectTransform:
   m_GameObject: {fileID: 1401648853}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.25, z: 1}
+  m_LocalScale: {x: 1.75, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1117264486}
@@ -13468,8 +13469,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -658, y: -443}
-  m_SizeDelta: {x: -1520, y: -930}
+  m_AnchoredPosition: {x: -610, y: -421}
+  m_SizeDelta: {x: -1520, y: -928}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1401648855
 MonoBehaviour:
@@ -24695,11 +24696,11 @@ PrefabInstance:
       objectReference: {fileID: 169296309}
     - target: {fileID: 7608069518413906601, guid: f4228d3c4cec84e5aa03c3842d74932e, type: 3}
       propertyPath: hungerDecayRate
-      value: 2.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 7608069518413906601, guid: f4228d3c4cec84e5aa03c3842d74932e, type: 3}
       propertyPath: thirstDecayRate
-      value: 2.5
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 7608069518413906601, guid: f4228d3c4cec84e5aa03c3842d74932e, type: 3}
       propertyPath: staminaDecayRate

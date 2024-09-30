@@ -104,7 +104,7 @@ public class Player : MonoBehaviour
         {
             if (curStamina < maxStamina)
             {
-                curStamina += staminaDecayRate * Time.deltaTime;
+                curStamina += (staminaDecayRate / 2) * Time.deltaTime;
             }
         }
     }
