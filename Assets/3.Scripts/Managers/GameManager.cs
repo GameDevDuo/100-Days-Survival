@@ -27,4 +27,13 @@ public class GameManager : MonoBehaviour
         }
         return false;
     }
+
+    public void RotateObject(ref GameObject gameObject, float minV, float maxX, float maxY, float maxZ)
+    {
+        float randX = Random.Range(minV, maxX);
+        float randY = Random.Range(minV, maxY);
+        float randZ = Random.Range(minV, maxZ);
+
+        gameObject.transform.Rotate(new Vector3(randX, randY, randZ));
+    }
 }
