@@ -90,16 +90,13 @@ public class Player : MonoBehaviour
     {
         if (isRun)
         {
-            if (curStamina > 0)
-            {
-                curStamina -= staminaDecayRate * Time.deltaTime;
+            curStamina -= staminaDecayRate * Time.deltaTime;
 
-                if (curStamina <= 0)
-                {
-                    curStamina = 0;
-                    isRun = false;
-                    playerController.isRunning = false;
-                }
+            if (curStamina <= 0)
+            {
+                curStamina = 0;
+                isRun = false;
+                playerController.isRunning = false;
             }
         }
         else
@@ -110,6 +107,7 @@ public class Player : MonoBehaviour
             }
         }
     }
+
 
     private void CheckPlayerDeath()
     {

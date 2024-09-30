@@ -51,12 +51,23 @@ public class PlayerController : MonoBehaviour
 
     private void Run()
     {
+        //if (isShiftPressed && moveInput.z > 0 && player.curStamina > 25)
+        //{
+        //    isRunning = true;
+        //    player.isRun = true;
+        //}
+        //else if (!isShiftPressed || player.curStamina <= 0 || moveInput.z <= 0)
+        //{
+        //    isRunning = false;
+        //    player.isRun = false;
+        //}
+
         if (player.curStamina > 25 && isShiftPressed && moveInput.z > 0)
         {
             isRunning = true;
             player.isRun = true;
         }
-        else
+        else if (!isShiftPressed || player.curStamina <= 0)
         {
             isRunning = false;
             player.isRun = false;
@@ -69,7 +80,7 @@ public class PlayerController : MonoBehaviour
 
         if (moveInput.x != 0 || moveInput.z != 0)
         {
-            anim.Play(isRunning ? "Run" : "Walk");
+            anim.Play("Run");
         }
         else
         {
