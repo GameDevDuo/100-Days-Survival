@@ -8,7 +8,9 @@ public class TreeSpawner : MonoBehaviour
     [SerializeField] private Terrain terrain;
     [SerializeField] private int[] treeCount;
     [SerializeField] private int[] texture;
-    [SerializeField] private float seaHeight; 
+    [SerializeField] private float seaHeight;
+    [SerializeField] private bool[] useCustomSize;
+    [SerializeField] private Vector2[] customSizeRange;
 
     void Start()
     {
@@ -25,6 +27,12 @@ public class TreeSpawner : MonoBehaviour
                 {
                     GameObject tree = Instantiate(treePrefab[i], position, Quaternion.identity);
                     tree.transform.parent = transform;
+
+                    if (useCustomSize.Length > i && useCustomSize[i])
+                    {
+                        float scale = Random.Range(customSizeRange[i].x, customSizeRange[i].y);
+                        tree.transform.localScale = new Vector3(scale, scale, scale);
+                    }
                 }
             }
         }
@@ -39,9 +47,9 @@ public class TreeSpawner : MonoBehaviour
         int mapX = Mathf.RoundToInt(x * terrain.terrainData.alphamapWidth);
         int mapZ = Mathf.RoundToInt(z * terrain.terrainData.alphamapHeight);
 
-        float[,,] Map = terrain.terrainData.GetAlphamaps(mapX, mapZ, 1, 1);
+        float[,,] map = terrain.terrainData.GetAlphamaps(mapX, mapZ, 1, 1);
 
-        return Map[0, 0, texture[index]] > 0.5f;
+        return map[0, 0, texture[index]] > 0.5f;
     }
 
     bool SeaHeight(float y)

@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Image mentalGauge;
     [SerializeField] private Image thirstGauge;
     [SerializeField] private Image damageFeedback;
-
+    
     [SerializeField] private int curHealth = maxHealth;
     [SerializeField] private float curHunger = maxHunger;
     [SerializeField] private int curMentalState = maxMentalState;
@@ -139,7 +139,7 @@ public class Player : MonoBehaviour
 
     private IEnumerator ShowDamageFeedback()
     {
-        damageFeedback.enabled = true;
+        damageFeedback.gameObject.SetActive(true);
 
         Color color = damageFeedback.color;
 
@@ -160,6 +160,6 @@ public class Player : MonoBehaviour
             damageFeedback.color = color;
             yield return null;
         }
-        damageFeedback.enabled = false;
+        damageFeedback.gameObject.SetActive(false);
     }
 }
