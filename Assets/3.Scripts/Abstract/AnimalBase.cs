@@ -1,3 +1,4 @@
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -166,6 +167,7 @@ public abstract class AnimalBase : RandomPosBase, IMove, IFindWater
     public void ChangeState(State newState, float time)
     {
         currentState = newState;
+        currentTime = time;
     }
 
     public void ChangeState(State newState)
@@ -175,7 +177,7 @@ public abstract class AnimalBase : RandomPosBase, IMove, IFindWater
 
     public float RandomTime(float maxTime)
     {
-        return currentTime = Random.Range(minTime, maxTime);
+        return Random.Range(minTime, maxTime);
     }
 
     public void FindWaterPlane()
