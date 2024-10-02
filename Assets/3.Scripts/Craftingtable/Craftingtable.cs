@@ -48,7 +48,7 @@ public class Craftingtable : MonoBehaviour
         }
     }
 
-    public void ToggleCraftingTable()
+    public void OnToggleCraftingTable()
     {
         if (resourceItemRaycaster.isCollecting)
         {
