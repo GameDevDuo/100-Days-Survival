@@ -731,9 +731,9 @@ MonoBehaviour:
   staminaGauge: {fileID: 0}
   mentalGauge: {fileID: 0}
   thirstGauge: {fileID: 0}
+  damageFeedback: {fileID: 0}
   curHealth: 100
   curHunger: 100
-  curTemperature: 36.5
   curMentalState: 100
   curThirst: 100
   hungerDecayRate: 0.25
@@ -3366,7 +3366,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 2500
+  far clip plane: 1250
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -3560,6 +3560,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 5b914c20-4fb5-42df-9d0b-f533080adac9
     m_ActionName: Player/ToggleCraftingTable[/Keyboard/q]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 30745d73-b42f-44d1-8734-ebf2aaa735ee
+    m_ActionName: Player/Run[/Keyboard/leftShift]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
