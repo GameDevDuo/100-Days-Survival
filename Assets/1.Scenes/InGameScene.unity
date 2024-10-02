@@ -176,10 +176,28 @@ MonoBehaviour:
   - {fileID: 4689234527507443809, guid: fcbef4494cd51427b8436a3ef34361c5, type: 3}
   - {fileID: 1002808933755254235, guid: 4f11beb56a9b44455b1f058c903214a0, type: 3}
   - {fileID: 6809481121959456646, guid: c6af999428e47440e91afa92d16d6865, type: 3}
+  - {fileID: 6658243735856739739, guid: 37bf0bbc2962247d2bb47772ef9e9548, type: 3}
+  - {fileID: 8191463470967147637, guid: d8b9d4450162e43f38f144b259c8ec31, type: 3}
+  - {fileID: 6251013898703641446, guid: ca9e88f892b5f4c2dba7051d56575bcd, type: 3}
+  - {fileID: 1732566185671772358, guid: d7c68f12e2ce44df39101fdc707b17d9, type: 3}
   terrain: {fileID: 606024921}
-  treeCount: b80b0000b80b0000b80b00001027000010270000307500003075000050c30000
-  texture: 0000000001000000030000000300000003000000000000000000000000000000
+  treeCount: b80b0000b80b0000b80b00001027000010270000307500003075000050c3000030750000307500003075000030750000
+  texture: 000000000100000003000000030000000300000000000000000000000000000000000000000000000000000000000000
   seaHeight: 10
+  useCustomSize: 010101010101010101010101
+  customSizeRange:
+  - {x: 0.75, y: 3}
+  - {x: 1, y: 1.5}
+  - {x: 1, y: 1.5}
+  - {x: 0.65, y: 0.85}
+  - {x: 0.65, y: 0.85}
+  - {x: 0.75, y: 1.5}
+  - {x: 0.75, y: 1.5}
+  - {x: 0.25, y: 0.5}
+  - {x: 1, y: 7.5}
+  - {x: 1, y: 5}
+  - {x: 1, y: 5}
+  - {x: 1, y: 5}
 --- !u!1001 &20378723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6970,6 +6988,7 @@ GameObject:
   m_Component:
   - component: {fileID: 776911885}
   - component: {fileID: 776911886}
+  - component: {fileID: 776911887}
   m_Layer: 0
   m_Name: Inventory
   m_TagString: Untagged
@@ -7047,6 +7066,36 @@ MonoBehaviour:
   - {fileID: 75618124}
   - {fileID: 1900668518}
   selectedSlot: 0
+--- !u!114 &776911887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776911884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 1e352a31adbaf4283852cd3eb914dc3d, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &784035392
 GameObject:
   m_ObjectHideFlags: 0
@@ -7925,7 +7974,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &881262165
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8755,6 +8804,7 @@ GameObject:
   - component: {fileID: 920875823}
   - component: {fileID: 920875824}
   - component: {fileID: 920875825}
+  - component: {fileID: 920875826}
   m_Layer: 0
   m_Name: Craftingtable
   m_TagString: Untagged
@@ -8822,6 +8872,36 @@ MonoBehaviour:
     genreButton: {fileID: 948109391}
   defaultButtonColor: {r: 0.39607844, g: 0.3764706, b: 0.31764707, a: 1}
   selectedButtonColor: {r: 0.33333334, g: 0.6862745, b: 0.3137255, a: 0.6862745}
+--- !u!114 &920875826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920875822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 1e352a31adbaf4283852cd3eb914dc3d, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &929047677
 GameObject:
   m_ObjectHideFlags: 0
@@ -24686,6 +24766,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 840526327158104789, guid: f4228d3c4cec84e5aa03c3842d74932e, type: 3}
+      propertyPath: far clip plane
+      value: 1250
+      objectReference: {fileID: 0}
     - target: {fileID: 1369943543237267590, guid: f4228d3c4cec84e5aa03c3842d74932e, type: 3}
       propertyPath: m_Name
       value: Player

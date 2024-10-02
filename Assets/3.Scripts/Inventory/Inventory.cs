@@ -101,7 +101,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void ToggleInventory()
+    public void OnToggleInventory()
     {
         if (resourceItemRaycaster.isCollecting)
         {
