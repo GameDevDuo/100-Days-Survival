@@ -5,11 +5,12 @@ public class AttackAnimal : AnimalBase
 {
     private Player player;
 
+    private bool isAttack;
+
     public override void Start()
     {
         base.Start();
         player = playerObj.GetComponent<Player>();
-
     }
     protected override void Update()
     {
@@ -28,7 +29,7 @@ public class AttackAnimal : AnimalBase
             {
                 if (CheckForPlayer())
                 {
-                    ChangeState(State.Attak);
+                    ChangeState(State.Attak, animalData.AttackCoolTime);
                 }
                 else
                 {
@@ -61,7 +62,7 @@ public class AttackAnimal : AnimalBase
         {
             if (CheckForPlayer())
             {
-                ChangeState(State.Attak);
+                ChangeState(State.Attak, animalData.AttackCoolTime);
             }
             else
             {
@@ -101,10 +102,27 @@ public class AttackAnimal : AnimalBase
             {
                 agent.ResetPath();
                 animator.enabled = true;
-                RigidFreezeHandler(ref rb, RigidbodyConstraints.FreezeAll);
-                animator.Play("attack");
-                player.TakeDamage(animalData.Damage);
-                Debug.Log("공격!");
+
+                currentTime -= Time.deltaTime;
+
+                if (currentTime > 0f)
+                {
+                    animator.Play("idle");
+                    Debug.Log("쿨타임!");
+                }
+                else
+                {
+                    animator.Play("attack");
+                    if (!isAttack)
+                    {
+                        player.TakeDamage(animalData.Damage);
+                        isAttack = true;
+                        Debug.Log("공격!");
+                    }
+
+                    isAttack = false;
+                    ChangeState(State.Attak, animalData.AttackCoolTime);
+                }
             }
             else if (distanceToPlayer <= animalData.FindRange)
             {

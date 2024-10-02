@@ -16,4 +16,5 @@ MonoBehaviour:
   maxHp: 70
   damage: 30
   attakDistance: 4
+  attackCoolTime: 3.5
   findRange: 20
