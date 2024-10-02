@@ -5,11 +5,13 @@ public class AttackAnimal : AnimalBase
 {
     private Player player;
 
+    private float attackCoolTime;
+
     public override void Start()
     {
         base.Start();
         player = playerObj.GetComponent<Player>();
-
+        attackCoolTime = animalData.AttackCoolTime;
     }
     protected override void Update()
     {
@@ -102,9 +104,22 @@ public class AttackAnimal : AnimalBase
                 agent.ResetPath();
                 animator.enabled = true;
                 RigidFreezeHandler(ref rb, RigidbodyConstraints.FreezeAll);
-                animator.Play("attack");
-                player.TakeDamage(animalData.Damage);
-                Debug.Log("공격!");
+
+                attackCoolTime -= Time.deltaTime;
+
+                if (attackCoolTime <= 0)
+                {
+                    animator.Play("attack");
+                    player.TakeDamage(animalData.Damage);
+                    Debug.Log("공격!");
+
+                    attackCoolTime = animalData.AttackCoolTime;
+                }
+                else
+                {
+                    animator.Play("idle");
+                    Debug.Log("쿨타임!");
+                }
             }
             else if (distanceToPlayer <= animalData.FindRange)
             {
