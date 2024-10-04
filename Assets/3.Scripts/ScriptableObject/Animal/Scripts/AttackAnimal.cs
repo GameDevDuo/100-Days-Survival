@@ -110,18 +110,13 @@ public class AttackAnimal : AnimalBase
                     animator.Play("idle");
                     Debug.Log("쿨타임!");
                 }
-                else
+                else if(!isAttack)
                 {
                     animator.Play("attack");
-                    if (!isAttack)
-                    {
-                        player.TakeDamage(animalData.Damage);
-                        isAttack = true;
-                        Debug.Log("공격!");
-                    }
+                    isAttack = true;
+                    player.TakeDamage(animalData.Damage);
 
-                    isAttack = false;
-                    ChangeState(State.Attak, animalData.AttackCoolTime);
+                    currentTime = animalData.AttackCoolTime;
                 }
             }
             else if (distanceToPlayer <= animalData.FindRange)
@@ -136,6 +131,12 @@ public class AttackAnimal : AnimalBase
                 agent.ResetPath();
                 targetPosition = GetRandomPointInRange();
                 ChangeState(State.Move, RandomTime(MoveStateDuration));
+            }
+
+            if(animator.GetCurrentAnimatorStateInfo(0).IsName("attack") &&
+               animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+            {
+                isAttack = false;
             }
         }
     }
