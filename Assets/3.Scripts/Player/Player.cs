@@ -139,7 +139,7 @@ public class Player : MonoBehaviour
 
     private IEnumerator ShowDamageFeedback()
     {
-        damageFeedback.gameObject.SetActive(true);
+        damageFeedback.enabled = true;
 
         Color color = damageFeedback.color;
 
@@ -151,7 +151,7 @@ public class Player : MonoBehaviour
             damageFeedback.color = color;
             yield return null;
         }
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.3f);
 
         while (alpha > 0f)
         {
@@ -160,6 +160,6 @@ public class Player : MonoBehaviour
             damageFeedback.color = color;
             yield return null;
         }
-        damageFeedback.gameObject.SetActive(false);
+        damageFeedback.enabled = false;
     }
 }
