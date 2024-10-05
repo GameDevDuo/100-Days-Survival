@@ -731,9 +731,9 @@ MonoBehaviour:
   staminaGauge: {fileID: 0}
   mentalGauge: {fileID: 0}
   thirstGauge: {fileID: 0}
+  damageFeedback: {fileID: 0}
   curHealth: 100
   curHunger: 100
-  curTemperature: 36.5
   curMentalState: 100
   curThirst: 100
   hungerDecayRate: 0.25
@@ -3366,7 +3366,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 2500
+  far clip plane: 500
   field of view: 60
   orthographic: 0
   orthographic size: 5
