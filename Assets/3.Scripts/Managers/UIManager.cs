@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,7 @@ public class UIManager : MonoBehaviour, ITime, IDay
     public static UIManager Instance;
 
     [SerializeField] private Image circularGauge;
+    [SerializeField] private Text fpsText;
 
     public GameObject sunLight;
     public Text timeText;
@@ -59,6 +61,9 @@ public class UIManager : MonoBehaviour, ITime, IDay
         AddTime();
         AddDate();
         RotateSunLight();
+
+        float fps = 1 / Time.deltaTime;
+        fpsText.text = $"FPS : {Math.Round(fps)}";
     }
 
     public void ShowGauge(bool show)
