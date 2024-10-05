@@ -1,22 +1,22 @@
 ﻿<Properties StartupConfiguration="{1F604ABA-97D5-7786-F80E-1F5D5FA51AF3}|">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="fd466871-260f-47bc-8e83-075ed0a86210" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/3.Scripts/Inventory/Inventory.cs">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="324f9f59-4089-4f18-a6af-b8becc9e3fd6" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/3.Scripts/Managers/UIManager.cs">
     <Files>
-      <File FileName="Assets/3.Scripts/Managers/UIManager.cs" Line="2" Column="34" IsPinned="True" />
+      <File FileName="Assets/3.Scripts/Managers/UIManager.cs" Line="11" Column="50" IsPinned="True" />
       <File FileName="Assets/3.Scripts/Managers/GameManager.cs" Line="28" Column="22" IsPinned="True" />
-      <File FileName="Assets/3.Scripts/Player/PlayerController.cs" Line="22" Column="40" />
-      <File FileName="Assets/3.Scripts/Player/Player.cs" Line="12" Column="39" />
-      <File FileName="Assets/3.Scripts/Player/PlayerAttack.cs" Line="46" Column="14" />
-      <File FileName="Assets/3.Scripts/Inventory/BuildHandler.cs" Line="1" Column="1" />
-      <File FileName="Assets/3.Scripts/Camera/ResourceItemRaycaster.cs" Line="1" Column="1" />
-      <File FileName="Assets/3.Scripts/Camera/FirstPersonCamera.cs" Line="21" Column="22" />
-      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalData.cs" Line="1" Column="1" />
+      <File FileName="Assets/3.Scripts/Player/PlayerController.cs" />
+      <File FileName="Assets/3.Scripts/Player/Player.cs" />
+      <File FileName="Assets/3.Scripts/Player/PlayerAttack.cs" />
+      <File FileName="Assets/3.Scripts/Inventory/BuildHandler.cs" />
+      <File FileName="Assets/3.Scripts/Camera/ResourceItemRaycaster.cs" />
+      <File FileName="Assets/3.Scripts/Camera/FirstPersonCamera.cs" />
+      <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AnimalData.cs" />
       <File FileName="Assets/3.Scripts/ScriptableObject/Item/ItemData.cs" />
       <File FileName="Assets/3.Scripts/ScriptableObject/Item/ResourceItem.cs" />
       <File FileName="Assets/3.Scripts/Interface/ITime.cs" />
@@ -26,11 +26,11 @@
       <File FileName="Assets/3.Scripts/Inventory/Slot.cs" />
       <File FileName="Assets/3.Scripts/Interface/IOnOff.cs" />
       <File FileName="Assets/3.Scripts/Interface/IMove.cs" />
-      <File FileName="Assets/3.Scripts/Camera/ResourceItemFadeOut.cs" Line="1" Column="1" />
+      <File FileName="Assets/3.Scripts/Camera/ResourceItemFadeOut.cs" />
       <File FileName="Assets/3.Scripts/ScriptableObject/Crafting/CraftingData.cs" />
       <File FileName="Assets/3.Scripts/Craftingtable/CraftingMenuManager.cs" />
       <File FileName="Assets/3.Scripts/Utils/AnimalSpawner.cs" />
-      <File FileName="Assets/3.Scripts/Utils/TreeSpawner.cs" Line="26" Column="66" />
+      <File FileName="Assets/3.Scripts/Utils/TreeSpawner.cs" />
       <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/AttackAnimal.cs" />
       <File FileName="Assets/3.Scripts/ScriptableObject/Animal/Scripts/PassiveAnimal.cs" />
       <File FileName="Assets/3.Scripts/Abstract/AnimalBase.cs" />
@@ -49,9 +49,7 @@
                 <Node name="Camera" expanded="True" />
                 <Node name="Craftingtable" expanded="True" />
                 <Node name="Interface" expanded="True" />
-                <Node name="Inventory" expanded="True">
-                  <Node name="Inventory.cs" selected="True" />
-                </Node>
+                <Node name="Inventory" expanded="True" />
                 <Node name="Managers" expanded="True" />
                 <Node name="Player" expanded="True" />
                 <Node name="ScriptableObject" expanded="True">
